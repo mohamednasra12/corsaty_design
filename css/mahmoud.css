@@ -1,0 +1,378 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-frist: #5071eb;
+  --color-primary: #f6f6fa;
+  --color-secound: #e7282e;
+  --color-text: #111827;
+  --color-pargraph: #9da6ba;
+}
+/* var( --color-frist) */
+@font-face {
+  font-family: "light";
+  src: url("../fonts/alfont_com_Somar-Light.otf");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/alfont_com_Somar-Regular.otf");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("../fonts/alfont_com_Somar-Medium.otf");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/alfont_com_Somar-Bold.otf");
+}
+a {
+  text-decoration: none;
+}
+body {
+  direction: rtl;
+  background-color: #b2bbc615;
+  counter-reset: section;
+  overflow-x: hidden;
+}
+svg.svg-inline--fa.fa-angles-right {
+  background-color: white;
+  padding: 0.5rem;
+  box-shadow: -1px 0px 5px 2px #0000001c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+::placeholder {
+  font-family: "regular";
+  color: #576b74;
+}
+
+/* index coursat details */
+.index .all-icons .details {
+  display: flex;
+  align-items: center;
+  margin: 0.7rem 0;
+}
+.index .all-icons .img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #5071eb1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+.index .all-icons h5 {
+  font-size: 1rem;
+  font-family: "Medium";
+}
+.index .all-icons .review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.index .content .explain p {
+  font-size: 1rem;
+  font-family: "regular";
+}
+.index .total .total-exams {
+  margin: 0.5rem 0;
+}
+.index .total .total-exams .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(61 150 53 / 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+.index .total .total-exams .img-two {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(230 47 201 / 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+.index .total .total-exams .img-three {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(80 113 235 / 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+.index .total .total-exams .img-four {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(68 125 123 / 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+.index .total .total-exams .img-five {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(187 100 0 / 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+.index .total .total-exams .img-seven {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(227 30 37 / 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+.index .total .total-exams .arrow {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #5071eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+.index .total .total-exams .arrow svg {
+  font-size: 0.8rem;
+}
+.index .total .total-exams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px #b2bbc6 dashed;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+.index .total .total-exams .all-contant {
+  display: flex;
+  align-items: center;
+}
+.index .total .total-exams .explain h5 {
+  font-size: 1rem;
+  font-family: "regular";
+}
+.index .total .total-exams .explain p {
+  font-size: 1rem;
+  font-family: "bold";
+  margin: 0;
+}
+.index .total .total-exams .explain {
+  margin: 0 0.5rem;
+}
+.index .courses .title h4 {
+  font-size: 1rem;
+  font-family: "bold";
+}
+.index .courses .icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.index .courses .icons .edit-course .img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #5071eb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.index .courses .icons .block-cours .img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #bb6400;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.index .courses .icons .delet-cours .img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e31e25;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.index .courses .icons .edit-course .dropdown .btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+  height: 40px;
+}
+.index .courses .icons .edit-course .dropdown .dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-family: "regular";
+  color: black;
+}
+.index
+  .courses
+  .icons
+  .edit-course
+  .dropdown
+  .dropdown-menu
+  .dropdown-item
+  img {
+  margin: 0 0.5rem 0 1.5rem;
+}
+.index .courses .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.index .courses .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.index .all-corses .head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.index .all-corses .title-corses {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.index .all-corses .title-corses h4{
+    font-size: 1.1rem;
+    font-family: "bold";
+    margin: 0 .5rem;
+}
+.index .all-corses .add-new-cours{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.index .all-corses .add-new-cours .btn-primary{
+    font-size: 1rem;
+    font-family: "medium";
+    color: white;
+    padding: .7rem 1.8rem;
+}
+.index .all-corses .add-new-cours .img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #E1E3E5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+}
+.index .all-corses .courses{
+padding: 1rem;
+border:  1px solid rgb(178 187 198 / 50%);
+border-radius: 10px;
+}
+.index .all-corses .contant-course{
+padding: 1rem;
+border:  1px dotted rgb(178 187 198 / 50%);
+border-radius: 5px;
+display: flex;
+}
+.index .all-corses .contant-course .vidio img{
+width: 100%;
+}
+.index .contant-course .description h4{
+    font-size: .9rem;
+    font-family: "bold";
+    display: flex;
+}
+.index .contant-course .description p{
+    font-size: .9rem;
+    font-family: "bold";
+    color: #5071EB;
+    margin: 0;
+}
+.index .contant-course .description {
+margin: 0 1rem;
+}
+.index .contant-course .description .details {
+display: flex;
+}
+.index .contant-course .description .details .price{
+  background-color: rgb(80 113 235 / 10%);
+  border-radius: 21px;
+  padding: 0.5rem 1rem;
+  margin: 0 0 0 .5rem;
+}
+.index .contant-course .description .details .price h6{
+color: #5071EB;
+font-size: 1rem;
+font-family: "medium";
+}
+.index .contant-course .description .lesson .exams {
+display: flex;
+align-items: center;
+}
+.index .contant-course .description .lesson .exams .img{
+margin-left: .5rem;
+}
+.index .contant-course .description .lesson .exams h5{
+color: #576B74;
+font-size: 1rem;
+font-family: "medium";
+margin: 0;
+}
+.index .contant-course .description .lesson .exams h6{
+margin: 0;
+padding: 0.5rem;
+font-family: "medium";
+font-size: 1rem;
+}
+.index .contant-course .description .lesson .exams a{
+margin: 0;
+padding: 0.5rem;
+font-family: "medium";
+font-size: 1rem;
+}
+.index .contant-course .description .lesson .exams span{
+color:#E31E25;
+font-size: 1rem;
+font-family: "medium";
+margin: 0;
+}
+
+/* index coursat details */
