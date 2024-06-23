@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/corsaty.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- ? Custom JavaScript -->
+
+    <title>اضافة دورة تعليمية شهرية</title>
+  </head>
+  <body>
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <button id="closeSidebarBtn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="img-log">
+            <img class="img-logo" src="photo/logosidebar.png" alt="" />
+          </div>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-house-user ico"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-id-card-clip ico"></i>
+              <span>المساعدين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span>الكورسات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-people-group ico"></i>
+              <span>الطلاب</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-bell ico"></i>
+              <span>الاشعارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-gear ico"></i>
+              <span>اعدادات الحساب</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-right-from-bracket ico"></i>
+              <span>تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="logo-menu">
+            <div class="menu">
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+            <div class="name-page">
+              <h4>تفاصيل الدورة التعليمية</h4>
+            </div>
+          </div>
+
+          <div>
+            <div class="dropdown d-flex align-items-center">
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="notification"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="notification">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="dropdown-toggle profile-btn"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="all-pro">
+                  <div class="profile">
+                    <img
+                      class="profile-img"
+                      src="photo/profilenav.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="emmil">
+                    <h4>mohamed nasra</h4>
+                    <p>mohame@gmail.com</p>
+                  </div>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+        <!-- content -->
+
+        <div class="index">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="content">
+                <div class="course-details">
+                  <img class="course-img" src="photo/corsedetals.png" alt="" />
+                  <div class="youtube-mian">
+                    <img class="youtube" src="photo/youtube.svg" alt="" />
+                  </div>
+                </div>
+                <div class="text-details">
+                  <h4>المراجعة النهائية للأناتومي</h4>
+                  <p class="author"><span>مادة الاحياء</span> , Ahmed Heky </p>
+                  <div class="btn-all">
+                    <p class="pay">مدفوع</p>
+                    <p class="first-stage">مرحلة اولي</p>
+                  </div>
+                </div>
+                <div class="all-icons">
+                  <img src="photo/briefcase.svg" alt="">
+                  <h5>المرحلة الثانوية</h5>
+                  <img src="photo/bookmark-2.svg" alt="">
+                  <h5>مراجعة</h5>
+                  <img src="photo/teacher.svg" alt="">
+                  <h5>الصف الثالث الثانوي ( علمي علوم )</h5>
+                  <img src="photo/calendar.svg" alt="">
+                  <h5>25/10/2024 25/10/2025</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+              <div class="content"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- content -->
+      </section>
+    </div>
+
+    <!-- show sitting -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
