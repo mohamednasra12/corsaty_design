@@ -583,8 +583,10 @@ button.btn.delelt:hover {
 button.btn.add {
   font-family: "regular";
   background: var(--color-frist);
-  padding: 0.9rem 1.5rem;
+  padding: 0.9rem 2rem;
   color: var(--color-primary);
+  font-size: 1rem;
+  font-family: "medium";
 }
 .add-course .filler {
   display: flex;
@@ -645,7 +647,7 @@ button.btn.add {
 }
 
 .add-course table th {
-  font-family: "bold";
+  font-family: "medium";
   font-size: 0.8rem;
   padding: 1rem 0;
 }
@@ -673,6 +675,7 @@ tbody tr:nth-child(even) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem 0;
 }
 .add-course .pagenation h4 {
   font-family: "regular";
