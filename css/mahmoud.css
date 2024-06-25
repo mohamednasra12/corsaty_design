@@ -632,7 +632,16 @@ svg.svg-inline--fa.fa-angles-right {
   border-radius: 10px;
   padding: 1.3rem;
   margin: 2rem 0;
+  display: none;
 }
+.index .quesions {
+  border: 1px dashed #b2bbc6;
+  border-radius: 10px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+}
+
+
 .index .quesions .quesion-one {
   width: 65%;
 }
