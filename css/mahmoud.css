@@ -628,6 +628,12 @@ svg.svg-inline--fa.fa-angles-right {
   cursor: pointer;
 }
 .index .quesions {
+  border: 1px dashed #b2bbc6;
+  border-radius: 10px;
+  padding: 1.3rem;
+  margin: 2rem 0;
+}
+.index .quesions .quesion-one {
   width: 65%;
 }
 .index .quesions .quesion-one .add-quesion .uploadphoto {
@@ -643,14 +649,315 @@ svg.svg-inline--fa.fa-angles-right {
   height: 40px;
   border-radius: 50%;
 }
-.index .quesions .quesion-one .add-quesion .date-main {
-display: flex;
-justify-content: space-between;
+.index .quesions .quesion-one .add-quesion .date-main input {
+  background-color: white;
+  border: 1px solid #c1cad6;
+  border-radius: 10px;
 }
-.index .quesions .quesion-one .add-quesion .date-main  .uploadphoto {
-  width: 50%;
-  height: 60px;
+.index .quesions .quesion-one .add-quesion .date-upload input {
+  background-color: white;
+  border: 1px solid #c1cad6;
+  border-radius: 10px;
 }
+.index .quesions .quesion-one .add-quesion .date-upload {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.index .quesions .quesion-one .add-quesion .date-upload .tabs-language {
+  width: 80%;
+}
+.index .quesions .quesion-one .add-quesion .date-upload .checkbox {
+  margin: 1rem 0;
+}
+.index .quesions .quesion-one .add-quesion .date-upload .uploadphoto {
+  display: block;
+  height: 100%;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.index .quesions .quesion-one .add-quesion .select-main select {
+  background-color: white;
+  border: 1px solid #c1cad6;
+  border-radius: 10px;
+}
+
+/* details-student */
+.index .student-information .img-information .information .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.index .student-information .img-information {
+  display: flex;
+}
+.index .student-information .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.index .student-information .img-information .information .title h4 {
+  font-size: 1.5rem;
+  font-family: "bold";
+}
+.index .student-information .img-information .information .title {
+  margin-bottom: 1rem;
+}
+.index .student-information .img-information .information .condition h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  margin: 0;
+}
+.index .student-information .img-information .information .condition {
+  background-color: rgb(61 150 53 / 10%);
+  border-radius: 26px;
+  color: #3d9635;
+  padding: 0.5rem 1.4rem;
+}
+.index .student-information .img-information .information h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  margin: 0;
+}
+.index .student-information .img-information .information .phone {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.index .student-information .img-information .information .phone p {
+  font-size: 1rem;
+  font-family: "regular";
+  color: #576b74;
+  margin: 0 0.4rem;
+}
+.index .student-information .img-information .information {
+  margin: 0 1rem;
+}
+.index .student-information .details .notificaion-wats {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.index .student-information .details .notificaion-wats .notificaion {
+  display: flex;
+  align-items: center;
+  background-color: #d6534a;
+  color: white;
+  padding: 0.6rem 2rem;
+  border-radius: 47px;
+}
+.index .student-information .details .notificaion-wats .notificaion h5 {
+  font-size: 1rem;
+  font-family: "bold";
+  margin: 0 0.5rem;
+}
+.index .student-information .details .notificaion-wats .wats {
+  display: flex;
+  align-items: center;
+  background-color: #3d9635;
+  color: white;
+  padding: 0.6rem 2rem;
+  border-radius: 47px;
+}
+.index .student-information .details .notificaion-wats .wats h5 {
+  font-size: 1rem;
+  font-family: "bold";
+  margin: 0 0.5rem;
+}
+.index .student-information .details {
+  position: relative;
+}
+.index .student-information .details::after {
+  position: absolute;
+  content: "";
+  bottom: -4px;
+  width: 100%;
+  height: 0.6px;
+  background-color: rgb(168 168 168 / 50%);
+}
+.index .student-information .more-details .date-join .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5071eb;
+}
+.index .student-information .more-details .date-join .logo img {
+  width: 20px;
+}
+.index .student-information .more-details .date-join {
+  display: flex;
+  align-items: center;
+}
+.index .student-information .more-details .date-join .data {
+  margin: 0 0.5rem;
+}
+.index .student-information .more-details .date-join .data p {
+  font-size: 1.1rem;
+  font-family: "medium";
+  color: #5e6e77;
+  margin: 0.5rem 0;
+}
+.index .student-information .more-details .date-join .data h5 {
+  font-size: 1.1rem;
+  font-family: "bold";
+}
+.index .student-information .more-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.index .all-answer .title h4 {
+  font-size: 1.5rem;
+  font-family: "bold";
+}
+.index .all-answer .title .marks h6 {
+  font-size: 0.9rem;
+  font-family: "bold";
+  margin: 0;
+}
+.index .all-answer .title .marks {
+  background-color: #5071eb;
+  border-radius: 26px;
+  color: white;
+  padding: 0.6rem 1.5rem;
+}
+.index .all-answer .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.index .answer-quesion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  border: 1px dashed #b2bbc6;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.index .answer-quesion .img-answer {
+  display: flex;
+}
+.index .answer-quesion .img-answer .answer {
+  margin: 0 1rem;
+}
+.index .answer-quesion .answer h5 {
+  font-size: 0.9rem;
+  font-family: "bold";
+  margin-bottom: 1rem;
+}
+.index .answer-quesion .answer span {
+  font-size: 1rem;
+  font-family: "bold";
+  color: #5071eb;
+}
+.index .answer-quesion .answer p {
+  font-size: 0.8rem;
+  font-family: "bold";
+  color: #546881;
+}
+.index .answer-quesion .answer h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #3d9635;
+  margin-bottom: 1rem;
+}
+.index .answer-quesion .answer .wrong h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #e7282e;
+  margin-bottom: 1rem;
+}
+.index .answer-quesion .answer .wrong {
+  margin-bottom: 1rem;
+}
+.index .answer-quesion .answer .correct h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #3d9635;
+  margin-bottom: 1rem;
+}
+.index .answer-quesion .correct-answr {
+  background-color: rgb(61 150 53 / 10%);
+  border-radius: 26px;
+  color: #3d9635;
+  padding: 0.5rem 1.4rem;
+  height: fit-content;
+}
+.index .answer-quesion .wrong-answr {
+  background-color: rgb(231 40 46 / 10%);
+  border-radius: 26px;
+  color: #e7282e;
+  padding: 0.5rem 1.4rem;
+  height: fit-content;
+}
+.index .answer-quesion .correct-answr h6 {
+  font-size: 0.8rem;
+  font-family: "medium";
+  margin: 0;
+}
+.index .answer-quesion .wrong-answr h6 {
+  font-size: 0.8rem;
+  font-family: "medium";
+  margin: 0;
+}
+/* details-student */
+
+/* table qr */
+.add-course .filler .search-qr {
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  border-radius: 10px;
+  height: 43px;
+  width: 55%;
+  padding: 0rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-course .filler .search-qr input{
+  border: 0;
+  width: 90%;
+  outline: 0;
+  padding: 0 0.5rem;
+}
+.add-course table tbody .qr-available{
+  background-color: rgb(61 150 53 / 10%);
+  border-radius: 26px;
+  color: #3d9635;
+  padding: 0.5rem 1rem;
+}
+.add-course table tbody .qr-available p{
+  font-size: 0.8rem;
+  font-family: "medium";
+  margin: 0;
+}
+.add-course table tbody .qr-used{
+  background-color: rgb(80 113 235 / 10%);
+  border-radius: 26px;
+  color: #5071EB;
+  padding: 0.5rem 1rem;
+}
+.add-course table tbody .qr-used p{
+  font-size: 0.8rem;
+  font-family: "medium";
+  margin: 0;
+}
+.add-course table tbody .qr-ended{
+  background-color: rgb(227 30 37 / 10%);
+  border-radius: 26px;
+  color: #E31E25;
+  padding: 0.5rem 1rem;
+}
+.add-course table tbody .qr-ended p{
+  font-size: 0.8rem;
+  font-family: "medium";
+  margin: 0;
+}
+/* table qr */
+
 
 /* course-exam */
 @media only screen and (max-width: 1024.98px) {
