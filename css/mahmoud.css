@@ -233,6 +233,10 @@ svg.svg-inline--fa.fa-angles-right {
   justify-content: space-between;
   width: 90px;
   height: 40px;
+  background-color: white;
+  border: 2px solid #5071eb;
+  border-radius: 8px;
+  color: #5071eb;
 }
 .index .courses .icons .edit-course .dropdown .dropdown-menu .dropdown-item {
   display: flex;
@@ -308,17 +312,42 @@ svg.svg-inline--fa.fa-angles-right {
 }
 .index .all-corses .contant-course {
   padding: 1rem;
-  border: 1px dotted rgb(178 187 198 / 50%);
+  border: 2px dashed rgb(178 187 198 / 50%);
   border-radius: 5px;
   display: flex;
+  margin: 1rem 0;
+}
+.index .all-corses .contant-course .vidio {
+  position: relative;
 }
 .index .all-corses .contant-course .vidio img {
+  width: 100%;
+  height: 100%;
+}
+.index .all-corses .contant-course .vidio h6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  font-family: "bold";
+  background-color: rgb(255 255 255 / 10%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 16px;
+}
+.index .all-corses .contant-course .vidio .watch-vidio img {
+  width: 15%;
+}
+.index .all-corses .contant-course .vidio .watch-vidio {
+  position: absolute;
+  bottom: 25px;
   width: 100%;
 }
 .index .contant-course .description h4 {
   font-size: 0.9rem;
   font-family: "bold";
   display: flex;
+  margin-bottom: 1rem;
 }
 .index .contant-course .description p {
   font-size: 0.9rem;
@@ -331,6 +360,9 @@ svg.svg-inline--fa.fa-angles-right {
 }
 .index .contant-course .description .details {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 0.5rem;
 }
 .index .contant-course .description .details .price {
   background-color: rgb(80 113 235 / 10%);
@@ -340,13 +372,14 @@ svg.svg-inline--fa.fa-angles-right {
 }
 .index .contant-course .description .details .price h6 {
   color: #5071eb;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "medium";
   margin: 0;
 }
 .index .contant-course .description .lesson .exams {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .index .contant-course .description .lesson .exams .img {
   margin-left: 0.5rem;
@@ -409,8 +442,9 @@ svg.svg-inline--fa.fa-angles-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90px;
+  width: 49px;
   height: 40px;
+  padding: 0 0.3rem;
 }
 .index .contant-course .icon-to-edit .dropdown .dropdown-menu .dropdown-item {
   display: flex;
@@ -431,6 +465,7 @@ svg.svg-inline--fa.fa-angles-right {
 }
 .index .contant-course .icon-to-edit {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 30%;
 }
@@ -640,7 +675,6 @@ svg.svg-inline--fa.fa-angles-right {
   padding: 1.3rem;
   margin: 2rem 0;
 }
-
 
 .index .quesions .quesion-one {
   width: 65%;
@@ -920,60 +954,206 @@ svg.svg-inline--fa.fa-angles-right {
   border: 1px solid rgba(0, 0, 0, 0.103);
   border-radius: 10px;
   height: 43px;
-  width: 55%;
+  width: 56%;
   padding: 0rem 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.add-course .filler .search-qr input{
+.add-course .filler .search-qr input {
   border: 0;
   width: 90%;
   outline: 0;
   padding: 0 0.5rem;
 }
-.add-course table tbody .qr-available{
+.add-course table tbody .qr-available {
   background-color: rgb(61 150 53 / 10%);
   border-radius: 26px;
   color: #3d9635;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
+  width: fit-content;
+  margin: 0 auto;
 }
-.add-course table tbody .qr-available p{
+.add-course table tbody .qr-available p {
   font-size: 0.8rem;
   font-family: "medium";
   margin: 0;
 }
-.add-course table tbody .qr-used{
+.add-course table tbody .qr-used {
   background-color: rgb(80 113 235 / 10%);
   border-radius: 26px;
-  color: #5071EB;
-  padding: 0.5rem 1rem;
+  color: #5071eb;
+  padding: 0.5rem 3rem;
+  width: fit-content;
+  margin: 0 auto;
 }
-.add-course table tbody .qr-used p{
+.add-course table tbody .qr-used p {
   font-size: 0.8rem;
   font-family: "medium";
   margin: 0;
 }
-.add-course table tbody .qr-ended{
+.add-course table tbody .qr-ended {
   background-color: rgb(227 30 37 / 10%);
   border-radius: 26px;
-  color: #E31E25;
-  padding: 0.5rem 1rem;
+  color: #e31e25;
+  padding: 0.5rem 3rem;
+  width: fit-content;
+  margin: 0 auto;
 }
-.add-course table tbody .qr-ended p{
+.add-course table tbody .qr-ended p {
   font-size: 0.8rem;
   font-family: "medium";
   margin: 0;
 }
 /* table qr */
 
+/* student table  */
+.index table tbody .eye {
+  width: 30px;
+  height: 30px;
+  background-color: #5071eb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.add-course .filler .search-student {
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  border-radius: 10px;
+  height: 43px;
+  width: 80%;
+  padding: 0rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-course .filler .search-student input {
+  border: 0;
+  width: 90%;
+  outline: 0;
+  padding: 0 0.5rem;
+}
+/* student table  */
+
+/* education stages */
+.index .add-stages .modal .btn-close {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ededf1;
+  margin: 0.5rem;
+}
+.index .add-stages .modal .modal-body .title h6 {
+  font-size: 1.3rem;
+  font-family: "bold";
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.index .add-stages .modal .modal-body form .form-group label {
+  font-size: 1rem;
+  font-family: "medium";
+}
+.index .add-stages .modal .modal-body form .form-group::placeholder {
+  font-size: 1rem;
+  font-family: "regular";
+  color: #576b74;
+}
+.index .add-stages .modal .modal-footer .btn-primary {
+  font-size: 1rem;
+  font-family: "regular";
+  color: white;
+  width: 100%;
+  background-color: #5071eb;
+  padding: 0.7rem;
+  border-radius: 6px;
+  margin: 1rem;
+}
+/* education stages */
+/* add lesson  */
+.index .uploadForm{
+  text-align: center;
+  background-color: #5071eb0a;
+  padding: 1rem;
+  border: 1px dashed var(--color-frist);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+/* add lesson  */
+/* add lesson  */
+.index .uploadForm{
+  text-align: center;
+  background-color: #5071eb0a;
+  padding: 1rem;
+  border: 1px dashed var(--color-frist);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+/* add lesson  */
 
 /* course-exam */
 @media only screen and (max-width: 1024.98px) {
   .add-course .filler-course .search {
     width: 65%;
   }
+  .add-course table {
+    min-width: 800px;
+  }
+  .add-course .main-date {
+    width: 46%;
+  }
+  .add-course .filler .select {
+    width: 46%;
+  }
+  .add-course .filler .search-qr {
+    width: 100%;
+  }
+  .index .student-information .img-information .img-student {
+    width: 100%;
+  }
+  .index .student-information .img-information .img-student img {
+    width: 80%;
+  }
+  .index .student-information .details .notificaion-wats {
+    gap: 1.5rem;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .index .student-information .details {
+    flex-direction: column-reverse;
+  }
+  .index .student-information .more-details .date-join .logo {
+    width: 30px;
+    height: 30px;
+  }
+  .index .student-information .more-details .date-join .logo img {
+    width: 15px;
+  }
+  .index .student-information .more-details .date-join .data h5 {
+    font-size: 0.8rem;
+  }
+  .index .student-information .more-details .date-join .data p {
+    font-size: 0.9rem;
+  }
+  .index .student-information .more-details {
+    flex-wrap: wrap;
+  }
+  .index .quesions .quesion-one {
+    width: 80%;
+  }
+  .index .all-corses .contant-course {
+    flex-wrap: wrap;
+  }
+  .index .all-corses .contant-course .vidio {
+    margin-bottom: 1rem;
+  }
+  .index .contant-course .icon-to-edit {
+    width: 90%;
+  }
 }
+
 @media only screen and (max-width: 550px) {
   .add-course .filler-course {
     display: flex;
@@ -983,5 +1163,94 @@ svg.svg-inline--fa.fa-angles-right {
   }
   .add-course .filler-course .search {
     width: 100%;
+  }
+  .add-course .main-date {
+    width: 100%;
+  }
+  .add-course .filler .select {
+    width: 100%;
+  }
+  .add-course .filler .search-qr {
+    width: 100%;
+  }
+  .add-course table {
+    min-width: 700px;
+  }
+  .add-course .pagenation {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .add-course .filler .search-student {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .add-course .filler-student {
+    flex-direction: column;
+  }
+  .add-course .filler-student .search {
+    width: 100%;
+  }
+  .add-course .filler-student .select {
+    width: 100%;
+  }
+  .adress {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  button.btn.add {
+    margin-bottom: 1rem;
+  }
+  .index .student-information .img-information .img-student img {
+    width: 100%;
+  }
+  .index .student-information .more-details {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .index .all-answer .title h4 {
+    font-size: 1.3rem;
+  }
+  .index .answer-quesion {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .index .answer-quesion .correct-answr h6 {
+    text-align: center;
+  }
+  .index .answer-quesion .img-answer .answer {
+    margin-right: 0.5rem;
+  }
+  .index .answer-quesion .img-answer img {
+    width: 100%;
+  }
+  .index .quesions .quesion-one {
+    width: 100%;
+  }
+  .index .quesions .quesion-one .add-quesion .Default {
+    width: 20px !important;
+    height: 20px;
+  }
+  .uploadphoto h4 {
+    font-size: 1rem;
+  }
+  .index .quesions .quesion-one .add-quesion .uploadphoto {
+    height: 120px;
+  }
+  .index .buttons-add-quesions a {
+    width: 70%;
+  }
+  .index .buttons-add-quesions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn-save {
+    text-align: center;
+  }
+  .index .answer-quesion .correct-answr {
+    width: fit-content;
+  }
+  .index .answer-quesion .wrong-answr {
+    width: fit-content;
   }
 }

@@ -35,6 +35,9 @@
     <!-- ? Custom JavaScript -->
 
     <title>الطلاب الحاضرين</title>
+    <!-- ? Favicon img -->
+    <link rel="icon" href="photo/Group 25861.png" type="image" />
+    <!-- ? Favicon img-->
   </head>
   <body>
     <div class="d-flex sidemobile p-0">
@@ -587,21 +590,6 @@
                   </form>
                 </div>
               </div>
-              <div class="btn-save">
-                <div class="btn-main">
-                  <button
-                    type="button"
-                    class="btn save"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    حفظ و تأكيد
-                  </button>
-                  <button type="button" class="btn delelt">
-                    حذف جميع البيانات
-                  </button>
-                </div>
-              </div>
             </div>
             <div class="quesions" id="quesion2">
               <div class="quesion-one">
@@ -903,21 +891,6 @@
                       </div>
                     </div>
                   </form>
-                </div>
-              </div>
-              <div class="btn-save">
-                <div class="btn-main">
-                  <button
-                    type="button"
-                    class="btn save"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    حفظ و تأكيد
-                  </button>
-                  <button type="button" class="btn delelt">
-                    حذف جميع البيانات
-                  </button>
                 </div>
               </div>
             </div>
@@ -1223,23 +1196,8 @@
                   </form>
                 </div>
               </div>
-              <div class="btn-save">
-                <div class="btn-main">
-                  <button
-                    type="button"
-                    class="btn save"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    حفظ و تأكيد
-                  </button>
-                  <button type="button" class="btn delelt">
-                    حذف جميع البيانات
-                  </button>
-                </div>
-              </div>
             </div>
-            <!-- <div class="btn-save">
+            <div class="btn-save">
               <div class="btn-main">
                 <button
                   type="button"
@@ -1253,7 +1211,7 @@
                   حذف جميع البيانات
                 </button>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
 
@@ -1271,42 +1229,21 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- sweet alert -->
-
-    <!-- sweet alert delet -->
-    <script>
-      function remove() {
-        Swal.fire({
-          title: "Are you sure?",
-          text: "You won't be able to revert this!",
-          icon: "warning",
-          showCancelButton: true,
-          confirmButtonColor: "#3085d6",
-          cancelButtonColor: "#d33",
-          confirmButtonText: "Yes, delete it!",
-        }).then((result) => {
-          if (result.isConfirmed) {
-            Swal.fire({
-              title: "Deleted!",
-              text: "Your file has been deleted.",
-              icon: "success",
-            });
-          }
-        });
-      }
-    </script>
-    <!-- sweet alert delet -->
-    <script>
-      function showContent(contentId) {
-        // Hide all contents
-        var contents = document.querySelectorAll(".quesions");
-        contents.forEach(function (quesions) {
-          quesions.style.display = "none";
-        });
-
-        // Show the selected content
-        var selectedContent = document.getElementById(contentId);
-        selectedContent.style.display = "block";
-      }
-    </script>
+     <!-- add img -->
+     <script>
+                          document
+                      .getElementById("photo")
+                      .addEventListener("change", function (event) {
+                        const file = event.target.files[0];
+                        if (file) {
+                          const reader = new FileReader();
+                          reader.onload = function (e) {
+                            document.getElementById("photoPreview").src =
+                              e.target.result;
+                          };
+                          reader.readAsDataURL(file);
+                        }
+                      });
+     </script>
   </body>
 </html>
