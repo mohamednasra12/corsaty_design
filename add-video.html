@@ -41,7 +41,7 @@
     <!-- sweet alert file -->
     <!-- ? Custom JavaScript -->
 
-    <title>اضافة دورة تعليمية شهرية</title>
+    <title> اضافة فيديو</title>
     <!-- ? Favicon img -->
     <link rel="icon" href="photo/Group 25861.png" type="image" />
     <!-- ? Favicon img-->
@@ -115,7 +115,7 @@
               <i class="fa-solid fa-angles-right"></i>
             </div>
             <div class="name-page">
-              <h4>اضافة حصة</h4>
+              <h4>الدورات التعليمية / تفاصيل الدورة  / اضافة فيديو</h4>
             </div>
           </div>
 
@@ -190,14 +190,14 @@
                       id="flexSwitchCheckDefault"
                     />
                     <label class="form-check-label" for="flexSwitchCheckDefault"
-                      >اضافة حصة مُخصصة
+                      >   اضافة فيديو مُخصص
                     </label>
                   </div>
                 </div>
               </div>
               <!-- this div show sitting -->
               <div class="show-option" id="show-option" style="display: none">
-                <div class="col-lg-7 col-md-6 col-sm-12">
+                <div class="col-lg-8 col-md-10 col-sm-12">
                   <div class="tabs-language">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                       <li class="nav-item" role="presentation">
@@ -211,7 +211,7 @@
                           aria-controls="home-tab-pane"
                           aria-selected="true"
                         >
-                          اسم الحصة AR
+                        اسم الفيديو AR
                         </button>
                       </li>
                       <li class="nav-item" role="presentation">
@@ -225,7 +225,7 @@
                           aria-controls="profile-tab-pane"
                           aria-selected="false"
                         >
-                          اسم الحصة EN
+                        اسم الفيديو EN
                         </button>
                       </li>
                     </ul>
@@ -240,7 +240,7 @@
                         <input
                           class="form-control"
                           type="text"
-                          placeholder="ادخل اسم الدورة"
+                          placeholder="ادخل اسم الفيديو"
                         />
                       </div>
                       <div
@@ -254,29 +254,29 @@
                           id="English"
                           class="form-control"
                           type="text"
-                          placeholder="enter course name"
+                          placeholder="enter video name"
                         />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-7 col-md-6 col-sm-12">
-                  <div class="select-main">
-                    <label for="defaultSelect" class="form-label"
-                      >حدد الوحدة</label
-                    >
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>حدد الوحدة الخاصة بالحصه</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
+                <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-6">
+                  <div class="link-vidio">
+                    <label for="url">لينك اليوتيوب</label>
+                    <br>
+                    <input type="url" name="url" id="url" placeholder="ادخل اللينك  هنا ...." pattern="https://.*" size="30" required />
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-5 col-sm-6">
+                  <div class="link-vidio">
+                    <label for="">ترتيب الفيدو</label>
+                    <br>
+                    <input type="number" name="number" placeholder="ادخل اللينك  هنا ...."/>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-10 col-sm-12">
                   <div class="radio-main">
                     <label for="" class="form-label">حالة الحصة</label>
                     <div class="radio">
@@ -306,9 +306,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-7 col-md-6 col-sm-12">
+                <div class="col-lg-8 col-md-10 col-sm-12">
                   <div class="form-group">
-                    <label for="formGroupExampleInput">سعر الحصة</label>
+                    <label for="formGroupExampleInput">سعر الفيديو</label>
                     <input
                       type="number"
                       class="form-control"
@@ -317,10 +317,10 @@
                     />
                   </div>
                 </div>
-                <div class="col-lg-7 col-md-6 col-sm-12">
+                <div class="col-lg-8 col-md-10 col-sm-12">
                   <!-- upload file -->
                   <div class="upload-file">
-                    <p>ملف المذكرة</p>
+                    <p>ملف pdf</p>
                     <label for="fileInput" id="uploadLabel" class="img-file">
                       <img src="photo/send-square.png" alt="" />
                       <h4>
@@ -337,30 +337,82 @@
                   </div>
                   <!-- upload file -->
                 </div>
-                <div class="col-lg-7 col-md-6 col-sm-12">
-                  <div class="text-area-main">
-                    <label for="" class="form-label">وصف الحصة</label>
-                    <textarea
-                      name=""
-                      id=""
-                      class="discraption"
-                      placeholder="ادخل وصف الحصة"
-                    ></textarea>
+                  <div class="col-lg-8 col-md-10 col-sm-12">
+                    <div class="tabs-language">
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link active"
+                            id="home-tab-two"
+                            data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane-two"
+                            type="button"
+                            role="tab"
+                            aria-controls="home-tab-pane-two"
+                            aria-selected="true"
+                          >
+                          وصف الفيديو AR
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link"
+                            id="profile-tab-two"
+                            data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane-two"
+                            type="button"
+                            role="tab"
+                            aria-controls="profile-tab-pane-two"
+                            aria-selected="false"
+                          >
+                          وصف الفيديو EN
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="home-tab-pane-two"
+                          role="tabpanel"
+                          aria-labelledby="home-tab-two"
+                          tabindex="0"
+                        >
+                        <textarea
+                          name=""
+                          id=""
+                          class="discraption"
+                          placeholder="ادخل وصف الحصة"
+                        ></textarea>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="profile-tab-pane-two"
+                          role="tabpanel"
+                          aria-labelledby="profile-tab-two"
+                          tabindex="0"
+                        >
+                        <textarea
+                          name=""
+                          id=""
+                          class="discraption"
+                          placeholder="enter secion descripe"
+                        ></textarea>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
                 <!-- this div show sitting -->
                 <!-- image and video -->
-                <div class="row">
-                  <div class="col-lg-5 col-md-6 col-sm-12">
+                  <div class="col-lg-8 col-md-10 col-sm-12">
                     <div class="upload-main">
                       <label for="photo" class="form-label"
-                        >اضافة صورة للحصة</label
+                        >اضافة صورة للفيديو</label
                       >
                       <label class="uploadphoto" for="photo">
                         <img
                           class="Default"
                           id="photoPreview"
-                          src="photo/uploadphoto1.png"
+                          src="photo/uploadphoto.png"
                           alt=""
                         />
                         <h4>
@@ -376,37 +428,6 @@
                       />
                     </div>
                   </div>
-                  <div class="col-lg-5 col-md-6 col-sm-12">
-                    <div class="upload-main">
-                      <label for="video" class="form-label"
-                        >اضافة فيديو انترو</label
-                      >
-                      <label class="uploadphoto" for="video">
-                        <img
-                          class="Default"
-                          id="videoPreviewImg"
-                          src="photo/video-circle.jpg"
-                          alt=""
-                        />
-                        <video
-                          id="videoPreview"
-                          style="display: none"
-                          controls
-                        ></video>
-                        <h4>
-                          اسحب الفيديو واسقطه هنا اوقم بتحميل فيديو لتحميل
-                          الفديو من <span>هنا</span>
-                        </h4>
-                      </label>
-                      <input
-                        style="display: none"
-                        id="video"
-                        type="file"
-                        class="form-control"
-                      />
-                    </div>
-                  </div>
-                </div>
                 <!-- image and video -->
                 <div class="btn-main">
                   <button

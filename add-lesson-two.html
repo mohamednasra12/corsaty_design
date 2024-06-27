@@ -317,95 +317,22 @@
                     />
                   </div>
                 </div>
-                <div class="col-lg-7 col-md-6 col-sm-12">
-                  <!-- upload file -->
-                  <div class="upload-file">
-                    <p>ملف المذكرة</p>
-                    <label for="fileInput" id="uploadLabel" class="img-file">
-                      <img src="photo/send-square.png" alt="" />
-                      <h4>
-                        اسحب الملف واسقطه هنا اوقم بتحميل ملف من
-                        <span>هنا</span>
-                      </h4>
-                    </label>
-                    <input
-                      type="file"
-                      id="fileInput"
-                      accept=".pdf,.doc,.docx"
-                      style="display: none"
-                    />
-                  </div>
-                  <!-- upload file -->
-                </div>
-                <div class="col-lg-7 col-md-6 col-sm-12">
-                  <div class="text-area-main">
-                    <label for="" class="form-label">وصف الحصة</label>
-                    <textarea
-                      name=""
-                      id=""
-                      class="discraption"
-                      placeholder="ادخل وصف الحصة"
-                    ></textarea>
-                  </div>
-                </div>
                 <!-- this div show sitting -->
                 <!-- image and video -->
-                <div class="row">
-                  <div class="col-lg-5 col-md-6 col-sm-12">
-                    <div class="upload-main">
-                      <label for="photo" class="form-label"
-                        >اضافة صورة للحصة</label
-                      >
-                      <label class="uploadphoto" for="photo">
-                        <img
-                          class="Default"
-                          id="photoPreview"
-                          src="photo/uploadphoto1.png"
-                          alt=""
-                        />
+                  <div class="col-lg-7 col-md-6 col-sm-12">
+                    <div class="upload-all">
+                      <p>اضافة فيديو انترو / صورة</p>
+                      <label for="fileInput" id="uploadLabel" class="img-file">
+                        <img src="photo/video-circle2.svg" alt="" />
                         <h4>
-                          سيتم وضع الصورة الافتراضية الخاصة بك ف حال عدم ارفاق
-                          صوره او قم اضافة صورة من <span>هنا</span>
+                          اسحب الملف واسقطه هنا اوقم بتحميل ملف من
+                          <span>هنا</span>
                         </h4>
+                        <img id="photoPreview" alt="Image Preview"/>
+                      <video id="videoPreview" controls></video>
                       </label>
-                      <input
-                        style="display: none"
-                        id="photo"
-                        type="file"
-                        class="form-control"
-                      />
+                      <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg,.mp4,.mov,.avi" style="display: none;" />
                     </div>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-12">
-                    <div class="upload-main">
-                      <label for="video" class="form-label"
-                        >اضافة فيديو انترو</label
-                      >
-                      <label class="uploadphoto" for="video">
-                        <img
-                          class="Default"
-                          id="videoPreviewImg"
-                          src="photo/video-circle.jpg"
-                          alt=""
-                        />
-                        <video
-                          id="videoPreview"
-                          style="display: none"
-                          controls
-                        ></video>
-                        <h4>
-                          اسحب الفيديو واسقطه هنا اوقم بتحميل فيديو لتحميل
-                          الفديو من <span>هنا</span>
-                        </h4>
-                      </label>
-                      <input
-                        style="display: none"
-                        id="video"
-                        type="file"
-                        class="form-control"
-                      />
-                    </div>
-                  </div>
                 </div>
                 <!-- image and video -->
                 <div class="btn-main">
@@ -445,35 +372,34 @@
     <!-- show lesson -->
     <!-- scrpit for image and video -->
     <script>
-      document
-        .getElementById("photo")
-        .addEventListener("change", function (event) {
+      document.getElementById('fileInput').addEventListener('change', function(event) {
           const file = event.target.files[0];
+          const fileLabel = document.getElementById('uploadLabel');
+          const photoPreview = document.getElementById('photoPreview');
+          const videoPreview = document.getElementById('videoPreview');
+
           if (file) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-              document.getElementById("photoPreview").src = e.target.result;
-            };
-            reader.readAsDataURL(file);
+              const fileType = file.type;
+              const reader = new FileReader();
+              reader.onload = function(e) {
+                  if (fileType.startsWith('image/')) {
+                      photoPreview.src = e.target.result;
+                      photoPreview.style.display = 'block';
+                      videoPreview.style.display = 'none';
+                  } else if (fileType.startsWith('video/')) {
+                      videoPreview.src = e.target.result;
+                      videoPreview.style.display = 'block';
+                      photoPreview.style.display = 'none';
+                  }
+              };
+
+              if (fileType.startsWith('image/') || fileType.startsWith('video/')) {
+                  reader.readAsDataURL(file);
+              }
+              fileLabel.textContent = 'File selected: ' + file.name;
           }
-        });
-      document
-        .getElementById("video")
-        .addEventListener("change", function (event) {
-          const file = event.target.files[0];
-          if (file) {
-            const video = document.getElementById("videoPreview");
-            const img = document.getElementById("videoPreviewImg");
-            img.style.display = "none"; // Hide the image preview
-            video.style.display = "block"; // Show the video preview
-            const reader = new FileReader();
-            reader.onload = function (e) {
-              video.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-          }
-        });
-    </script>
+      });
+  </script>
     <!-- scrpit for image and video -->
     <!-- scrpit for relod file -->
     <script>

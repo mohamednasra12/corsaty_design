@@ -1081,7 +1081,7 @@ svg.svg-inline--fa.fa-angles-right {
 }
 /* add lesson  */
 /* add lesson  */
-.index .uploadForm{
+.index .img-file{
   text-align: center;
   background-color: #5071eb0a;
   padding: 1rem;
@@ -1089,8 +1089,209 @@ svg.svg-inline--fa.fa-angles-right {
   border-radius: 10px;
   margin-bottom: 1rem;
 }
+.upload-file label{
+  font-size: 1rem;
+  font-family: "medium";
+  margin-bottom: .5rem;
+}
+.upload-file label h4{
+  font-size: 1rem;
+  font-family: "medium";
+  color: #99A6AE;
+  margin: 0 1rem;
+}
+.upload-file label span{
+  color: #5071EB;
+}
+.upload-file p{
+  font-family: "medium";
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.upload-file .img-file{
+display: flex;
+align-items: center;
+background-color: rgb(6 69 107 / 5%);
+padding: 0.5rem;
+border: 1px dashed #99A6AE;
+border-radius: 10px;
+margin-bottom: 1rem;
+}
+.upload-file .img-file img{
+width: 25px;
+height: 25px;
+}
+.index .form-group label{
+  font-size: 1rem;
+  font-family: "medium";
+}
 /* add lesson  */
+/* add lesson two */
+/* #uploadLabel {
+  cursor: pointer;
+  width: 100%;
+}
+#photoPreview, #videoPreview {
+  display: none;
+  width: 100%;
+  max-width: 100px;
+} */
+.upload-all p{
+  font-family: "medium";
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.upload-all .img-file h4 {
+  font-family: "medium";
+    font-size: 1rem;
+    color: #99A6AE;
+    margin: 1rem;
+}
+.upload-all .img-file span {
+  font-family: "medium";
+    font-size: 1rem;
+    color: #5071EB;
+}
+.upload-all .img-file img {
+width: 30px;
+height: 30px;
+}
+/* add lesson two */
+/* add video  */
+.index .video-url label{
+  font-size: 1rem;
+    font-family: "medium";
+    margin: 1rem 0;
+}
+.index .video-url input{
+  background-color: var(--color-primary);
+  height: 56px;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  width: 100%;
+}
+.index .video-number label{
+  font-size: 1rem;
+    font-family: "medium";
+    margin: 1rem 0;
+}
+.index .video-number input{
+  background-color: var(--color-primary);
+  height: 56px;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  width: 100%;
+}
+.index .link-vidio label{
+  font-family: "medium";
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.index .link-vidio input{
+  background-color: var(--color-primary);
+  height: 56px;
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background-position: left 0.75rem center !important;
+  font-family: "regular";
+  color: #576b74;
+}
+.tabs-language textarea{
+  margin-top: .5rem;
+}
+/* add video  */
 
+/*  */
+
+/* .counter {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #111116;
+  height:100%;
+  align-items: center
+} */
+
+.progress {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: red;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  text-align: center;
+  line-height: 50px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: black;
+}
+
+.progress::after {content: "%";}
+
+.progress .title {
+  position: relative;
+  z-index: 100;
+  color: black;
+}
+.progress .overlay {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  color: red;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+.progress .left, .progress .right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 10px solid #5071eb;
+  border-radius: 100px 0px 0px 100px;
+  border-right: 0;
+  transform-origin: right;
+}
+
+.progress .left {animation: load1 1s linear forwards;}
+
+.progress:nth-of-type(2) .right, .progress:nth-of-type(3) .right {animation: load2 .5s linear forwards 1s;}
+
+.progress:last-of-type .right, .progress:first-of-type .right {animation: load3 .8s linear forwards 1s;}
+
+@keyframes load1 {
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(180deg);}
+}
+
+@keyframes load2 {
+  0% {z-index: 100;transform: rotate(180deg);}
+
+  100% {z-index: 100;transform: rotate(270deg);}
+}
+
+@keyframes load3 {
+  0% {z-index: 100;transform: rotate(180deg);}
+
+  100% {
+      z-index: 100;transform: rotate(315deg);}
+}
+
+
+/*  */
 /* course-exam */
 @media only screen and (max-width: 1024.98px) {
   .add-course .filler-course .search {

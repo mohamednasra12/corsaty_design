@@ -435,6 +435,7 @@ a#notification {
 }
 .radio-main {
   margin-top: 1.4rem;
+  margin-bottom: 1rem;
 }
 .radio {
   display: flex;
@@ -458,7 +459,7 @@ a#notification {
 .uploadphoto {
   text-align: center;
   background-color: #5071eb0a;
-  padding: 0.5rem;
+  padding: 1rem;
   border: 1px dashed var(--color-frist);
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -517,6 +518,7 @@ button.btn.save {
   border-radius: 10px;
   font-size: 1.2rem;
   transition: 0.7s;
+  margin: 0 1rem;
 }
 button.btn.save:hover {
   background: white;
@@ -717,6 +719,7 @@ svg.svg-inline--fa.fa-trash-can.delelt {
 }
 .youtube-mian {
   position: absolute;
+  content: '';
   top: -2px;
   left: -2px;
   background: white;
