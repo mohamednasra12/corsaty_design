@@ -34,7 +34,7 @@
 
     <!-- ? Custom JavaScript -->
 
-    <title>مشاهدات الطلاب</title>
+    <title>جميع الطلاب</title>
     <!-- ? Favicon img -->
     <link rel="icon" href="photo/Group 25861.png" type="image" />
     <!-- ? Favicon img-->
@@ -108,7 +108,7 @@
               <i class="fa-solid fa-angles-right"></i>
             </div>
             <div class="name-page">
-              <h4>الدورات التعليمية / تفاصيل الدورة / مشاهدات الطلاب</h4>
+              <!-- <h4>الدورات التعليمية / تفاصيل الدورة  / Qr Code History</h4> -->
             </div>
           </div>
 
@@ -174,177 +174,150 @@
           <div class="content">
             <div class="container">
               <div class="adress">
-                <h4>مشاهدات الطلاب</h4>
+                <h4>جميع الطلاب ( 250 )</h4>
+                <div class="btn-add-std">
+                  <a href="#">
+                    <button class="btn file">
+                      تصدير اكسيل <img src="photo/xls-file 1.svg" alt="" />
+                    </button>
+                  </a>
+                  <a href="#">
+                    <button class="btn add">اضافة طالب +</button>
+                  </a>
+                </div>
               </div>
               <div class="add-course">
-                <div class="filler" style="justify-content: flex-start">
-                  <div class="search-student">
+                <div class="filler">
+                  <div class="search-qr">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="ابحث هنا.." />
+                  </div>
+                  <div class="select">
+                    <select name="" id="">
+                      <option value="">الحالة</option>
+                      <option value="">99</option>
+                      <option value="">0</option>
+                      <option value="">66</option>
+                    </select>
+                  </div>
+                  <div class="select">
+                    <select name="" id="">
+                      <option value="">جميع المراحل التعليمية</option>
+                      <option value="">99</option>
+                      <option value="">0</option>
+                      <option value="">66</option>
+                    </select>
                   </div>
                 </div>
                 <div class="table-responsive">
                   <table>
                     <thead>
                       <tr>
-                        <th scope="col">الاسم</th>
-                        <th scope="col">رقم الهاتف</th>
-                        <th scope="col">اجمالي المشاهدات</th>
-                        <th scope="col">تاريخ اخر مشاهدة</th>
-                        <th scope="col">نسبة اكتمال المشاهدة</th>
+                        <th scope="col">
+                          <div class="chose">
+                            <input
+                              type="checkbox"
+                              id="vehicle1"
+                              name="vehicle1"
+                              value="Bike"
+                            />
+                            <label for="vehicle1"> الاسم - رقم الهاتف</label>
+                          </div>
+                        </th>
+                        <th scope="col">الفرقة</th>
+                        <th scope="col">المرحلة التعليمية</th>
+                        <th scope="col">تاريخ الانضمام</th>
+                        <th scope="col">تاريخ اخر ظهور</th>
+                        <th scope="col">الاعدادات</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">Esther Howard</th>
-                        <td><p>01225478887</p></td>
-                        <td>12</td>
+                        <th scope="row">
+                          <!-- هنا الصوره و الرقم للطالب -->
+                          <div class="details">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                id="vehicle1"
+                                name="vehicle1"
+                                value="Bike"
+                              />
+                            </div>
+                            <div class="img-name">
+                              <div class="img">
+                                <img src="photo/img.png" alt="" />
+                                <div class="condition">
+                                    <h4></h4>
+                                  <h5></h5>
+                                  
+                                </div>
+                              </div>
+                              <div class="phone">
+                                <h5>احمد فتحي ابو زيد</h5>
+                                <p>011225544145 . <span>5 اشتراكات</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <td>الاولي</td>
+                        <td>تعليم اساسي ( حكومي - ثانوي - اولي ثانوي )</td>
+                        <td>2024-05-05</td>
+                        <td>2024-05-05</td>
+                        <td><div class="icon"></div></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4097</th>
+                        <td>842617</td>
                         <td>2024-05-13 12:43 PM</td>
+                        <td>2024-05-02</td>
                         <td>
-                          <div class="counter">
-                            <div
-                              role="progressbar"
-                              aria-valuenow="60"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="--value: 60"
-                            ></div>
+                          <div class="qr-used">
+                            <p>مُستخدم</p>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">Esther Howard</th>
-                        <td><p>01225478887</p></td>
-                        <td>12</td>
+                        <th scope="row">4097</th>
+                        <td>842617</td>
                         <td>2024-05-13 12:43 PM</td>
+                        <td>2024-05-02</td>
                         <td>
-                          <div class="counter">
-                            <div
-                              role="progressbar"
-                              aria-valuenow="90"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="--value: 90"
-                            ></div>
+                          <div class="qr-ended">
+                            <p>مُستخدم</p>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">Esther Howard</th>
-                        <td><p>01225478887</p></td>
-                        <td>12</td>
+                        <th scope="row">4097</th>
+                        <td>842617</td>
                         <td>2024-05-13 12:43 PM</td>
+                        <td>2024-05-02</td>
                         <td>
-                          <div class="counter">
-                            <div
-                              role="progressbar"
-                              aria-valuenow="20"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="--value: 20"
-                            ></div>
+                          <div class="qr-available">
+                            <p>صالح</p>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">Esther Howard</th>
-                        <td><p>01225478887</p></td>
-                        <td>12</td>
+                        <th scope="row">4097</th>
+                        <td>842617</td>
                         <td>2024-05-13 12:43 PM</td>
+                        <td>2024-05-02</td>
                         <td>
-                          <div class="counter">
-                            <div
-                              role="progressbar"
-                              aria-valuenow="10"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="--value: 10"
-                            ></div>
+                          <div class="qr-used">
+                            <p>مُستخدم</p>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">Esther Howard</th>
-                        <td><p>01225478887</p></td>
-                        <td>12</td>
+                        <th scope="row">4097</th>
+                        <td>842617</td>
                         <td>2024-05-13 12:43 PM</td>
+                        <td>2024-05-02</td>
                         <td>
-                          <div class="counter">
-                            <div
-                              role="progressbar"
-                              aria-valuenow="80"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="--value: 80"
-                            ></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Esther Howard</th>
-                        <td><p>01225478887</p></td>
-                        <td>12</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td>
-                          <div class="counter">
-                            <div
-                              role="progressbar"
-                              aria-valuenow="15"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="--value: 15"
-                            ></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Esther Howard</th>
-                        <td><p>01225478887</p></td>
-                        <td>12</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td>
-                          <div class="counter">
-                            <div
-                              role="progressbar"
-                              aria-valuenow="50"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="--value: 50"
-                            ></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Esther Howard</th>
-                        <td><p>01225478887</p></td>
-                        <td>12</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td>
-                          <div class="counter">
-                            <div
-                              role="progressbar"
-                              aria-valuenow="90"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="--value: 90"
-                            ></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Esther Howard</th>
-                        <td><p>01225478887</p></td>
-                        <td>12</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td>
-                          <div class="counter">
-                            <div
-                              role="progressbar"
-                              aria-valuenow="20"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="--value: 20"
-                            ></div>
+                          <div class="qr-ended">
+                            <p>مُستخدم</p>
                           </div>
                         </td>
                       </tr>
