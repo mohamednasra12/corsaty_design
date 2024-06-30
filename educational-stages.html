@@ -34,10 +34,10 @@
 
     <!-- ? Custom JavaScript -->
 
-    <title> امتحانات الدورة </title>
-        <!-- ? Favicon img -->
-        <link rel="icon" href="photo/Group 25861.png" type="image" />
-        <!-- ? Favicon img-->
+    <title> المراحل التعليمية </title>
+    <!-- ? Favicon img -->
+    <link rel="icon" href="photo/Group 25861.png" type="image" />
+    <!-- ? Favicon img-->
   </head>
   <body>
     <div class="d-flex sidemobile p-0">
@@ -172,26 +172,50 @@
 
         <div class="index">
             <div class="content">
-                  <div class="add-course"> 
+                  <div class="add-course">
                     <div class="filler-course">
                         <div class="search">
                           <i class="fa-solid fa-magnifying-glass"></i>
                           <input type="text" placeholder="بحث" />
                         </div>
-                        <a href="#">
-                            <button class="btn add">+ امتحان جديد</button>
-                          </a>
+                        <div class="add-stages">
+                            <!-- Button trigger modal -->
+                            <a href="#">
+                                <button class="btn add" data-bs-toggle="modal" data-bs-target="#exampleModal">+ اضافة مرحلة تعليمية </button>
+                              </a>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="title">
+            <h6>اضافة مرحلة تعليمية جديدة</h6>
+          </div>
+       <form action="">
+        <div class="form-group">
+            <label for="formGroupExampleInput">اسم المرحلة التعليمية</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ادخل اسم المرحلة التعليمية">
+          </div>
+       </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="success()">تأكيد الاضافة</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        </div>
+                        
                       </div>
                       <div class="table-responsive">
                         <table>
                           <thead>
                             <tr>
-                              <th scope="col">اسم الامتحان</th>
-                              <th scope="col"> عدد الاسئلة</th>
-                              <th scope="col">تاريخ البدأ</th>
-                              <th scope="col">مدة الامتحان</th>
-                              <th scope="col">درجة الامتحان</th>
-                              <th scope="col">الطلاب المجتازين</th>
+                              <th scope="col">اسم المرحلة التعليمية</th>
+                              <th scope="col"> تاريخ الانشاء </th>
                               <th scope="col">...</th>
                             </tr>
                           </thead>
@@ -199,19 +223,8 @@
                             <tr>
                               <th scope="row">امتحان رقم 1</th>
                               <td>20 سؤال</td>
-                              <td>2024-05-13 12:43 PM</td>
-                              <td>50 دقيقة</td>
-                              <td>50 درجة</td>
-                              <td>100 طالب</td>
                               <td>
                                 <div class="icons">
-                                    <div class="edit-course">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/w.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="edit-course">
                                         <a href="#">
                                         <div class="img">
@@ -219,13 +232,6 @@
                                         </div>
                                        </a>
                                       </div>
-                                    <div class="block-cours">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/y.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="delet-cours">
                                       <a href="#">
                                       <div class="img" onclick="remove()">
@@ -239,19 +245,8 @@
                             <tr>
                               <th scope="row">امتحان رقم 1</th>
                               <td>20 سؤال</td>
-                              <td>2024-05-13 12:43 PM</td>
-                              <td>50 دقيقة</td>
-                              <td>50 درجة</td>
-                              <td>100 طالب</td>
                               <td>
                                 <div class="icons">
-                                    <div class="edit-course">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/w.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="edit-course">
                                         <a href="#">
                                         <div class="img">
@@ -259,13 +254,6 @@
                                         </div>
                                        </a>
                                       </div>
-                                    <div class="block-cours">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/y.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="delet-cours">
                                       <a href="#">
                                       <div class="img" onclick="remove()">
@@ -279,19 +267,8 @@
                             <tr>
                               <th scope="row">امتحان رقم 1</th>
                               <td>20 سؤال</td>
-                              <td>2024-05-13 12:43 PM</td>
-                              <td>50 دقيقة</td>
-                              <td>50 درجة</td>
-                              <td>100 طالب</td>
                               <td>
                                 <div class="icons">
-                                    <div class="edit-course">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/w.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="edit-course">
                                         <a href="#">
                                         <div class="img">
@@ -299,13 +276,6 @@
                                         </div>
                                        </a>
                                       </div>
-                                    <div class="block-cours">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/y.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="delet-cours">
                                       <a href="#">
                                       <div class="img" onclick="remove()">
@@ -319,19 +289,8 @@
                             <tr>
                               <th scope="row">امتحان رقم 1</th>
                               <td>20 سؤال</td>
-                              <td>2024-05-13 12:43 PM</td>
-                              <td>50 دقيقة</td>
-                              <td>50 درجة</td>
-                              <td>100 طالب</td>
                               <td>
                                 <div class="icons">
-                                    <div class="edit-course">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/w.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="edit-course">
                                         <a href="#">
                                         <div class="img">
@@ -339,13 +298,6 @@
                                         </div>
                                        </a>
                                       </div>
-                                    <div class="block-cours">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/y.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="delet-cours">
                                       <a href="#">
                                       <div class="img" onclick="remove()">
@@ -359,19 +311,8 @@
                             <tr>
                               <th scope="row">امتحان رقم 1</th>
                               <td>20 سؤال</td>
-                              <td>2024-05-13 12:43 PM</td>
-                              <td>50 دقيقة</td>
-                              <td>50 درجة</td>
-                              <td>100 طالب</td>
                               <td>
                                 <div class="icons">
-                                    <div class="edit-course">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/w.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="edit-course">
                                         <a href="#">
                                         <div class="img">
@@ -379,13 +320,6 @@
                                         </div>
                                        </a>
                                       </div>
-                                    <div class="block-cours">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/y.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="delet-cours">
                                       <a href="#">
                                       <div class="img" onclick="remove()">
@@ -399,19 +333,8 @@
                             <tr>
                               <th scope="row">امتحان رقم 1</th>
                               <td>20 سؤال</td>
-                              <td>2024-05-13 12:43 PM</td>
-                              <td>50 دقيقة</td>
-                              <td>50 درجة</td>
-                              <td>100 طالب</td>
                               <td>
                                 <div class="icons">
-                                    <div class="edit-course">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/w.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="edit-course">
                                         <a href="#">
                                         <div class="img">
@@ -419,13 +342,6 @@
                                         </div>
                                        </a>
                                       </div>
-                                    <div class="block-cours">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/y.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="delet-cours">
                                       <a href="#">
                                       <div class="img" onclick="remove()">
@@ -439,19 +355,8 @@
                             <tr>
                               <th scope="row">امتحان رقم 1</th>
                               <td>20 سؤال</td>
-                              <td>2024-05-13 12:43 PM</td>
-                              <td>50 دقيقة</td>
-                              <td>50 درجة</td>
-                              <td>100 طالب</td>
                               <td>
                                 <div class="icons">
-                                    <div class="edit-course">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/w.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="edit-course">
                                         <a href="#">
                                         <div class="img">
@@ -459,13 +364,6 @@
                                         </div>
                                        </a>
                                       </div>
-                                    <div class="block-cours">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/y.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
                                     <div class="delet-cours">
                                       <a href="#">
                                       <div class="img" onclick="remove()">
@@ -476,87 +374,6 @@
                                 </div>
                               </td>
                             </tr>
-                            <tr>
-                              <th scope="row">امتحان رقم 1</th>
-                              <td>20 سؤال</td>
-                              <td>2024-05-13 12:43 PM</td>
-                              <td>50 دقيقة</td>
-                              <td>50 درجة</td>
-                              <td>100 طالب</td>
-                              <td>
-                                <div class="icons">
-                                    <div class="edit-course">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/w.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
-                                    <div class="edit-course">
-                                        <a href="#">
-                                        <div class="img">
-                                          <img src="photo/q.svg" alt="">
-                                        </div>
-                                       </a>
-                                      </div>
-                                    <div class="block-cours">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/y.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
-                                    <div class="delet-cours">
-                                      <a href="#">
-                                      <div class="img" onclick="remove()">
-                                        <img src="photo/delet.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">امتحان رقم 1</th>
-                              <td>20 سؤال</td>
-                              <td>2024-05-13 12:43 PM</td>
-                              <td>50 دقيقة</td>
-                              <td>50 درجة</td>
-                              <td>100 طالب</td>
-                              <td>
-                                <div class="icons">
-                                    <div class="edit-course">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/w.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
-                                    <div class="edit-course">
-                                        <a href="#">
-                                        <div class="img">
-                                          <img src="photo/q.svg" alt="">
-                                        </div>
-                                       </a>
-                                      </div>
-                                    <div class="block-cours">
-                                      <a href="#">
-                                      <div class="img">
-                                        <img src="photo/y.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
-                                    <div class="delet-cours">
-                                      <a href="#">
-                                      <div class="img" onclick="remove()">
-                                        <img src="photo/delet.svg" alt="">
-                                      </div>
-                                     </a>
-                                    </div>
-                                </div>
-                              </td>
-                            </tr>
-                            
                           </tbody>
                         </table>
                       </div>
