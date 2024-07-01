@@ -213,17 +213,16 @@
                   <table>
                     <thead>
                       <tr>
+                        <!-- checkbox student -->
                         <th scope="col">
-                          <div class="chose">
-                            <input
-                              type="checkbox"
-                              id="vehicle1"
-                              name="vehicle1"
-                              value="Bike"
-                            />
-                            <label for="vehicle1"> الاسم - رقم الهاتف</label>
-                          </div>
+                          <input
+                            type="checkbox"
+                            id="vehicle1"
+                            name="vehicle1"
+                            value="Bike"
+                          />
                         </th>
+                        <th scope="col">الاسم - رقم الهاتف</th>
                         <th scope="col">الفرقة</th>
                         <th scope="col">المرحلة التعليمية</th>
                         <th scope="col">تاريخ الانضمام</th>
@@ -244,13 +243,16 @@
                                 value="Bike"
                               />
                             </div>
+                          </div>
+                        </th>
+                        <td>
+                          <div class="details">
                             <div class="img-name">
                               <div class="img">
                                 <img src="photo/img.png" alt="" />
                                 <div class="condition">
-                                    <h4></h4>
+                                  <h4></h4>
                                   <h5></h5>
-                                  
                                 </div>
                               </div>
                               <div class="phone">
@@ -259,65 +261,526 @@
                               </div>
                             </div>
                           </div>
-                        </th>
+                        </td>
                         <td>الاولي</td>
                         <td>تعليم اساسي ( حكومي - ثانوي - اولي ثانوي )</td>
                         <td>2024-05-05</td>
                         <td>2024-05-05</td>
-                        <td><div class="icon"></div></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4097</th>
-                        <td>842617</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td>2024-05-02</td>
                         <td>
-                          <div class="qr-used">
-                            <p>مُستخدم</p>
+                          <div class="icon-seting">
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/eye.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/pencil.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/timer-start.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/book-saved.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/security-safe.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/slash.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="delet" onclick="remove()">
+                                <a href="#"
+                                  ><img src="photo/trash.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">4097</th>
-                        <td>842617</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td>2024-05-02</td>
+                        <th scope="row">
+                          <!-- هنا الصوره و الرقم للطالب -->
+                          <div class="details">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                id="vehicle1"
+                                name="vehicle1"
+                                value="Bike"
+                              />
+                            </div>
+                          </div>
+                        </th>
                         <td>
-                          <div class="qr-ended">
-                            <p>مُستخدم</p>
+                          <div class="details">
+                            <div class="img-name">
+                              <div class="img">
+                                <img src="photo/img.png" alt="" />
+                                <div class="condition">
+                                  <h4></h4>
+                                  <h5></h5>
+                                </div>
+                              </div>
+                              <div class="phone">
+                                <h5>احمد فتحي ابو زيد</h5>
+                                <p>011225544145 . <span>5 اشتراكات</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>الاولي</td>
+                        <td>تعليم اساسي ( حكومي - ثانوي - اولي ثانوي )</td>
+                        <td>2024-05-05</td>
+                        <td>2024-05-05</td>
+                        <td>
+                          <div class="icon-seting">
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/eye.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/pencil.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/timer-start.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/book-saved.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/security-safe.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/slash.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="delet" onclick="remove()">
+                                <a href="#"
+                                  ><img src="photo/trash.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">4097</th>
-                        <td>842617</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td>2024-05-02</td>
+                        <th scope="row">
+                          <!-- هنا الصوره و الرقم للطالب -->
+                          <div class="details">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                id="vehicle1"
+                                name="vehicle1"
+                                value="Bike"
+                              />
+                            </div>
+                          </div>
+                        </th>
                         <td>
-                          <div class="qr-available">
-                            <p>صالح</p>
+                          <div class="details">
+                            <div class="img-name">
+                              <div class="img">
+                                <img src="photo/img.png" alt="" />
+                                <div class="condition">
+                                  <h4></h4>
+                                  <h5></h5>
+                                </div>
+                              </div>
+                              <div class="phone">
+                                <h5>احمد فتحي ابو زيد</h5>
+                                <p>011225544145 . <span>5 اشتراكات</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>الاولي</td>
+                        <td>تعليم اساسي ( حكومي - ثانوي - اولي ثانوي )</td>
+                        <td>2024-05-05</td>
+                        <td>2024-05-05</td>
+                        <td>
+                          <div class="icon-seting">
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/eye.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/pencil.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/timer-start.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/book-saved.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/security-safe.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/slash.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="delet" onclick="remove()">
+                                <a href="#"
+                                  ><img src="photo/trash.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">4097</th>
-                        <td>842617</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td>2024-05-02</td>
+                        <th scope="row">
+                          <!-- هنا الصوره و الرقم للطالب -->
+                          <div class="details">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                id="vehicle1"
+                                name="vehicle1"
+                                value="Bike"
+                              />
+                            </div>
+                          </div>
+                        </th>
                         <td>
-                          <div class="qr-used">
-                            <p>مُستخدم</p>
+                          <div class="details">
+                            <div class="img-name">
+                              <div class="img">
+                                <img src="photo/img.png" alt="" />
+                                <div class="condition">
+                                  <h4></h4>
+                                  <h5></h5>
+                                </div>
+                              </div>
+                              <div class="phone">
+                                <h5>احمد فتحي ابو زيد</h5>
+                                <p>011225544145 . <span>5 اشتراكات</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>الاولي</td>
+                        <td>تعليم اساسي ( حكومي - ثانوي - اولي ثانوي )</td>
+                        <td>2024-05-05</td>
+                        <td>2024-05-05</td>
+                        <td>
+                          <div class="icon-seting">
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/eye.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/pencil.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/timer-start.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/book-saved.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/security-safe.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/slash.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="delet" onclick="remove()">
+                                <a href="#"
+                                  ><img src="photo/trash.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">4097</th>
-                        <td>842617</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td>2024-05-02</td>
+                        <th scope="row">
+                          <!-- هنا الصوره و الرقم للطالب -->
+                          <div class="details">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                id="vehicle1"
+                                name="vehicle1"
+                                value="Bike"
+                              />
+                            </div>
+                          </div>
+                        </th>
                         <td>
-                          <div class="qr-ended">
-                            <p>مُستخدم</p>
+                          <div class="details">
+                            <div class="img-name">
+                              <div class="img">
+                                <img src="photo/img.png" alt="" />
+                                <div class="condition">
+                                  <h4></h4>
+                                  <h5></h5>
+                                </div>
+                              </div>
+                              <div class="phone">
+                                <h5>احمد فتحي ابو زيد</h5>
+                                <p>011225544145 . <span>5 اشتراكات</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>الاولي</td>
+                        <td>تعليم اساسي ( حكومي - ثانوي - اولي ثانوي )</td>
+                        <td>2024-05-05</td>
+                        <td>2024-05-05</td>
+                        <td>
+                          <div class="icon-seting">
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/eye.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/pencil.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/timer-start.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/book-saved.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/security-safe.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/slash.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="delet" onclick="remove()">
+                                <a href="#"
+                                  ><img src="photo/trash.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <!-- هنا الصوره و الرقم للطالب -->
+                          <div class="details">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                id="vehicle1"
+                                name="vehicle1"
+                                value="Bike"
+                              />
+                            </div>
+                          </div>
+                        </th>
+                        <td>
+                          <div class="details">
+                            <div class="img-name">
+                              <div class="img">
+                                <img src="photo/img.png" alt="" />
+                                <div class="condition">
+                                  <h4></h4>
+                                  <h5></h5>
+                                </div>
+                              </div>
+                              <div class="phone">
+                                <h5>احمد فتحي ابو زيد</h5>
+                                <p>011225544145 . <span>5 اشتراكات</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>الاولي</td>
+                        <td>تعليم اساسي ( حكومي - ثانوي - اولي ثانوي )</td>
+                        <td>2024-05-05</td>
+                        <td>2024-05-05</td>
+                        <td>
+                          <div class="icon-seting">
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/eye.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/pencil.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/timer-start.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/book-saved.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/security-safe.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/slash.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="delet" onclick="remove()">
+                                <a href="#"
+                                  ><img src="photo/trash.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <!-- هنا الصوره و الرقم للطالب -->
+                          <div class="details">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                id="vehicle1"
+                                name="vehicle1"
+                                value="Bike"
+                              />
+                            </div>
+                          </div>
+                        </th>
+                        <td>
+                          <div class="details">
+                            <div class="img-name">
+                              <div class="img">
+                                <img src="photo/img.png" alt="" />
+                                <div class="condition">
+                                  <h4></h4>
+                                  <h5></h5>
+                                </div>
+                              </div>
+                              <div class="phone">
+                                <h5>احمد فتحي ابو زيد</h5>
+                                <p>011225544145 . <span>5 اشتراكات</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>الاولي</td>
+                        <td>تعليم اساسي ( حكومي - ثانوي - اولي ثانوي )</td>
+                        <td>2024-05-05</td>
+                        <td>2024-05-05</td>
+                        <td>
+                          <div class="icon-seting">
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/eye.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/pencil.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/timer-start.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
+                            <div class="timer">
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/book-saved.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/security-safe.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="book">
+                                <a href="#"
+                                  ><img src="photo/slash.svg" alt=""
+                                /></a>
+                              </div>
+                              <div class="delet" onclick="remove()">
+                                <a href="#"
+                                  ><img src="photo/trash.svg" alt=""
+                                /></a>
+                              </div>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -366,5 +829,13 @@
     </div>
 
     <script src="js/main.js"></script>
+    <!-- sweet alert -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- sweet alert -->
   </body>
 </html>
