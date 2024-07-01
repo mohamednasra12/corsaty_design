@@ -780,6 +780,7 @@ svg.svg-inline--fa.fa-angles-right {
 .index .student-information .details .notificaion-wats {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 .index .student-information .details .notificaion-wats .notificaion {
@@ -839,13 +840,13 @@ svg.svg-inline--fa.fa-angles-right {
   margin: 0 0.5rem;
 }
 .index .student-information .more-details .date-join .data p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "medium";
   color: #5e6e77;
   margin: 0.5rem 0;
 }
 .index .student-information .more-details .date-join .data h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "bold";
 }
 .index .student-information .more-details {
@@ -1471,24 +1472,24 @@ table tbody .end {
 .index .content .nav .nav-link:focus {
   color: #021724;
 }
-.index .edit-course .btn{
+.index .edit-course .btn {
   box-shadow: none;
 }
 .index .edit-course .dropdown-toggle::after {
-  display:contents;
+  display: contents;
 }
 /* details-lesson */
 
 /* course exam */
-.index .filler-exam .search-exam{
+.index .filler-exam .search-exam {
   border: 1px solid rgba(0, 0, 0, 0.103);
-    border-radius: 10px;
-    height: 55px;
-    width: 80%;
-    padding: 0rem 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border-radius: 10px;
+  height: 55px;
+  width: 80%;
+  padding: 0rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .index .filler-exam .search-exam input {
   border: 0;
@@ -1503,70 +1504,71 @@ table tbody .end {
   gap: 15px;
   margin-top: 1rem;
 }
-.add-course table tbody h6{
-  color: #5071EB;
+.add-course table tbody .name {
+  color: #5071eb;
 }
 /* course exam */
 
 /* all-student */
-.index .btn-add-std .file{
-background-color: #FFFFFF;
-border: 1px solid #EBEDF0;
-border-radius: 4px;
-padding: 0.9rem 2rem;
-    font-size: 1rem;
-    font-family: "medium";
-    margin: 0 1rem;
+.index .btn-add-std .file {
+  background-color: #ffffff;
+  border: 1px solid #ebedf0;
+  border-radius: 4px;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-family: "medium";
+  margin: 0 1rem;
 }
-.index .content table thead .chose{
+.index .content table thead .chose {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.index .content table  .details{
+.index .content table .details {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.index .content table  .img-name{
+.index .content table .img-name {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.index .content table  .img-name img{
- width: 100%;
+.index .content table .img-name img {
+  width: 40px;
+  height: 40px;
 }
-.index .content table  .img-name .phone h5{
-font-size: .7rem;
-font-family: "medium";
+.index .content table .img-name .phone h5 {
+  font-size: 0.7rem;
+  font-family: "medium";
 }
-.index .content table  .img-name .phone p{
-font-size: .7rem;
-font-family: "medium";
-color: #717171;
-margin: 0;
+.index .content table .img-name .phone p {
+  font-size: 0.7rem;
+  font-family: "medium";
+  color: #717171;
+  margin: 0;
 }
-.index .content table  .img-name .phone span{
-color: #3D9635;
+.index .content table .img-name .phone span {
+  color: #3d9635;
 }
-.index .content table  .img-name {
+.index .content table .img-name {
   position: relative;
 }
-.index .content table  .img-name .condition h5{
+.index .content table .img-name .condition h5 {
   position: absolute;
   content: "";
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #3D9635;
+  background-color: #3d9635;
   bottom: 2px;
   right: -2px;
   margin: 0;
 }
-.index .content table  .img-name .condition h4{
+.index .content table .img-name .condition h4 {
   position: absolute;
   content: "";
   width: 15px;
@@ -1578,9 +1580,311 @@ color: #3D9635;
   margin: 0;
   z-index: 0;
 }
-
+.index table tbody .icon-seting .timer {
+  display: flex;
+  align-items: center;
+}
+.index table tbody .icon-seting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index table tbody .book {
+  width: 30px;
+  height: 30px;
+  background-color: #5071eb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3rem;
+}
+.index table tbody .delet {
+  width: 30px;
+  height: 30px;
+  background-color: #d6534a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3rem;
+}
+.index table tbody .details .checkbox {
+  margin-right: 1rem;
+}
 /* all-student */
 
+/* student-details */
+.index .student-information .details .notificaion-wats img {
+  width: 20px;
+  height: 20px;
+}
+.index .student-information .details .notificaion-wats .add-notes {
+  display: flex;
+  align-items: center;
+  background-color: #5071eb;
+  color: white;
+  padding: 0.6rem 2rem;
+  border-radius: 47px;
+}
+.index .student-information .details .notificaion-wats .add-notes h5 {
+  font-size: 1rem;
+  font-family: "bold";
+  margin: 0 0.5rem;
+}
+.index .content .some-btns .btn-primary {
+  background-color: #5071eb;
+  color: white;
+  font-size: 1rem;
+  font-family: "medium";
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+}
+.index .content .some-btns .btn-primary img {
+  margin: 0 0.2rem;
+}
+.index .content .some-btns .btn-danger {
+  background-color: #d6534a;
+  color: white;
+  font-size: 1rem;
+  font-family: "medium";
+  border-radius: 4px;
+  padding: 1rem 2rem;
+}
+.index .content .some-btns .btn-danger img {
+  margin: 0 0.2rem;
+}
+.index .content .courses-tabs .search-courses {
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  border-radius: 10px;
+  height: 43px;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 0rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index .content .courses-tabs .search-courses input {
+  border: 0;
+  width: 95%;
+  outline: 0;
+  padding: 0 0.5rem;
+}
+.index .add-course table .course-name h6 {
+  font-size: 1rem;
+  font-family: "medium";
+}
+.index .add-course table .number-courses h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #3d4c5e;
+}
+.index .add-course table .subject h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #717171;
+}
+.index .add-course table .teacher h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #5071eb;
+}
+.index .add-course table .course-status .available {
+  color: #3d9635;
+  font-size: 1rem;
+  font-family: "medium";
+}
+.index .add-course table .course-status .not-available {
+  color: #546881;
+  font-size: 1rem;
+  font-family: "medium";
+}
+.index .add-course table .course-status .notavailable-block ul li {
+  color: #546881;
+  font-size: 1rem;
+  font-family: "medium";
+}
+.index .add-course table .course-status .notavailable-block span {
+  color: #e31e25;
+  font-size: 1rem;
+  font-family: "medium";
+}
+.index .add-course table .course-status .available ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.index .add-course table .course-status .not-available ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.index .add-course table .course-status .notavailable-block ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.index .add-course table .join h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #717171;
+}
+.index .add-course table .date h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #717171;
+}
+.index table tbody .icon .average {
+  width: 30px;
+  height: 30px;
+  background-color: #5071eb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3rem;
+}
+.index table tbody .icon .block {
+  width: 30px;
+  height: 30px;
+  background-color: #d6534a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3rem;
+}
+.index table tbody .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index .tab-content .tab-pane .Requests-search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.index .courses-tabs .search-Requests {
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  border-radius: 10px;
+  height: 43px;
+  width: 55%;
+  margin: 1.5rem 0;
+  padding: 0rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index .courses-tabs .search-Requests input {
+  border: 0;
+  width: 95%;
+  outline: 0;
+  padding: 0 0.5rem;
+}
+.index .tab-pane .Requests-search .Requests {
+  display: flex;
+  background-color: rgb(245 246 247 / 50%);
+  border: none;
+}
+.index .tab-pane .Requests-search .Requests .btn-outline-primary{
+  border: none;
+  padding: .9rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "medium";
+}
+.index table tbody .name-Platform h6{
+font-size: 1rem;
+font-family: "medium";
+}
+.index table tbody .name-teacher p{
+font-size: 1rem;
+font-family: "medium";
+color: #717171;
+margin: 0;
+}
+.index table tbody .block-accpet{
+display: flex;
+justify-content: space-evenly;
+}
+.index table tbody .block-accpet .accept{
+background-color: #3D9635;
+color: white;
+width: 80px;
+height: 35px;
+border-radius: 214px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.index table tbody .block-accpet .accept h6{
+  font-size: 1rem;
+  font-family: "medium";
+  color: white;
+  margin: 0;
+  display: flex;
+    align-items: end;
+}
+.index table tbody .block-accpet .accept svg{
+  margin: 0 .3rem;
+}
+.index table tbody .block-accpet .block{
+border: 1px solid #D6534A;
+color: white;
+width: 80px;
+height: 35px;
+border-radius: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.index table tbody .block-accpet .block h6{
+  font-size: 1rem;
+  font-family: "medium";
+  color: #D6534A;
+  margin: 0;
+  display: flex;
+    align-items: end;
+}
+.index table tbody .block-accpet .block svg{
+margin: 0 .3rem;
+}
+.index table tbody .block-accpet .accept-request h6{
+  font-size: 1rem;
+  font-family: "medium";
+  color: #3D9635;
+  margin: 0;
+}
+.index table tbody .block-accpet .accept-request{
+  background-color: rgb(61 150 53 / 10%);
+  width: 95px;
+  height: 35px;
+  border-radius: 214px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index table tbody .block-accpet .notaccept-request h6{
+  font-size: 1rem;
+  font-family: "medium";
+  color: #D6534A;
+  margin: 0;
+}
+.index table tbody .block-accpet .notaccept-request{
+  background-color: rgb(214 83 74 / 10%);
+  width: 95px;
+  height: 35px;
+  border-radius: 214px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* student-details */
 
 /* course-exam */
 @media only screen and (max-width: 1024.98px) {
@@ -1588,7 +1892,7 @@ color: #3D9635;
     width: 65%;
   }
   .add-course table {
-    min-width: 800px;
+    min-width: 1000px;
   }
   .add-course .main-date {
     width: 46%;
@@ -1659,6 +1963,12 @@ color: #3D9635;
   .content .tab-content .filler-course {
     justify-content: end;
   }
+  .index .courses-tabs .search-Requests {
+    width: 100%;
+  }
+  .index .tab-content .tab-pane .Requests-search {
+    justify-content: end;
+  }
 }
 @media only screen and (max-width: 550px) {
   .add-course .filler-course {
@@ -1680,7 +1990,7 @@ color: #3D9635;
     width: 100%;
   }
   .add-course table {
-    min-width: 700px;
+    min-width: 1000px;
   }
   .add-course .pagenation {
     flex-direction: column;
@@ -1771,19 +2081,19 @@ color: #3D9635;
   .courses .all-corses .video-description {
     flex-wrap: wrap;
     justify-content: start;
-}
-.index .contant-course .icon-edit {
-  margin-bottom: 1rem;
-}
-.index .all-corses .contant-course .vidio {
-  width: 70%;
-  height: 40vh;
-}
-.index .contant-course .description {
-margin: 0;
-}
-.index .contant-course .icon-edit .block-cours .img {
-  width: 30px;
-  height: 30px;
-}
+  }
+  .index .contant-course .icon-edit {
+    margin-bottom: 1rem;
+  }
+  .index .all-corses .contant-course .vidio {
+    width: 70%;
+    height: 40vh;
+  }
+  .index .contant-course .description {
+    margin: 0;
+  }
+  .index .contant-course .icon-edit .block-cours .img {
+    width: 30px;
+    height: 30px;
+  }
 }
