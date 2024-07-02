@@ -731,6 +731,7 @@ svg.svg-inline--fa.fa-angles-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 1rem 0;
 }
 .index .student-information .img-information {
   display: flex;
@@ -743,9 +744,6 @@ svg.svg-inline--fa.fa-angles-right {
 .index .student-information .img-information .information .title h4 {
   font-size: 1.5rem;
   font-family: "bold";
-}
-.index .student-information .img-information .information .title {
-  margin-bottom: 1rem;
 }
 .index .student-information .img-information .information .condition h6 {
   font-size: 1rem;
@@ -780,16 +778,19 @@ svg.svg-inline--fa.fa-angles-right {
 .index .student-information .details .notificaion-wats {
   display: flex;
   align-items: center;
+  justify-content: end;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 .index .student-information .details .notificaion-wats .notificaion {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #d6534a;
   color: white;
-  padding: 0.6rem 2rem;
   border-radius: 47px;
+  width: 210px;
+  height: 45px;
 }
 .index .student-information .details .notificaion-wats .notificaion h5 {
   font-size: 1rem;
@@ -799,10 +800,12 @@ svg.svg-inline--fa.fa-angles-right {
 .index .student-information .details .notificaion-wats .wats {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #3d9635;
   color: white;
-  padding: 0.6rem 2rem;
   border-radius: 47px;
+  width: 210px;
+  height: 45px;
 }
 .index .student-information .details .notificaion-wats .wats h5 {
   font-size: 1rem;
@@ -1622,10 +1625,12 @@ table tbody .end {
 .index .student-information .details .notificaion-wats .add-notes {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #5071eb;
   color: white;
-  padding: 0.6rem 2rem;
   border-radius: 47px;
+  width: 210px;
+  height: 45px;
 }
 .index .student-information .details .notificaion-wats .add-notes h5 {
   font-size: 1rem;
@@ -1761,7 +1766,7 @@ table tbody .end {
   align-items: center;
   justify-content: center;
 }
-.index .tab-content .tab-pane .Requests-search{
+.index .tab-content .tab-pane .Requests-search {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1790,76 +1795,76 @@ table tbody .end {
   background-color: rgb(245 246 247 / 50%);
   border: none;
 }
-.index .tab-pane .Requests-search .Requests .btn-outline-primary{
+.index .tab-pane .Requests-search .Requests .btn-outline-primary {
   border: none;
-  padding: .9rem 1.2rem;
-  border-radius: 10px;
+  padding: 0.9rem 1.2rem;
+  border-radius: 7px;
   font-size: 1rem;
   font-family: "medium";
 }
-.index table tbody .name-Platform h6{
-font-size: 1rem;
-font-family: "medium";
+.index table tbody .name-Platform h6 {
+  font-size: 1rem;
+  font-family: "medium";
 }
-.index table tbody .name-teacher p{
-font-size: 1rem;
-font-family: "medium";
-color: #717171;
-margin: 0;
+.index table tbody .name-teacher p {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #717171;
+  margin: 0;
 }
-.index table tbody .block-accpet{
-display: flex;
-justify-content: space-evenly;
+.index table tbody .block-accpet {
+  display: flex;
+  justify-content: space-evenly;
 }
-.index table tbody .block-accpet .accept{
-background-color: #3D9635;
-color: white;
-width: 80px;
-height: 35px;
-border-radius: 214px;
-display: flex;
-align-items: center;
-justify-content: center;
+.index table tbody .block-accpet .accept {
+  background-color: #3d9635;
+  color: white;
+  width: 80px;
+  height: 35px;
+  border-radius: 214px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.index table tbody .block-accpet .accept h6{
+.index table tbody .block-accpet .accept h6 {
   font-size: 1rem;
   font-family: "medium";
   color: white;
   margin: 0;
   display: flex;
-    align-items: end;
+  align-items: end;
 }
-.index table tbody .block-accpet .accept svg{
-  margin: 0 .3rem;
+.index table tbody .block-accpet .accept svg {
+  margin: 0 0.3rem;
 }
-.index table tbody .block-accpet .block{
-border: 1px solid #D6534A;
-color: white;
-width: 80px;
-height: 35px;
-border-radius: 35px;
-display: flex;
-align-items: center;
-justify-content: center;
+.index table tbody .block-accpet .block {
+  border: 1px solid #d6534a;
+  color: white;
+  width: 80px;
+  height: 35px;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.index table tbody .block-accpet .block h6{
+.index table tbody .block-accpet .block h6 {
   font-size: 1rem;
   font-family: "medium";
-  color: #D6534A;
+  color: #d6534a;
   margin: 0;
   display: flex;
-    align-items: end;
+  align-items: end;
 }
-.index table tbody .block-accpet .block svg{
-margin: 0 .3rem;
+.index table tbody .block-accpet .block svg {
+  margin: 0 0.3rem;
 }
-.index table tbody .block-accpet .accept-request h6{
+.index table tbody .block-accpet .accept-request h6 {
   font-size: 1rem;
   font-family: "medium";
-  color: #3D9635;
+  color: #3d9635;
   margin: 0;
 }
-.index table tbody .block-accpet .accept-request{
+.index table tbody .block-accpet .accept-request {
   background-color: rgb(61 150 53 / 10%);
   width: 95px;
   height: 35px;
@@ -1868,13 +1873,13 @@ margin: 0 .3rem;
   align-items: center;
   justify-content: center;
 }
-.index table tbody .block-accpet .notaccept-request h6{
+.index table tbody .block-accpet .notaccept-request h6 {
   font-size: 1rem;
   font-family: "medium";
-  color: #D6534A;
+  color: #d6534a;
   margin: 0;
 }
-.index table tbody .block-accpet .notaccept-request{
+.index table tbody .block-accpet .notaccept-request {
   background-color: rgb(214 83 74 / 10%);
   width: 95px;
   height: 35px;
@@ -1883,7 +1888,254 @@ margin: 0 .3rem;
   align-items: center;
   justify-content: center;
 }
-
+.index table tbody .name-person h6 {
+  color: #5071eb;
+  font-size: 1rem;
+  font-family: "medium";
+}
+.index table tbody .requst-join p {
+  color: #717171;
+  font-size: 1rem;
+  font-family: "medium";
+}
+.index .tab-pane .main-date {
+  height: 43px;
+  font-family: "regular";
+  padding: 0 0.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.index .tab-pane .main-date input {
+  border: 0;
+  width: 90%;
+  outline: 0;
+}
+.index .tab-pane .select {
+  width: 20%;
+}
+.index .tab-pane select {
+  height: 43px;
+  font-family: "regular";
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  width: 100%;
+}
+.index .tab-pane table tbody .rank {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0084ff;
+  color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.index .tab-pane table tbody .rank h6 {
+  font-size: 1rem;
+  font-family: "medium";
+  margin: 0;
+}
+.index .tab-pane table tbody p {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #717171;
+}
+.index .tab-pane table tbody .Next-exam p {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #5071eb;
+  margin: 0;
+}
+.index .tab-pane table tbody .Next-exam {
+  background-color: rgb(80 113 235 / 10%);
+  width: 85px;
+  height: 30px;
+  border-radius: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.index .tab-pane table tbody .end-exam p {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #3d9635;
+  margin: 0;
+}
+.index .tab-pane table tbody .end-exam {
+  background-color: rgb(61 150 53 / 10%);
+  width: 85px;
+  height: 30px;
+  border-radius: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.index .tab-pane table tbody .missed-exam p {
+  font-size: 1rem;
+  font-family: "medium";
+  color: #d6534a;
+  margin: 0;
+}
+.index .tab-pane table tbody .missed-exam {
+  background-color: rgb(214 83 74 / 10%);
+  width: 85px;
+  height: 30px;
+  border-radius: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.index .tab-pane table tbody .responsible-person h6 {
+  color: #5071eb;
+}
+.index .tab-pane table tbody .Type-activity {
+  background-color: rgb(80 113 235 / 10%);
+  width: 130px;
+  height: 35px;
+  border-radius: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.index .tab-pane table tbody .Type-activity h6 {
+  color: #5071eb;
+  margin: 0;
+}
+.index .modal-dialog .confirme h4{
+font-size: 1rem;
+font-family: "bold";
+}
+.index .modal-dialog .confirme p{
+font-size: 1rem;
+font-family: "regular";
+color: #6E655B;
+}
+.index .modal-dialog .confirme {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.modal-content {
+min-height: 270px;
+max-width: 400px;
+margin: 0 auto;
+}
+.index .modal-dialog .confirme {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.index .modal-dialog .modal-header{
+margin-bottom: 2rem;
+}
+.index .modal-dialog .modal-footer .sure{
+ width: 45%;
+ background-color: #5071EB;
+ color: white;
+}
+.index .modal-dialog .modal-footer .sure:hover{
+ width: 45%;
+ background-color: white;
+ color: #5071EB;
+ transition: .5s;
+}
+.index .modal-dialog .modal-footer .btn-secondary{
+ width: 45%;
+ background-color: white;
+ color: #5071EB;
+}
+.index .modal-dialog .modal-footer{
+ justify-content: space-between;
+}
+.index .modal-dialog .Transferring-student .img img{
+width: 70%;
+}
+.index .modal-dialog .Transferring-student .img{
+margin-bottom: 3rem;
+text-align: center;
+}
+.index .modal-dialog .Transferring-student h4{
+font-size: 1rem;
+font-family:"bold";
+}
+.index .modal-dialog .Transferring-student select {
+  height: 43px;
+  font-family: "regular";
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  width: 100%;
+}
+.index .modal-dialog .Transferring-student label {
+  font-size: 1rem;
+  font-family:"medium";
+  margin-bottom: .7rem;
+}
+.index .modal-dialog .modal-footer .Confirm-transfer {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+font-family:"bold";
+background-color: #5071EB;
+}
+.index .modal-dialog .modal-footer .Confirm-transfer:hover {
+  background-color: white;
+  color: #5071EB;
+  transition: .5s;
+}
+.index .modal-dialog .block-student .img-block img{
+width: 150px;
+}
+.index .modal-dialog .block-student .img-block h4{
+  font-size: .9rem;
+  font-family:"bold";
+}
+.index .modal-dialog .block-student .img-block{
+ text-align: center;
+ margin: 0 auto;
+}
+.index .modal-dialog .block-student .form .form-control{
+height: 100px;
+padding: 1rem;
+}
+.index .modal-dialog .block-student .form{
+margin: 2rem 0 0;
+}
+.index .modal-dialog .notification-student .img-notification img{
+  width: 100px;
+}
+.index .modal-dialog .notification-student .img-notification h4{
+  font-size: .9rem;
+  font-family:"bold";
+  margin: 1rem;
+}
+.index .modal-dialog .notification-student .img-notification{
+margin: 0 auto;
+text-align: center;
+}
+.index .modal-dialog .notification-student select {
+  height: 43px;
+  font-family: "regular";
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.index .modal-dialog .notification-student label {
+  font-size: 1rem;
+  font-family: "medium";
+  margin-bottom: .7rem;
+}
 /* student-details */
 
 /* course-exam */
@@ -1967,7 +2219,13 @@ margin: 0 .3rem;
     width: 100%;
   }
   .index .tab-content .tab-pane .Requests-search {
-    justify-content: end;
+    justify-content: space-between;
+  }
+  .index .tab-pane .select {
+    width: 40%;
+  }
+  .index .tab-pane .main-date {
+    width: 30%;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -2018,7 +2276,8 @@ margin: 0 .3rem;
     margin-bottom: 1rem;
   }
   .index .student-information .img-information .img-student img {
-    width: 100%;
+    width: 100px;
+    height: 100px;
   }
   .index .student-information .more-details {
     flex-wrap: wrap;
@@ -2096,4 +2355,38 @@ margin: 0 .3rem;
     width: 30px;
     height: 30px;
   }
+  .index .tab-pane .select {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .index .tab-pane .main-date {
+    width: 100%;
+  }
+  .index .student-information .img-information {
+    flex-direction: column;
+  }
+  .index .student-information .details .notificaion-wats .add-notes {
+    width: 170px;
+  }
+  .index .student-information .details .notificaion-wats .notificaion {
+    width: 170px;
+  }
+  .index .student-information .details .notificaion-wats .wats {
+    width: 170px;
+  }
+  .index .content .some-btns .btn-danger {
+padding: 0.5rem;
+}
+.index .content .some-btns .btn-primary {
+  padding: 0.5rem;
+}
+.index .student-information .details .notificaion-wats .wats {
+  width: 140px;
+}
+.index .student-information .details .notificaion-wats .notificaion {
+  width: 140px;
+}
+.index .tab-pane .Requests-search .Requests .btn-outline-primary {
+  padding: .5rem;
+}
 }
