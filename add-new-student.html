@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/corsaty.css" />
+    <link rel="stylesheet" href="css/mahmoud.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  -->
+    <link rel="stylesheet" href="css/datepicker.material.css" />
+    
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <!-- sweet alert -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- sweet alert file -->
+    <!-- ? Custom JavaScript -->
+
+    <title>اضافة طالب جديد</title>
+    <!-- ? Favicon img -->
+    <link rel="icon" href="photo/Group 25861.png" type="image" />
+    <!-- ? Favicon img-->
+  </head>
+  <body>
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <button id="closeSidebarBtn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="img-log">
+            <img class="img-logo" src="photo/logosidebar.png" alt="" />
+          </div>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-house-user ico"></i>
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-id-card-clip ico"></i>
+              <span>المساعدين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span>الكورسات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-people-group ico"></i>
+              <span>الطلاب</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-bell ico"></i>
+              <span>الاشعارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-gear ico"></i>
+              <span>اعدادات الحساب</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <i class="fa-solid fa-right-from-bracket ico"></i>
+              <span>تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="logo-menu">
+            <div class="menu">
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+            <div class="name-page">
+              <h4>اضافة حصة</h4>
+            </div>
+          </div>
+
+          <div>
+            <div class="dropdown d-flex align-items-center">
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="notification"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="notification">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="dropdown-toggle profile-btn"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="all-pro">
+                  <div class="profile">
+                    <img
+                      class="profile-img"
+                      src="photo/profilenav.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="emmil">
+                    <h4>mohamed nasra</h4>
+                    <p>mohame@gmail.com</p>
+                  </div>
+                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+        <!-- content -->
+
+        <div class="index">
+          <div class="content">
+            <div class="container">
+              <div class="add-studen">
+                <!-- student name activation -->
+                <div class="Student-activation">
+                  <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="form-group">
+                      <label for="inputname">اسم الطالب</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputname"
+                        placeholder="اكتب اسم الطالب"
+                      />
+                    </div>
+                  </div>
+                  <div class="activation-toggle-main">
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                      />
+                      <label class="form-check-label">تفعيل الطالب </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- number , email -->
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="form-group">
+                      <label for="phone">رقم الجوال</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        placeholder="ادخل رقم الجوال"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1"
+                        >البريد الالكترونى</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="ادخل البريد الالكترونى"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="student-checkbox">
+                  <div class="student-lable">
+                    <div class="contant-checkbox">
+                      <input
+                        type="checkbox"
+                        id="option1"
+                        onchange="toggleStage('option1')"
+                      />
+                      <p>تعليم اساسي</p>
+                    </div>
+                    <div class="contant-checkbox">
+                      <input
+                        type="checkbox"
+                        id="option2"
+                        onchange="toggleStage('option2')"
+                      />
+                      <p>تعليم جامعي</p>
+                    </div>
+                    <div class="contant-checkbox">
+                      <input
+                        type="checkbox"
+                        id="option3"
+                        onchange="toggleStage('option3')"
+                      />
+                      <p>تعليم حر</p>
+                    </div>
+                  </div>
+                  <div class="student-contant">
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                      <div id="stage1" class="stage">
+                        <div class="select-main">
+                          <label for="defaultSelect" class="form-label">
+                            المستوي التعليمي
+                          </label>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>حكومي</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="select-main">
+                              <label for="defaultSelect" class="form-label">
+                                المرحلة التعليمية
+                              </label>
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>مرحلة ابتدائية</option>
+                                <option value="1">one</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="select-main">
+                              <label for="defaultSelect" class="form-label">
+                                الصف الدراسي
+                              </label>
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>الاول ابتدائي</option>
+                                <option value="1">الثاني ابتدائي</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                      <div id="stage2" class="stage">
+                        <div class="select-main">
+                          <label for="defaultSelect" class="form-label">
+                            المستوي التعليمي
+                          </label>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>خاص</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="select-main">
+                              <label for="defaultSelect" class="form-label">
+                                الجامعة
+                              </label>
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>المنصورة</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="select-main">
+                              <label for="defaultSelect" class="form-label">
+                                الكلية
+                              </label>
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>تجارة</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="select-main">
+                              <label for="defaultSelect" class="form-label">
+                                القسم
+                              </label>
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>محاسبة</option>
+                                <option value="1">اقتصاد</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="select-main">
+                              <label for="defaultSelect" class="form-label">
+                                الفرق
+                              </label>
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>فرقة اولي</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                      <div id="stage3" class="stage">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                          <div class="select-main">
+                            <label for="defaultSelect" class="form-label">
+                                القسم
+                            </label>
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>هندسة</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="select-main">
+                            <label for="defaultSelect" class="form-label">
+                                التخصص
+                            </label>
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>ميكانيكا</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-primary">
+                    الاضافة والحفظ
+                  </button>
+                </div>
+                <input
+                type="hidden"
+                id="constrained"
+                data-inline="true"
+                data-multiple="true"
+                data-open-on="today"
+                data-time="true"
+              />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- content -->
+      </section>
+    </div>
+    <script src="js/main.js"></script>
+    <!-- show contant checkbox -->
+    <script>
+      function toggleStage(option) {
+        var stageId = "stage" + option.slice(-1); // Extract the numeric part from option
+        var stage = document.getElementById(stageId);
+
+        // Check if the checkbox is checked
+        var isChecked = document.getElementById(option).checked;
+
+        // Hide all stages initially
+        document.querySelectorAll(".stage").forEach(function (stage) {
+          stage.style.display = "none";
+        });
+
+        // Show the stage only if the checkbox is checked
+        if (isChecked) {
+          stage.style.display = "block";
+        } else {
+          stage.style.display = "none"; // Hide the stage if the checkbox is unchecked
+        }
+
+        // Uncheck all other checkboxes
+        document
+          .querySelectorAll('input[type="checkbox"]')
+          .forEach(function (checkbox) {
+            if (checkbox.id !== option) {
+              checkbox.checked = false;
+            }
+          });
+      }
+    </script>
+    <script>
+        var constrained = new Datepicker("#constrained", {
+          // 10 days in the past
+          min: (function () {
+            var date = new Date();
+            date.setDate(date.getDate() - 10);
+            return date;
+          })(),
+          // 10 days in the future
+          max: (function () {
+            var date = new Date();
+            date.setDate(date.getDate() + 10);
+            return date;
+          })(),
+        });
+      </script>
+  </body>
+</html>

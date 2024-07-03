@@ -2010,14 +2010,14 @@ table tbody .end {
   color: #5071eb;
   margin: 0;
 }
-.index .modal-dialog .confirme h4{
-font-size: 1rem;
-font-family: "bold";
+.index .modal-dialog .confirme h4 {
+  font-size: 1rem;
+  font-family: "bold";
 }
-.index .modal-dialog .confirme p{
-font-size: 1rem;
-font-family: "regular";
-color: #6E655B;
+.index .modal-dialog .confirme p {
+  font-size: 1rem;
+  font-family: "regular";
+  color: #6e655b;
 }
 .index .modal-dialog .confirme {
   width: 80%;
@@ -2025,48 +2025,48 @@ color: #6E655B;
   text-align: center;
 }
 .modal-content {
-min-height: 270px;
-max-width: 400px;
-margin: 0 auto;
+  min-height: 270px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .index .modal-dialog .confirme {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.index .modal-dialog .modal-header{
-margin-bottom: 2rem;
+.index .modal-dialog .modal-header {
+  margin-bottom: 2rem;
 }
-.index .modal-dialog .modal-footer .sure{
- width: 45%;
- background-color: #5071EB;
- color: white;
+.index .modal-dialog .modal-footer .sure {
+  width: 45%;
+  background-color: #5071eb;
+  color: white;
 }
-.index .modal-dialog .modal-footer .sure:hover{
- width: 45%;
- background-color: white;
- color: #5071EB;
- transition: .5s;
+.index .modal-dialog .modal-footer .sure:hover {
+  width: 45%;
+  background-color: white;
+  color: #5071eb;
+  transition: 0.5s;
 }
-.index .modal-dialog .modal-footer .btn-secondary{
- width: 45%;
- background-color: white;
- color: #5071EB;
+.index .modal-dialog .modal-footer .btn-secondary {
+  width: 45%;
+  background-color: white;
+  color: #5071eb;
 }
-.index .modal-dialog .modal-footer{
- justify-content: space-between;
+.index .modal-dialog .modal-footer {
+  justify-content: space-between;
 }
-.index .modal-dialog .Transferring-student .img img{
-width: 70%;
+.index .modal-dialog .Transferring-student .img img {
+  width: 70%;
 }
-.index .modal-dialog .Transferring-student .img{
-margin-bottom: 3rem;
-text-align: center;
+.index .modal-dialog .Transferring-student .img {
+  margin-bottom: 3rem;
+  text-align: center;
 }
-.index .modal-dialog .Transferring-student h4{
-font-size: 1rem;
-font-family:"bold";
+.index .modal-dialog .Transferring-student h4 {
+  font-size: 1rem;
+  font-family: "bold";
 }
 .index .modal-dialog .Transferring-student select {
   height: 43px;
@@ -2077,51 +2077,51 @@ font-family:"bold";
 }
 .index .modal-dialog .Transferring-student label {
   font-size: 1rem;
-  font-family:"medium";
-  margin-bottom: .7rem;
+  font-family: "medium";
+  margin-bottom: 0.7rem;
 }
 .index .modal-dialog .modal-footer .Confirm-transfer {
   width: 100%;
   padding: 1rem;
   border-radius: 6px;
   font-size: 1rem;
-font-family:"bold";
-background-color: #5071EB;
+  font-family: "bold";
+  background-color: #5071eb;
 }
 .index .modal-dialog .modal-footer .Confirm-transfer:hover {
   background-color: white;
-  color: #5071EB;
-  transition: .5s;
+  color: #5071eb;
+  transition: 0.5s;
 }
-.index .modal-dialog .block-student .img-block img{
-width: 150px;
+.index .modal-dialog .block-student .img-block img {
+  width: 150px;
 }
-.index .modal-dialog .block-student .img-block h4{
-  font-size: .9rem;
-  font-family:"bold";
+.index .modal-dialog .block-student .img-block h4 {
+  font-size: 0.9rem;
+  font-family: "bold";
 }
-.index .modal-dialog .block-student .img-block{
- text-align: center;
- margin: 0 auto;
+.index .modal-dialog .block-student .img-block {
+  text-align: center;
+  margin: 0 auto;
 }
-.index .modal-dialog .block-student .form .form-control{
-height: 100px;
-padding: 1rem;
+.index .modal-dialog .block-student .form .form-control {
+  height: 100px;
+  padding: 1rem;
 }
-.index .modal-dialog .block-student .form{
-margin: 2rem 0 0;
+.index .modal-dialog .block-student .form {
+  margin: 2rem 0 0;
 }
-.index .modal-dialog .notification-student .img-notification img{
+.index .modal-dialog .notification-student .img-notification img {
   width: 100px;
 }
-.index .modal-dialog .notification-student .img-notification h4{
-  font-size: .9rem;
-  font-family:"bold";
+.index .modal-dialog .notification-student .img-notification h4 {
+  font-size: 0.9rem;
+  font-family: "bold";
   margin: 1rem;
 }
-.index .modal-dialog .notification-student .img-notification{
-margin: 0 auto;
-text-align: center;
+.index .modal-dialog .notification-student .img-notification {
+  margin: 0 auto;
+  text-align: center;
 }
 .index .modal-dialog .notification-student select {
   height: 43px;
@@ -2134,9 +2134,116 @@ text-align: center;
 .index .modal-dialog .notification-student label {
   font-size: 1rem;
   font-family: "medium";
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
+}
+.index .modal-dialog .notification-student textarea.form-control {
+  height: 100px;
+}
+.index .modal-dialog .add-student-notes .img-note {
+}
+.index .modal-dialog .add-student-notes .img-note {
+  margin: 0 auto;
+  text-align: center;
+}
+.index .modal-dialog .add-student-notes .img-note img {
+  width: 150px;
+}
+.index .modal-dialog .add-student-notes .img-note h4 {
+  font-size: 0.9rem;
+  font-family: "bold";
+  margin: 1rem;
+}
+.index .modal-dialog .add-student-notes .form {
+  margin-bottom: 1rem;
+}
+.index .modal-dialog .add-student-notes .form textarea.form-control {
+  height: 100px;
 }
 /* student-details */
+/* add new student */
+.index .Student-activation {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.index .Student-activation .activation-toggle-main {
+  font-family: "regular";
+}
+.index .add-studen .form-group {
+  margin: 1rem 0;
+}
+/* Chrome, Safari, Edge, Opera */
+.index .add-studen input::-webkit-outer-spin-button,
+.index .add-studen input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.index .add-studen input[type="number"] {
+  -moz-appearance: textfield;
+}
+.stage {
+  display: none; /* Hide stage by default */
+  margin-top: 20px;
+}
+.index .student-checkbox .student-lable {
+  display: flex;
+  align-items: center;
+}
+.index .student-checkbox .student-lable .contant-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 4rem;
+}
+.index .student-checkbox .student-lable .contant-checkbox p {
+  margin: 0;
+  font-size: 1rem;
+  font-family: "regular";
+}
+.index .student-checkbox .btn-primary {
+  font-size: 1rem;
+  font-family: "bold";
+  padding: 1rem 3rem;
+  color: white;
+  background-color: rgb(80 113 235 / 50%);
+  margin: 1rem 0;
+  border: none;
+}
+.index .student-checkbox .btn-primary:hover {
+  transition: 0.5s;
+  color: white;
+  background-color: #5071eb;
+}
+/* add new student */
+/* student statstics */
+.index .Description-class .video-lesson .img img {
+  width: 200px;
+}
+.index .Description-class .video-lesson {
+  position: relative;
+}
+.index .Description-class .video-lesson .watching-video {
+  position: absolute;
+  content: "";
+  right: 20px;
+  bottom: 15px;
+  background-color: rgb(255 255 255 / 10%);
+  border-radius: 33px;
+}
+.index .Description-class .video-lesson .watching-video p {
+  margin: 0;
+  font-size: 1rem;
+  font-family: "bold";
+  color: white;
+  width: 160px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* student statstics */
 
 /* course-exam */
 @media only screen and (max-width: 1024.98px) {
@@ -2375,18 +2482,18 @@ text-align: center;
     width: 170px;
   }
   .index .content .some-btns .btn-danger {
-padding: 0.5rem;
-}
-.index .content .some-btns .btn-primary {
-  padding: 0.5rem;
-}
-.index .student-information .details .notificaion-wats .wats {
-  width: 140px;
-}
-.index .student-information .details .notificaion-wats .notificaion {
-  width: 140px;
-}
-.index .tab-pane .Requests-search .Requests .btn-outline-primary {
-  padding: .5rem;
-}
+    padding: 0.5rem;
+  }
+  .index .content .some-btns .btn-primary {
+    padding: 0.5rem;
+  }
+  .index .student-information .details .notificaion-wats .wats {
+    width: 140px;
+  }
+  .index .student-information .details .notificaion-wats .notificaion {
+    width: 140px;
+  }
+  .index .tab-pane .Requests-search .Requests .btn-outline-primary {
+    padding: 0.5rem;
+  }
 }
