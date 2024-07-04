@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <!-- ? Custom CSS -->
+    <!-- multible slect  -->
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <!-- multible slect  -->
     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" href="css/corsaty.css" />
     <link rel="stylesheet" href="css/mahmoud.css" />
@@ -21,7 +24,7 @@
     />
     <!--  -->
     <link rel="stylesheet" href="css/datepicker.material.css" />
-    
+
     <!-- ? Custom CSS -->
     <!-- ? Main JavaScript -->
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -264,6 +267,7 @@
                       <p>تعليم حر</p>
                     </div>
                   </div>
+                  <!-- المحتوي الي هيظهر لما يختار نوع التعليم -->
                   <div class="student-contant">
                     <div class="col-lg-8 col-md-8 col-sm-12">
                       <div id="stage1" class="stage">
@@ -283,36 +287,48 @@
                         </div>
                         <div class="row">
                           <div class="col-lg-6 col-md-6 col-sm-6">
+                            <!-- input group -->
                             <div class="select-main">
                               <label for="defaultSelect" class="form-label">
                                 المرحلة التعليمية
                               </label>
                               <select
-                                class="form-select"
-                                aria-label="Default select example"
+                                required
+                                class="selectpicker"
+                                multiple
+                                data-selected-text-format="count > 1"
+                                data-icon="bi bi-trash"
+                                data-live-search="true"
+                                data-placeholder="المرحلة التعليمية"
                               >
-                                <option selected>مرحلة ابتدائية</option>
-                                <option value="1">one</option>
+                                <option value="1">مرحلة ابتدائية</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                               </select>
                             </div>
+                            <!-- input group -->
                           </div>
                           <div class="col-lg-6 col-md-6 col-sm-6">
+                            <!-- input group -->
                             <div class="select-main">
                               <label for="defaultSelect" class="form-label">
                                 الصف الدراسي
                               </label>
                               <select
-                                class="form-select"
-                                aria-label="Default select example"
+                                required
+                                class="selectpicker"
+                                multiple
+                                data-selected-text-format="count > 1"
+                                data-icon="bi bi-trash"
+                                data-live-search="true"
+                                data-placeholder="المرحلة التعليمية"
                               >
-                                <option selected>الاول ابتدائي</option>
-                                <option value="1">الثاني ابتدائي</option>
-                                <option value="2">Two</option>
+                                <option value="1">الاول ابتدائي</option>
+                                <option value="2">الثاني ابتدائي</option>
                                 <option value="3">Three</option>
                               </select>
                             </div>
+                            <!-- input group -->
                           </div>
                         </div>
                       </div>
@@ -369,20 +385,26 @@
                         </div>
                         <div class="row">
                           <div class="col-lg-6 col-md-6 col-sm-6">
+                            <!-- input group -->
                             <div class="select-main">
                               <label for="defaultSelect" class="form-label">
                                 القسم
                               </label>
                               <select
-                                class="form-select"
-                                aria-label="Default select example"
+                                required
+                                class="selectpicker"
+                                multiple
+                                data-selected-text-format="count > 1"
+                                data-icon="bi bi-trash"
+                                data-live-search="true"
+                                data-placeholder=" "
                               >
-                                <option selected>محاسبة</option>
-                                <option value="1">اقتصاد</option>
-                                <option value="2">Two</option>
+                                <option value="1">محاسبة</option>
+                                <option value="2">اقتصاد</option>
                                 <option value="3">Three</option>
                               </select>
                             </div>
+                            <!-- input group -->
                           </div>
                           <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="select-main">
@@ -390,12 +412,16 @@
                                 الفرق
                               </label>
                               <select
-                                class="form-select"
-                                aria-label="Default select example"
+                                required
+                                class="selectpicker"
+                                multiple
+                                data-selected-text-format="count > 1"
+                                data-icon="bi bi-trash"
+                                data-live-search="true"
+                                data-placeholder=" "
                               >
-                                <option selected>فرقة اولي</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
+                                <option value="1">فرقة اولي</option>
+                                <option value="2">one</option>
                                 <option value="3">Three</option>
                               </select>
                             </div>
@@ -408,7 +434,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12">
                           <div class="select-main">
                             <label for="defaultSelect" class="form-label">
-                                القسم
+                              القسم
                             </label>
                             <select
                               class="form-select"
@@ -422,7 +448,7 @@
                           </div>
                           <div class="select-main">
                             <label for="defaultSelect" class="form-label">
-                                التخصص
+                              التخصص
                             </label>
                             <select
                               class="form-select"
@@ -443,13 +469,13 @@
                   </button>
                 </div>
                 <input
-                type="hidden"
-                id="constrained"
-                data-inline="true"
-                data-multiple="true"
-                data-open-on="today"
-                data-time="true"
-              />
+                  type="hidden"
+                  id="constrained"
+                  data-inline="true"
+                  data-multiple="true"
+                  data-open-on="today"
+                  data-time="true"
+                />
               </div>
             </div>
           </div>
@@ -460,6 +486,9 @@
     </div>
     <script src="js/main.js"></script>
     <!-- show contant checkbox -->
+    <!-- multible slect  -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- multible slect  -->
     <script>
       function toggleStage(option) {
         var stageId = "stage" + option.slice(-1); // Extract the numeric part from option
@@ -491,20 +520,20 @@
       }
     </script>
     <script>
-        var constrained = new Datepicker("#constrained", {
-          // 10 days in the past
-          min: (function () {
-            var date = new Date();
-            date.setDate(date.getDate() - 10);
-            return date;
-          })(),
-          // 10 days in the future
-          max: (function () {
-            var date = new Date();
-            date.setDate(date.getDate() + 10);
-            return date;
-          })(),
-        });
-      </script>
+      var constrained = new Datepicker("#constrained", {
+        // 10 days in the past
+        min: (function () {
+          var date = new Date();
+          date.setDate(date.getDate() - 10);
+          return date;
+        })(),
+        // 10 days in the future
+        max: (function () {
+          var date = new Date();
+          date.setDate(date.getDate() + 10);
+          return date;
+        })(),
+      });
+    </script>
   </body>
 </html>
