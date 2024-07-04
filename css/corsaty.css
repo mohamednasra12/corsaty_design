@@ -423,6 +423,7 @@ a#notification {
 .form-select {
   background-color: var(--color-primary);
   height: 56px;
+  padding: .7rem;
   margin-top: 0.5rem;
   border-radius: 0.5rem;
   border: 0;
