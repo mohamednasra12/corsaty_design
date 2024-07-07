@@ -2533,9 +2533,91 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
   font-size: 1rem;
   font-family: "bold";
 }
+.circle-chart{
+  position: relative;
+}
+.circle-chart .grade{
+  position: absolute;
+  content: "";
+  top: 150px;
+  left: 110px;
+}
+.circle-chart .grade h4{
+font-size: 1rem ;
+font-family: "bold";
+}
+.circle-chart .grade h6{
+font-size: .8rem ;
+font-family: "bold";
+color: #546881;
+}
+.circle-chart h5{
+font-size: 1rem ;
+font-family: "bold";
+}
+.Student-progress{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Student-progress select{
+  height: 43px;
+  font-family: "regular";
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  width: 100%;
+}
+.Student-progress h4{
+  font-size: 1rem ;
+  font-family: "bold";
+}
+.Students-levels {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  gap: 12px;
+}
+.circle-charts {
+  background-color: white;
+  padding: 1rem;
+  border-radius:10px ;
+}
+.line-charts {
+  background-color: white;
+  padding: 1rem;
+  border-radius:10px ;
+}
+canvas#myChart {
+  min-width: 409px !important;
+  min-height: 277px !important;
+}
+.subjects {
+  width: 60%;
+}
+.courses-exams {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+
+}
+.courses-exams .Overall-evaluation{
+  width: 25%;
+}
+.courses-exams .contents{
+  background-color: white;
+  padding: 1rem;
+  border-radius:10px ;
+  margin: 0 2rem 1rem ;
+}
 /* student statstics */
 
 /* course-exam */
+@media only screen and (max-width: 1300px) {
+  canvas#circel {
+    width: 200px !important;
+}
+}
 @media only screen and (max-width: 1024.98px) {
   .add-course .filler-course .search {
     width: 65%;

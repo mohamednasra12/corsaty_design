@@ -29,6 +29,7 @@
     <script src="js/all.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
     <!-- ? Main JavaScript -->
+
     <!-- ? Custom JavaScript -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="js/charts.js"></script>
@@ -47,6 +48,8 @@
     <!-- ? Favicon img -->
     <link rel="icon" href="photo/Group 25861.png" type="image" />
     <!-- ? Favicon img-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="path/to/your/utils.js"></script>
   </head>
   <body>
     <div class="d-flex sidemobile p-0">
@@ -274,75 +277,101 @@
               </div>
             </div>
           </div>
+          <!-- جميع الكورسات , جميع الحصص  -->
+          <!-- <div class="container"> -->
+            <div class="courses-exams">
+              <div class="Overall-evaluation">
+                <div class="contents">
+                  <div class="all-courses">
+                    <div class="number">
+                      <p>جميع الكورسات</p>
+                      <h4>04/06</h4>
+                    </div>
+                    <div class="img">
+                      <img src="photo/Group 1000006921.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Overall-evaluation">
+                <div class="contents">
+                  <div class="all-courses">
+                    <div class="number">
+                      <p>جميع الحصص</p>
+                      <h4>20/60</h4>
+                    </div>
+                    <div class="img">
+                      <img src="photo/Group 1000006928.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Overall-evaluation">
+                <div class="contents">
+                  <div class="all-courses">
+                    <div class="number">
+                      <p>الامتحانات المجتازة</p>
+                      <h4>16/50</h4>
+                    </div>
+                    <div class="img">
+                      <img src="photo/Group 1000006931.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Overall-evaluation">
+                <div class="contents">
+                  <div class="all-courses">
+                    <div class="number">
+                      <p>التقييم العام للطالب</p>
+                      <h4>جيد جداً</h4>
+                    </div>
+                    <div class="img">
+                      <img src="photo/star.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-6">
-              <div class="content">
-                <div class="all-courses">
-                  <div class="number">
-                    <p>جميع الكورسات</p>
-                    <h4>04/06</h4>
-                  </div>
-                  <div class="img">
-                    <img src="photo/Group 1000006921.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-6">
-              <div class="content">
-                <div class="all-courses">
-                  <div class="number">
-                    <p>جميع الحصص</p>
-                    <h4>20/60</h4>
-                  </div>
-                  <div class="img">
-                    <img src="photo/Group 1000006928.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-6">
-              <div class="content">
-                <div class="all-courses">
-                  <div class="number">
-                    <p>الامتحانات المجتازة</p>
-                    <h4>16/50</h4>
-                  </div>
-                  <div class="img">
-                    <img src="photo/Group 1000006931.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-6">
-              <div class="content">
-                <div class="all-courses">
-                  <div class="number">
-                    <p>التقييم العام للطالب</p>
-                    <h4>جيد جداً</h4>
-                  </div>
-                  <div class="img">
-                    <img src="photo/star.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="col-lg-8 col-md-12 col-12">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div>
-                    <canvas id="myChart2"></canvas>
+              <div class="container">
+                <div class="Students-levels">
+                  <div class="Passed-tests">
+                    <div class="circle-charts">
+                      <div class="circle-chart">
+                        <h5>المستوي العام لاداء الطالب</h5>
+                        <div class="grade">
+                          <h4>75%</h4>
+                          <h6>جيد جداً</h6>
+                        </div>
+                        <canvas id="circel"></canvas>
+                      </div>
+                    </div>
                   </div>
-                  
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div>
-                    <canvas id="myChart3"></canvas>
+                  <div class="subjects">
+                    <div class="line-charts">
+                      <div class="Student-progress">
+                        <h4>مستوي تقدم الطالب</h4>
+                        <div class="select">
+                          <select name="" id="">
+                            <option value="">خلال الشهر</option>
+                            <option value="">99</option>
+                            <option value="">0</option>
+                            <option value="">66</option>
+                          </select>
+                        </div>
+                      </div>
+                      <canvas id="myChart"></canvas>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-12 col-12">aaa</div>
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="content">calender</div>
+            </div>
           </div>
         </div>
 
@@ -352,145 +381,256 @@
     <script src="js/main.js"></script>
     <!-- show contant checkbox -->
     <script src="js/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- multible slect  -->
     <script src="js/bootstrap-select.min.js"></script>
     <!-- multible slect  -->
+
     <!-- main js -->
+
+    <!-- chart 1 -->
     <script>
-      function toggleStage(option) {
-        var stageId = "stage" + option.slice(-1); // Extract the numeric part from option
-        var stage = document.getElementById(stageId);
-
-        // Check if the checkbox is checked
-        var isChecked = document.getElementById(option).checked;
-
-        // Hide all stages initially
-        document.querySelectorAll(".stage").forEach(function (stage) {
-          stage.style.display = "none";
-        });
-
-        // Show the stage only if the checkbox is checked
-        if (isChecked) {
-          stage.style.display = "block";
-        } else {
-          stage.style.display = "none"; // Hide the stage if the checkbox is unchecked
-        }
-
-        // Uncheck all other checkboxes
-        document
-          .querySelectorAll('input[type="checkbox"]')
-          .forEach(function (checkbox) {
-            if (checkbox.id !== option) {
-              checkbox.checked = false;
-            }
-          });
-      }
-    </script>
-    <script>
-      var constrained = new Datepicker("#constrained", {
-        // 10 days in the past
-        min: (function () {
-          var date = new Date();
-          date.setDate(date.getDate() - 10);
-          return date;
-        })(),
-        // 10 days in the future
-        max: (function () {
-          var date = new Date();
-          date.setDate(date.getDate() + 10);
-          return date;
-        })(),
+      document.addEventListener("DOMContentLoaded", function () {
+        const ctx = document.getElementById("myChart2").getContext("2d");
+        const data = {
+          labels: [
+            "اسبوع 1",
+            "اسبوع 2",
+            "اسبوع 3",
+            "اسبوع 4",
+            "اسبوع 5",
+            "اسبوع 6",
+          ],
+          datasets: [
+            {
+              label: "Try hiding me",
+              data: [30, 40, 20, 30, 10, 50, 40],
+              fill: false,
+              borderColor: "rgb(75, 192, 192)",
+            },
+          ],
+        };
+        const config = {
+          type: "line",
+          data: data,
+          options: {
+            animations: {
+              tension: {
+                duration: 1000,
+                easing: "linear",
+                from: 1,
+                to: 0,
+                loop: true,
+              },
+            },
+            scales: {
+              y: {
+                // defining min and max so hiding the dataset does not change scale range
+                min: 10,
+                max: 50,
+              },
+            },
+          },
+        };
+        const myChart = new Chart(ctx, config);
       });
     </script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const ctx = document.getElementById("myChart2").getContext("2d");
+    <!-- chart 1 -->
+    <!-- chart 2 -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ctx = document.getElementById("circel").getContext("2d");
+        const labels = ["الاختبارات المجتازة", "الغيابات"];
+        const data = {
+          labels: labels,
+          datasets: [
+            {
+              label: "My Dataset",
+              data: [80, 20],
+              backgroundColor: [
+                "rgb(80 113 235)", // Color for Branch 1
+                "rgb(80 113 235 / 10%)", // Color for Branch 1
+              ],
+              borderColor: [
+                "rgb(255 255 255)", // Border color for Branch 1
+              ],
+              borderWidth: 2,
+              borderRadius: 5,
+            },
+          ],
+        };
+        const config = {
+          type: "doughnut",
+          data: data,
+          options: {
+            responsive: true,
+            animations: {
+              tension: {
+                duration: 4000,
+                easing: "linear",
+                from: 1,
+                to: 0,
+                loop: true,
+              },
+            },
+            interaction: {
+              intersect: false,
+            },
+            scales: {
+              x: {
+                stacked: false,
+                display: false,
+              },
+              y: {
+                stacked: false,
+                display: false,
+              },
+            },
+          },
+        };
+        const myChart = new Chart(ctx, config);
+      });
+    </script>
+    <!-- chart 2 -->
 
+    <!--  -->
+    <script>
+      // Utility functions
+      const Utils = {
+        CHART_COLORS: {
+          green: "rgb(27 208 132)",
+          purple: "rgb(78 54 226)",
+        },
+        transparentize: function (color, opacity) {
+          const alpha = 1 - opacity;
+          return color.replace("rgb", "rgba").replace(")", `, ${alpha})`);
+        },
+        numbers: function ({ count, min, max }) {
+          const data = [];
+          for (let i = 0; i < count; i++) {
+            data.push(Math.floor(Math.random() * (max - min + 1)) + min);
+          }
+          return data;
+        },
+        months: function ({ count }) {
+          const months = [
+            "اسبوع 1",
+            "اسبوع 2",
+            "اسبوع 3",
+            "اسبوع 4",
+            "اسبوع 5",
+            "اسبوع 6",
+          ];
+          return months.slice(0, count);
+        },
+      };
+
+      // Data and configuration
       const DATA_COUNT = 7;
-const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
+      const NUMBER_CFG = { count: DATA_COUNT, min: 0, max: 50 }; // Changed range from -100, 100 to 0, 200
 
-const labels = Utils.months({count: 7});
-const data = {
-  labels: labels,
-  datasets: [
-    {
-      label: 'Dataset 1',
-      data: [10, 30, 39, 20, 25, 34, -10],
-      borderColor: Utils.CHART_COLORS.red,
-      backgroundColor: Utils.CHART_COLORS.red,
-    },
-    {
-      label: 'Dataset 2',
-      data: [18, 33, 22, 19, 11, 39, 30],
-      borderColor: Utils.CHART_COLORS.blue,
-      backgroundColor: Utils.CHART_COLORS.blue,
-    }
-  ]
-};
-const config = {
-  type: 'line',
-  data: data,
-  options: {
-    responsive: true,
-    plugins: {
-      title: {
-        display: true,
-        text: 'Suggested Min and Max Settings'
-      }
-    },
-    scales: {
-      y: {
-        // the data minimum used for determining the ticks is Math.min(dataMin, suggestedMin)
-        suggestedMin: 30,
+      const labels = Utils.months({ count: 7 });
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: "الكيمياء",
+            data: Utils.numbers(NUMBER_CFG),
+            borderColor: Utils.CHART_COLORS.green,
+            backgroundColor: Utils.transparentize(Utils.CHART_COLORS.green, 5),
+            yAxisID: "y",
+          },
+          {
+            label: "الفيزياء ",
+            data: Utils.numbers(NUMBER_CFG),
+            borderColor: Utils.CHART_COLORS.purple,
+            backgroundColor: Utils.transparentize(
+              Utils.CHART_COLORS.purple,
+              0.5
+            ),
+            yAxisID: "y1",
+          },
+        ],
+      };
 
-        // the data maximum used for determining the ticks is Math.max(dataMax, suggestedMax)
-        suggestedMax: 50,
-      }
-    }
-  },
-};
+      const config = {
+        type: "line",
+        data: data,
+        options: {
+          responsive: true,
+          interaction: {
+            mode: "index",
+            intersect: false,
+          },
+          stacked: false,
+          plugins: {
+            title: {
+              display: true,
+            },
+          },
+          scales: {
+            y: {
+              type: "linear",
+              display: true,
+              position: "left",
+              min: 0, // Adjusted the minimum value of y-axis
+              max: 50, // Adjusted the maximum value of y-axis
+              ticks: {
+                callback: function (value, index, values) {
+                  return value.toFixed(2); // Format number to 2 decimal places
+                },
+              },
+            },
+            y1: {
+              type: "linear",
+              display: true,
+              position: "right",
+              min: 0, // Adjusted the minimum value of y1-axis
+              max: 50, // Adjusted the maximum value of y1-axis
+              grid: {
+                drawOnChartArea: false, // only want the grid lines for one axis to show up
+              },
+              ticks: {
+                callback: function (value, index, values) {
+                  return value.toFixed(2); // Format number to 2 decimal places
+                },
+              },
+            },
+          },
+        },
+      };
 
+      // Actions
+      const actions = [
+        {
+          name: "Randomize",
+          handler(chart) {
+            chart.data.datasets.forEach((dataset) => {
+              dataset.data = Utils.numbers({
+                count: chart.data.labels.length,
+                min: 0,
+                max: 200,
+              }); // Update data range here
+            });
+            chart.update();
+          },
+        },
+      ];
 
+      // Create the chart and add action buttons
+      window.onload = function () {
+        const ctx = document.getElementById("myChart").getContext("2d");
+        const myChart = new Chart(ctx, config);
 
-      const myChart = new Chart(ctx, config);
-});
-</script>
-<script>
-   document.addEventListener("DOMContentLoaded", function () {
-    const ctx = document.getElementById("myChart2").getContext("2d");
-  const data = {
-  labels: ['اسبوع 1', 'اسبوع 2', 'اسبوع 3', 'اسبوع 4', 'اسبوع 5', 'اسبوع 6'],
-  datasets: [{
-    label: 'Try hiding me',
-    data: [30, 40, 20, 30, 10, 50, 40],
-    fill: false,
-    borderColor: 'rgb(75, 192, 192)',
-  }]
-};
-const config = {
-  type: 'line',
-  data: data,
-  options: {
-    animations: {
-      tension: {
-        duration: 1000,
-        easing: 'linear',
-        from: 1,
-        to: 0,
-        loop: true
-      }
-    },
-    scales: {
-      y: { // defining min and max so hiding the dataset does not change scale range
-        min: 10,
-        max: 50
-      }
-    }
-  }
-};
-const myChart = new Chart(ctx, config);
-});
-</script>
-
+        // Attach actions
+        actions.forEach((action) => {
+          const button = document.createElement("button");
+          button.innerText = action.name;
+          button.addEventListener("click", () => action.handler(myChart));
+          document.body.appendChild(button);
+        });
+      };
+    </script>
+    <!--  -->
   </body>
 </html>

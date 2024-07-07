@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chart.js Line Chart Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Utility functions
+    const Utils = {
+      CHART_COLORS: {
+        red: 'rgb(255, 99, 132)',
+        blue: 'rgb(54, 162, 235)'
+      },
+      transparentize: function(color, opacity) {
+        const alpha = 1 - opacity;
+        return color.replace('rgb', 'rgba').replace(')', `, ${alpha})`);
+      },
+      numbers: function({count, min, max}) {
+        const data = [];
+        for (let i = 0; i < count; i++) {
+          data.push(Math.floor(Math.random() * (max - min + 1)) + min);
+        }
+        return data;
+      },
+      months: function({count}) {
+        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        return months.slice(0, count);
+      }
+    };
+
+    // Data and configuration
+    const DATA_COUNT = 7;
+    const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 50}; // Changed range from -100, 100 to 0, 200
+
+    const labels = Utils.months({count: 7});
+    const data = {
+      labels: labels,
+      datasets: [
+        {
+          label: 'Dataset 1',
+          data: Utils.numbers(NUMBER_CFG),
+          borderColor: Utils.CHART_COLORS.red,
+          backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
+          yAxisID: 'y',
+        },
+        {
+          label: 'Dataset 2',
+          data: Utils.numbers(NUMBER_CFG),
+          borderColor: Utils.CHART_COLORS.blue,
+          backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
+          yAxisID: 'y1',
+        }
+      ]
+    };
+
+    const config = {
+      type: 'line',
+      data: data,
+      options: {
+        responsive: true,
+        interaction: {
+          mode: 'index',
+          intersect: false,
+        },
+        stacked: false,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Chart.js Line Chart - Multi Axis'
+          }
+        },
+        scales: {
+          y: {
+            type: 'linear',
+            display: true,
+            position: 'left',
+            min: 0, // Adjusted the minimum value of y-axis
+            max: 50, // Adjusted the maximum value of y-axis
+            ticks: {
+              callback: function(value, index, values) {
+                return value.toFixed(2); // Format number to 2 decimal places
+              }
+            }
+          },
+          y1: {
+            type: 'linear',
+            display: true,
+            position: 'right',
+            min: 0, // Adjusted the minimum value of y1-axis
+            max: 50, // Adjusted the maximum value of y1-axis
+            grid: {
+              drawOnChartArea: false, // only want the grid lines for one axis to show up
+            },
+            ticks: {
+              callback: function(value, index, values) {
+                return value.toFixed(2); // Format number to 2 decimal places
+              }
+            }
+          },
+        }
+      },
+    };
+
+    // Actions
+    const actions = [
+      {
+        name: 'Randomize',
+        handler(chart) {
+          chart.data.datasets.forEach(dataset => {
+            dataset.data = Utils.numbers({count: chart.data.labels.length, min: 0, max: 200}); // Update data range here
+          });
+          chart.update();
+        }
+      },
+    ];
+
+    // Create the chart and add action buttons
+    window.onload = function() {
+      const ctx = document.getElementById('myChart').getContext('2d');
+      const myChart = new Chart(ctx, config);
+
+      // Attach actions
+      actions.forEach(action => {
+        const button = document.createElement('button');
+        button.innerText = action.name;
+        button.addEventListener('click', () => action.handler(myChart));
+        document.body.appendChild(button);
+      });
+    };
+  </script>
+</head>
+<body>
+  <canvas id="myChart"></canvas>
+</body>
+</html>
