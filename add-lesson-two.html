@@ -197,7 +197,7 @@
               </div>
               <!-- this div show sitting -->
               <div class="show-option" id="show-option" style="display: none">
-                <div class="col-lg-7 col-md-6 col-sm-12">
+                <div class="col-lg-7 col-md-10 col-sm-12">
                   <div class="tabs-language">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                       <li class="nav-item" role="presentation">
@@ -260,7 +260,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-7 col-md-6 col-sm-12">
+                <div class="col-lg-7 col-md-10 col-sm-12">
                   <div class="select-main">
                     <label for="defaultSelect" class="form-label"
                       >حدد الوحدة</label
@@ -276,7 +276,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-10 col-sm-12">
                   <div class="radio-main">
                     <label for="" class="form-label">حالة الحصة</label>
                     <div class="radio">
@@ -306,7 +306,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-7 col-md-6 col-sm-12">
+                <div class="col-lg-7 col-md-10 col-sm-12">
                   <div class="form-group">
                     <label for="formGroupExampleInput">سعر الحصة</label>
                     <input
@@ -319,21 +319,56 @@
                 </div>
                 <!-- this div show sitting -->
                 <!-- image and video -->
-                  <div class="col-lg-7 col-md-6 col-sm-12">
-                    <div class="upload-all">
-                      <p>اضافة فيديو انترو / صورة</p>
-                      <label for="fileInput" id="uploadLabel" class="img-file">
-                        <img src="photo/video-circle2.svg" alt="" />
-                        <h4>
-                          اسحب الملف واسقطه هنا اوقم بتحميل ملف من
-                          <span>هنا</span>
-                        </h4>
-                        <img id="photoPreview" alt="Image Preview"/>
-                      <video id="videoPreview" controls></video>
-                      </label>
-                      <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg,.mp4,.mov,.avi" style="display: none;" />
-                    </div>
+                <div class="col-lg-7 col-md-10 col-sm-12">
+                  <div class="upload-main">
+                    <label for="video" class="form-label"
+                      >اضافة فيديو انترو</label
+                    >
+                    <label class="uploadphoto" for="video">
+                      <img
+                        class="Default"
+                        id="videoPreviewImg"
+                        src="photo/video-circle.jpg"
+                        alt=""
+                      />
+                      <video
+                        id="videoPreview"
+                        style="display: none"
+                        controls
+                      ></video>
+                      <h4>
+                        اسحب الفيديو واسقطه هنا اوقم بتحميل فيديو لتحميل الفديو
+                        من <span>هنا</span>
+                      </h4>
+                    </label>
+                    <input
+                      style="display: none"
+                      id="video"
+                      type="file"
+                      class="form-control"
+                    />
+                  </div>
                 </div>
+                <!-- scrpit for image and video -->
+                <script>
+                  document
+                    .getElementById("video")
+                    .addEventListener("change", function (event) {
+                      const file = event.target.files[0];
+                      if (file) {
+                        const video = document.getElementById("videoPreview");
+                        const img = document.getElementById("videoPreviewImg");
+                        img.style.display = "none"; // Hide the image preview
+                        video.style.display = "block"; // Show the video preview
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                          video.src = e.target.result;
+                        };
+                        reader.readAsDataURL(file);
+                      }
+                    });
+                </script>
+                <!-- scrpit for image and video -->
                 <!-- image and video -->
                 <div class="btn-main">
                   <button
@@ -370,53 +405,6 @@
         });
     </script>
     <!-- show lesson -->
-    <!-- scrpit for image and video -->
-    <script>
-      document.getElementById('fileInput').addEventListener('change', function(event) {
-          const file = event.target.files[0];
-          const fileLabel = document.getElementById('uploadLabel');
-          const photoPreview = document.getElementById('photoPreview');
-          const videoPreview = document.getElementById('videoPreview');
-
-          if (file) {
-              const fileType = file.type;
-              const reader = new FileReader();
-              reader.onload = function(e) {
-                  if (fileType.startsWith('image/')) {
-                      photoPreview.src = e.target.result;
-                      photoPreview.style.display = 'block';
-                      videoPreview.style.display = 'none';
-                  } else if (fileType.startsWith('video/')) {
-                      videoPreview.src = e.target.result;
-                      videoPreview.style.display = 'block';
-                      photoPreview.style.display = 'none';
-                  }
-              };
-
-              if (fileType.startsWith('image/') || fileType.startsWith('video/')) {
-                  reader.readAsDataURL(file);
-              }
-              fileLabel.textContent = 'File selected: ' + file.name;
-          }
-      });
-  </script>
-    <!-- scrpit for image and video -->
-    <!-- scrpit for relod file -->
-    <script>
-      document
-        .getElementById("fileInput")
-        .addEventListener("change", function (event) {
-          const fileInput = event.target;
-          const fileLabel = document.getElementById("uploadLabel");
-          if (fileInput.files.length > 0) {
-            const file = fileInput.files[0];
-            if (file.type === "application/pdf") {
-              fileLabel.textContent = file.name;
-            }
-          }
-        });
-    </script>
-    <!-- scrpit for relod file -->
     <script src="js/main.js"></script>
   </body>
 </html>

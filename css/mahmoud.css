@@ -311,7 +311,7 @@ svg.svg-inline--fa.fa-angles-right {
   border-radius: 10px;
 }
 .index .all-corses .contant-course {
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   border: 2px dashed rgb(178 187 198 / 50%);
   border-radius: 5px;
   display: flex;
@@ -470,6 +470,33 @@ svg.svg-inline--fa.fa-angles-right {
   flex-wrap: wrap;
   width: 30%;
 }
+.all-corses .modal-content {
+  max-width: 100%;
+}
+.all-corses .modal-body .title-vidio h1 {
+  font-size: 1.5rem;
+  font-family: "bold";
+  color: black;
+  margin-bottom: 1rem;
+}
+.all-corses .modal-body .title-vidio span {
+  color: #5071eb;
+}
+.all-corses .modal-body .title-vidio video {
+  width: 100%;
+  border-radius: 10px;
+}
+.all-corses .modal-footer .end-vidio h4 {
+  font-size: 1.3rem;
+  font-family: "bold";
+  color: #0084ff;
+  padding: 0.5rem;
+}
+.all-corses .modal-footer .btn-info {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #0084ff;
+}
 /* index coursat details */
 
 /* Participating-students */
@@ -569,6 +596,11 @@ svg.svg-inline--fa.fa-angles-right {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.divide-icon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 .index .choies-time label {
   font-family: "bold";
@@ -715,7 +747,7 @@ svg.svg-inline--fa.fa-angles-right {
   margin: 1rem 0;
 }
 .index .quesions .quesion-one .add-quesion .date-upload .uploadphoto {
-  display: block;
+  /* display: block; */
   height: 100%;
   margin-bottom: 0;
   cursor: pointer;
@@ -725,7 +757,11 @@ svg.svg-inline--fa.fa-angles-right {
   border: 1px solid #c1cad6;
   border-radius: 10px;
 }
-
+.upload-checkbox {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
 /* details-student */
 .index .student-information .img-information .information .title {
   display: flex;
@@ -791,6 +827,7 @@ svg.svg-inline--fa.fa-angles-right {
   border-radius: 47px;
   width: 210px;
   height: 45px;
+  cursor: pointer;
 }
 .index .student-information .details .notificaion-wats .notificaion h5 {
   font-size: 1rem;
@@ -806,6 +843,7 @@ svg.svg-inline--fa.fa-angles-right {
   border-radius: 47px;
   width: 210px;
   height: 45px;
+  cursor: pointer;
 }
 .index .student-information .details .notificaion-wats .wats h5 {
   font-size: 1rem;
@@ -1035,7 +1073,7 @@ svg.svg-inline--fa.fa-angles-right {
 }
 .add-course .filler .search-student input {
   border: 0;
-  width: 90%;
+  width: 95%;
   outline: 0;
   padding: 0 0.5rem;
 }
@@ -1105,6 +1143,17 @@ svg.svg-inline--fa.fa-angles-right {
 .btn-main .modal .modal-footer {
   display: flex;
   flex-direction: column;
+}
+.btn-main .modal .modal-footer a {
+  width: 100%;
+}
+.index .modal-dialog .modal-footer .btn-light {
+  width: 100%;
+  border: 1px solid #0084ff;
+  background-color: white;
+  color: #5071eb;
+  font-size: 1rem;
+  font-family: "regular";
 }
 .btn-main .modal .modal-footer .btn {
   padding: 1rem 9rem;
@@ -1330,6 +1379,7 @@ div[role="progressbar"]::before {
 }
 .courses .all-corses .video-description {
   display: flex;
+  align-items: end;
 }
 .index .contant-course .icon-edit .edit-course {
   width: 40px;
@@ -1481,6 +1531,11 @@ table tbody .end {
 .index .edit-course .dropdown-toggle::after {
   display: contents;
 }
+.details-content {
+  background-color: white;
+  margin: 1rem 1rem 1rem 0;
+  padding: 1rem;
+}
 /* details-lesson */
 
 /* course exam */
@@ -1496,7 +1551,7 @@ table tbody .end {
 }
 .index .filler-exam .search-exam input {
   border: 0;
-  width: 90%;
+  width: 95%;
   outline: 0;
   padding: 0 0.5rem;
 }
@@ -2159,14 +2214,14 @@ table tbody .end {
 .index .modal-dialog .add-student-notes .form textarea.form-control {
   height: 100px;
 }
-.index .modal-dialog .modal-content .add h4{
-font-size: 1.5rem;
-font-family: "bold";
+.index .modal-dialog .modal-content .add h4 {
+  font-size: 1.5rem;
+  font-family: "bold";
 }
-.index .modal-dialog .modal-content .add .btn-close{
-margin: 0;
+.index .modal-dialog .modal-content .add .btn-close {
+  margin: 0;
 }
-.index .modal-dialog .modal-content .model-add-student .search-courses{
+.index .modal-dialog .modal-content .model-add-student .search-courses {
   border: 1px solid rgba(0, 0, 0, 0.103);
   border-radius: 10px;
   height: 65px;
@@ -2190,43 +2245,42 @@ margin: 0;
   border: 0;
   width: 16%;
   margin: 1rem 0;
-
 }
 .index .modal-dialog .modal-content .model-add-student .search-select {
- display: flex;
- justify-content: space-between;
- align-items: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 .index .modal-dialog .modal-content .model-add-student .more-slect {
- display: flex;
- justify-content: space-between;
- align-items: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 .index .modal-dialog .modal-contente table tbody .img img {
-width: 40px;
+  width: 40px;
 }
 .index .modal-dialog .modal-content table tbody .img {
-text-align: end;
+  text-align: end;
 }
-.index .modal-dialog .modal-content table tbody .name-course  {
-display: flex;
-align-items: center;
-justify-content: center;
+.index .modal-dialog .modal-content table tbody .name-course {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.index .modal-dialog .modal-content table tbody .name-course  .contant{
-margin-right: .5rem;
+.index .modal-dialog .modal-content table tbody .name-course .contant {
+  margin-right: 0.5rem;
 }
 .index .modal-dialog .modal-content table tbody .name-course h6 {
-font-size: .8rem;
-font-family: "light";
+  font-size: 0.8rem;
+  font-family: "light";
 }
 .index .modal-dialog .modal-content table tbody .name-course p {
-font-size: .7rem;
-font-family: "light";
-color: #576B74;
-margin: 0;
+  font-size: 0.7rem;
+  font-family: "light";
+  color: #576b74;
+  margin: 0;
 }
-.index .modal-dialog .modal-content .add-table table  {
+.index .modal-dialog .modal-content .add-table table {
   width: 100%;
   text-align: center;
   margin-top: 1rem;
@@ -2239,34 +2293,32 @@ margin: 0;
   padding: 1rem 0;
 }
 .index .modal-dialog .modal-content .add-table table thead {
- background-color: white;
- border-bottom: 2px solid #EAF0F4;
+  background-color: white;
+  border-bottom: 2px solid #eaf0f4;
 }
-.index .modal-dialog .modal-content .add-table table thead th{
-color: #29384B;
-font-size: 1rem;
-font-family: "regular";
+.index .modal-dialog .modal-content .add-table table thead th {
+  color: #29384b;
+  font-size: 1rem;
+  font-family: "regular";
 }
-.index .modal-dialog .modal-content .add-table table tbody tr{
-color: #29384B;
-font-size: 1rem;
-font-family: "light";
+.index .modal-dialog .modal-content .add-table table tbody tr {
+  color: #29384b;
+  font-size: 1rem;
+  font-family: "light";
 }
-.index .modal-dialog .modal-content .add-table table tbody .btn-primary{
-width: 150px;
-border-radius: 10px;
-padding: .8rem 0;
-background-color: #5071EB;
+.index .modal-dialog .modal-content .add-table table tbody .btn-primary {
+  width: 150px;
+  border-radius: 10px;
+  padding: 0.8rem 0;
+  background-color: #5071eb;
 }
-.index .modal-dialog .modal-content .add-table table tbody tr{
-  border-bottom: 2px solid #EAF0F4;
+.index .modal-dialog .modal-content .add-table table tbody tr {
+  border-bottom: 2px solid #eaf0f4;
   background-color: white;
 }
-.index .modal-dialog .modal-content .add-table .modal-footer .add-course{
-width: 100%;
+.index .modal-dialog .modal-content .add-table .modal-footer .add-course {
+  width: 100%;
 }
-
-
 
 /* student-details */
 /* add new student */
@@ -2326,26 +2378,28 @@ width: 100%;
   background-color: #5071eb;
 }
 .index .student-checkbox .select-main {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(
+    .input-group-btn
+  ) {
   background-color: var(--color-primary);
-    height: 56px;
-    width: 100%;
-    margin-top: 0.5rem;
-    border-radius: 0.5rem;
-    border: 0;
-    background-position: left 0.75rem center !important;
-    font-family: "regular";
-    color: #576b74;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+  height: 56px;
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background-position: left 0.75rem center !important;
+  font-family: "regular";
+  color: #576b74;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
-.bootstrap-select>.dropdown-toggle {
+.bootstrap-select > .dropdown-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: #5071EB;
+  color: #5071eb;
   border: unset;
   font-size: 1rem;
 }
@@ -2448,7 +2502,7 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 .index .Description-class .describion-video .title {
   display: flex;
@@ -2468,7 +2522,7 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
 .index .Description-class .describion-video .Education-icons .Education {
   display: flex;
   align-items: center;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 .index .Description-class .describion-video .Education-icons .Education h6 {
   font-size: 0.9rem;
@@ -2480,7 +2534,7 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 .index
   .Description-class
@@ -2519,56 +2573,60 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
 .index .Description-class {
   display: flex;
 }
-.index .all-courses{
+.index .all-courses {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.index .all-courses .number p{
+.index .all-courses .number p {
   color: #546881;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-family: "medium";
 }
-.index .all-courses .number h4{
+.index .all-courses .number h4 {
   font-size: 1rem;
   font-family: "bold";
 }
-.circle-chart{
+.circle-chart {
   position: relative;
 }
-.circle-chart .grade{
+.circle-chart .grade {
   position: absolute;
   content: "";
-  top: 150px;
-  left: 110px;
+  top: 53%;
+  left: 45%;
+  text-align: center;
 }
-.circle-chart .grade h4{
-font-size: 1rem ;
-font-family: "bold";
+.circle-chart .grade h4 {
+  font-size: 2rem;
+  font-family: "bold";
 }
-.circle-chart .grade h6{
-font-size: .8rem ;
-font-family: "bold";
-color: #546881;
+.circle-chart .grade h6 {
+  font-size: 1rem;
+  font-family: "bold";
+  color: #546881;
 }
-.circle-chart h5{
-font-size: 1rem ;
-font-family: "bold";
+.circle-chart h5 {
+  font-size: 1rem;
+  font-family: "bold";
 }
-.Student-progress{
+.Student-progress {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.Student-progress select{
+.Student-progress select {
   height: 43px;
   font-family: "regular";
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.103);
   width: 100%;
 }
-.Student-progress h4{
-  font-size: 1rem ;
+.Student-progress .select {
+ width: 25%;
+}
+.Student-progress h4 {
+  font-size: 1rem;
   font-family: "bold";
 }
 .Students-levels {
@@ -2581,42 +2639,131 @@ font-family: "bold";
 .circle-charts {
   background-color: white;
   padding: 1rem;
-  border-radius:10px ;
+  border-radius: 10px;
+  margin: 0.5rem 2rem;
 }
 .line-charts {
   background-color: white;
   padding: 1rem;
-  border-radius:10px ;
+  border-radius: 10px;
+  margin: 0.5rem 2rem;
 }
 canvas#myChart {
-  min-width: 409px !important;
-  min-height: 277px !important;
+  min-width: 385px !important;
+  min-height: 315px !important;
 }
 .subjects {
-  width: 60%;
+  width: 100%;
 }
 .courses-exams {
- display: flex;
- justify-content: space-between;
- flex-wrap: wrap;
-
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.courses-exams .Overall-evaluation{
+.courses-exams .Overall-evaluation {
   width: 25%;
 }
-.courses-exams .contents{
+.courses-exams .contents {
   background-color: white;
   padding: 1rem;
-  border-radius:10px ;
-  margin: 0 2rem 1rem ;
+  border-radius: 10px;
+  margin: 0 2rem 1rem;
+}
+.circle-charts .passed-exams .title{
+display: flex;
+align-items: end;
+justify-content: space-between;
+}
+.circle-charts canvas{
+max-height: 320px;
+}
+.circle-charts .passed-exams .title h5{
+font-size: 1rem;
+font-family: "bold";
+}
+.circle-charts .passed-exams .title select {
+  height: 43px;
+  font-family: "regular";
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  width: 100%;
+}
+.circle-charts .passed-exams .title .select {
+  width: 20%;
+}
+.circle-charts .passed-exams .add-course table {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  overflow: scroll;
+  min-width: 600px;
+}
+.Upcoming-exams .exam .name-dropdown .name-mark{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Upcoming-exams .exam .name-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: .5rem;
+}
+.Upcoming-exams .exam .name-dropdown .dropdown .btn-secondary{
+ background-color: white;
+ border: none;
+ box-shadow: none;
+}
+.Upcoming-exams .exam .name-dropdown .name-mark h5{
+ font-size: 1rem;
+ font-family: "medium";
+}
+.Upcoming-exams .exam .name-dropdown .name-mark p{
+ font-size: 1rem;
+ font-family: "bold";
+ color: #5071EB;
+ margin: 0;
+}
+.Upcoming-exams .exam .quesion{
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin-bottom: .5rem;
+}
+.Upcoming-exams .exam .quesion h6{
+  color: #546881;
+  font-size: 1rem;
+  font-family: "regular";
+}
+.Upcoming-exams .exam .time-quesion{
+  display: flex;
+  gap: 30px;
+}
+.Upcoming-exams .exam {
+ border-bottom: 2px solid #EBEAED;
+}
+.Upcoming-exams  {
+overflow: scroll;
+height: 500px;
 }
 /* student statstics */
 
 /* course-exam */
-@media only screen and (max-width: 1300px) {
-  canvas#circel {
+@media only screen and (max-width: 1350px) {
+  /* canvas#circel {
     width: 200px !important;
-}
+  } */
+  .index .courses .icons {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  .index .courses .title {
+    align-items: start;
+  }
+  .index .all-corses .contant-course {
+    flex-direction: column-reverse;
+  }
 }
 @media only screen and (max-width: 1024.98px) {
   .add-course .filler-course .search {
@@ -2676,7 +2823,9 @@ canvas#myChart {
     margin-bottom: 1rem;
   }
   .index .contant-course .icon-to-edit {
-    width: 90%;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
   }
   .index .contant-course .icon-edit {
     justify-content: end;
@@ -2707,14 +2856,36 @@ canvas#myChart {
     width: 30%;
   }
   .index .Description-class .describion-video .subject {
-   width: 100%;
+    width: 100%;
+  }
+  .index .Description-class .describion-video .title {
+    justify-content: end;
+  }
+  .course-details {
+    width: 40%;
+  }
 }
-.index .Description-class .describion-video .title {
-  justify-content: end;
-}
-}
-@media only screen and (max-width: 750px) {
-
+@media only screen and (max-width: 800px) {
+  .video-viwes {
+    gap: 0;
+    flex-direction: column;
+  }
+  .all-status {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .index .quesions .quesion-one .add-quesion .date-upload .uploadphoto {
+    height: 60px;
+    width: 80%;
+  }
+  .index .Student-activation {
+    flex-direction: column-reverse;
+    align-items: normal;
+  }
+  .all-corses .modal-dialog {
+    margin-top: 3rem !important;
+    margin-right: 17%;
+  }
 }
 @media only screen and (max-width: 550px) {
   .add-course .filler-course {
@@ -2876,5 +3047,49 @@ canvas#myChart {
   }
   .index .tab-pane .Requests-search .Requests .btn-outline-primary {
     padding: 0.5rem;
+  }
+  .voise-call {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  button.btn.save {
+    width: 100%;
+    margin: 0;
+  }
+  button.btn.delelt {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  input#flexSwitchCheckDefault {
+    height: 25px;
+    width: 4rem;
+  }
+  .index .buttons-add-quesions {
+    flex-wrap: wrap;
+  }
+  .index .quesions .quesion-one .add-quesion .date-upload {
+    align-items: start;
+    flex-direction: column;
+  }
+  .index .quesions .quesion-one .add-quesion .date-upload .tabs-language {
+    width: 100%;
+  }
+  .index .quesions .quesion-one .add-quesion .date-upload .uploadphoto {
+    height: 60px;
+    width: 100%;
+  }
+  .index .student-checkbox .student-lable {
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .course-details {
+    width: 65%;
+  }
+  .all-corses .modal-dialog {
+    margin-right: 0 !important;
+  }
+  .all-corses .modal-content {
+    max-width: 90%;
   }
 }
