@@ -191,7 +191,7 @@
                 <div class="img">
                   <img src="photo/world.png" alt="" />
                 </div>
-                <div class="watching-video">
+                <div class="watching-video" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   <a href="#">
                     <p>
                       <img src="photo/video-circle1.svg" alt="" /> watching
@@ -199,6 +199,32 @@
                     </p>
                   </a>
                 </div>
+                <!-- model vidio  -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="title-vidio">
+          <h1> <span>01.</span>    الدرس الاول </h1>
+          <video controls>
+            <source  src="photo/855418-hd_1920_1080_25fps.mp4" type="video/mp4"> 
+          </video>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-bs-dismiss="modal">
+          <div class="end-vidio"> <h4> close </h4></div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+                    <!-- model vidio  -->
               </div>
               <div class="describion-video">
                 <div class="title">
@@ -402,7 +428,7 @@
                 </div>
               </div> -->
         <div class="row">
-          <div class="col-lg-7 col-md-7 col-12">
+          <div class="col-lg-6 col-md-7 col-12">
             <div class="circle-charts">
               <div class="passed-exams">
                 <div class="title">
@@ -509,10 +535,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5 col-md-5 col-12">
+          <div class="col-lg-6 col-md-5 col-12">
             <div class="circle-charts">
               <div class="calender">
-
                 <input
                     type="hidden"
                     id="constrained"
@@ -767,6 +792,10 @@
     <!-- multible slect  -->
     <script src="js/bootstrap-select.min.js"></script>
     <!-- multible slect  -->
+    <script src="js/aos-anmite.js"></script>
+    <script>
+      AOS.init({ disable: "mobile" });
+    </script>
 
     <!-- main js -->
 

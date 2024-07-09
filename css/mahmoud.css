@@ -2519,6 +2519,37 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
   border-radius: 50%;
   background-color: rgb(80 113 235 / 10%);
 }
+.index .Description-class .describion-video .Education-icons .Education .icon img{
+  animation: koko 2s ease infinite;
+}
+@keyframes koko {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+.index .Description-class .describion-video .Education-icontwo .Education .icon img{
+  animation: koko 2s ease infinite;
+}
 .index .Description-class .describion-video .Education-icons .Education {
   display: flex;
   align-items: center;
@@ -2623,7 +2654,7 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
   width: 100%;
 }
 .Student-progress .select {
- width: 25%;
+  width: 25%;
 }
 .Student-progress h4 {
   font-size: 1rem;
@@ -2669,17 +2700,17 @@ canvas#myChart {
   border-radius: 10px;
   margin: 0 2rem 1rem;
 }
-.circle-charts .passed-exams .title{
-display: flex;
-align-items: end;
-justify-content: space-between;
+.circle-charts .passed-exams .title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
 }
-.circle-charts canvas{
-max-height: 320px;
+.circle-charts canvas {
+  max-height: 320px;
 }
-.circle-charts .passed-exams .title h5{
-font-size: 1rem;
-font-family: "bold";
+.circle-charts .passed-exams .title h5 {
+  font-size: 1rem;
+  font-family: "bold";
 }
 .circle-charts .passed-exams .title select {
   height: 43px;
@@ -2696,9 +2727,9 @@ font-family: "bold";
   text-align: center;
   margin-top: 1rem;
   overflow: scroll;
-  min-width: 600px;
+  min-width: 500px;
 }
-.Upcoming-exams .exam .name-dropdown .name-mark{
+.Upcoming-exams .exam .name-dropdown .name-mark {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -2707,44 +2738,109 @@ font-family: "bold";
   display: flex;
   justify-content: space-between;
   align-items: end;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-.Upcoming-exams .exam .name-dropdown .dropdown .btn-secondary{
- background-color: white;
- border: none;
- box-shadow: none;
+.Upcoming-exams .exam .name-dropdown .dropdown .btn-secondary {
+  background-color: white;
+  border: none;
+  box-shadow: none;
 }
-.Upcoming-exams .exam .name-dropdown .name-mark h5{
- font-size: 1rem;
- font-family: "medium";
+.Upcoming-exams .exam .name-dropdown .name-mark h5 {
+  font-size: 1rem;
+  font-family: "medium";
 }
-.Upcoming-exams .exam .name-dropdown .name-mark p{
- font-size: 1rem;
- font-family: "bold";
- color: #5071EB;
- margin: 0;
+.Upcoming-exams .exam .name-dropdown .name-mark p {
+  font-size: 1rem;
+  font-family: "bold";
+  color: #5071eb;
+  margin: 0;
 }
-.Upcoming-exams .exam .quesion{
+.Upcoming-exams .exam .quesion {
   display: flex;
   align-items: flex-start;
   gap: 5px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-.Upcoming-exams .exam .quesion h6{
+.Upcoming-exams .exam .quesion img{
+  animation: koko 2s ease infinite;
+}
+.Upcoming-exams .exam .quesion h6 {
   color: #546881;
   font-size: 1rem;
   font-family: "regular";
 }
-.Upcoming-exams .exam .time-quesion{
+.Upcoming-exams .exam .time-quesion {
   display: flex;
   gap: 30px;
 }
 .Upcoming-exams .exam {
- border-bottom: 2px solid #EBEAED;
+  border-bottom: 2px solid #ebeaed;
 }
-.Upcoming-exams  {
-overflow: scroll;
-height: 500px;
+.Upcoming-exams {
+  overflow-y: scroll;
+  height: 500px;
+}
+.calender {
+  width: 100%;
+}
+.datepicker__wrapper {
+  width: 100% !important;
+  border: none !important;
+  border-bottom: 2px solid #ebeaed !important;
+  margin-bottom: 1rem !important;
+}
+.datepicker {
+  width: 100%;
+}
+.datepicker__header {
+  background: rgb(0 132 255 / 80%) !important;
+  color: black !important;
+  border-radius: 5px !important;
+}
+.datepicker table tbody tr:nth-child(even) {
+  background-color: white;
+}
+.datepicker table thead {
+  background-color: white;
+}
+.datepicker table th {
+  font-size: 0.9rem !important;
+  font-family: "regular" !important;
+}
+.datepicker__time {
+  font-size: 0.9rem !important;
+  background: #e3f2fdb5 !important;
+  border-radius: 2px;
+}
+.Description-class .video-lesson .modal-content {
+  max-width: 100%;
+}
+.Description-class .video-lesson .modal-body .title-vidio video {
+  width: 100%;
+  border-radius: 10px;
+}
+.Description-class .video-lesson .modal-body .title-vidio h1 {
+  font-size: 1.5rem;
+  font-family: "bold";
+  color: black;
+  margin-bottom: 1rem;
+}
+.Description-class .video-lesson .modal-body .title-vidio span {
+  color: #5071eb;
+}
+.Description-class .video-lesson .modal-dialog .modal-footer {
+  justify-content: space-between;
+}
+.Description-class .video-lesson .modal-footer .end-vidio h4 {
+  font-size: 1.3rem;
+  font-family: "bold";
+  color: #0084ff;
+  padding: 0.5rem;
+}
+.Description-class .video-lesson  .modal-footer .btn-info {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #0084ff;
 }
 /* student statstics */
 
