@@ -560,7 +560,7 @@ svg.svg-inline--fa.fa-angles-right {
 }
 .add-course .filler-course .search input {
   border: 0;
-  width: 90%;
+  width: 95%;
   outline: 0;
   padding: 0 0.5rem;
 }
@@ -2519,37 +2519,6 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
   border-radius: 50%;
   background-color: rgb(80 113 235 / 10%);
 }
-.index .Description-class .describion-video .Education-icons .Education .icon img{
-  animation: koko 2s ease infinite;
-}
-@keyframes koko {
-  0%,
-  7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-15deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
-  }
-  30% {
-    transform: rotateZ(6deg);
-  }
-  35% {
-    transform: rotateZ(-4deg);
-  }
-  40%,
-  100% {
-    transform: rotateZ(0);
-  }
-}
-.index .Description-class .describion-video .Education-icontwo .Education .icon img{
-  animation: koko 2s ease infinite;
-}
 .index .Description-class .describion-video .Education-icons .Education {
   display: flex;
   align-items: center;
@@ -2618,18 +2587,22 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
   font-size: 1rem;
   font-family: "bold";
 }
+.index .all-courses .img img {
+ width: 50px;
+ height: 50px;
+}
 .circle-chart {
   position: relative;
 }
 .circle-chart .grade {
   position: absolute;
   content: "";
-  top: 53%;
-  left: 45%;
+  top: 50%;
+  left: 40%;
   text-align: center;
 }
 .circle-chart .grade h4 {
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: "bold";
 }
 .circle-chart .grade h6 {
@@ -2671,7 +2644,7 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 2rem .5rem 1rem;
 }
 .line-charts {
   background-color: white;
@@ -2698,31 +2671,31 @@ canvas#myChart {
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
-  margin: 0 2rem 1rem;
+  margin: 0.5rem 2rem .5rem 1rem;
 }
-.circle-charts .passed-exams .title {
+.table-charts .passed-exams .title {
   display: flex;
   align-items: end;
   justify-content: space-between;
 }
-.circle-charts canvas {
+.table-charts canvas {
   max-height: 320px;
 }
-.circle-charts .passed-exams .title h5 {
+.table-charts .passed-exams .title h5 {
   font-size: 1rem;
   font-family: "bold";
 }
-.circle-charts .passed-exams .title select {
+.table-charts .passed-exams .title select {
   height: 43px;
   font-family: "regular";
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.103);
   width: 100%;
 }
-.circle-charts .passed-exams .title .select {
+.table-charts .passed-exams .title .select {
   width: 20%;
 }
-.circle-charts .passed-exams .add-course table {
+.table-charts .passed-exams .add-course table {
   width: 100%;
   text-align: center;
   margin-top: 1rem;
@@ -2760,9 +2733,6 @@ canvas#myChart {
   align-items: flex-start;
   gap: 5px;
   margin-bottom: 0.5rem;
-}
-.Upcoming-exams .exam .quesion img{
-  animation: koko 2s ease infinite;
 }
 .Upcoming-exams .exam .quesion h6 {
   color: #546881;
@@ -2837,10 +2807,36 @@ canvas#myChart {
   color: #0084ff;
   padding: 0.5rem;
 }
-.Description-class .video-lesson  .modal-footer .btn-info {
+.Description-class .video-lesson .modal-footer .btn-info {
   width: 100%;
   background-color: white;
   border: 1px solid #0084ff;
+}
+.charts-one{
+  background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 2rem .5rem 0;
+    height: 390px;
+}
+.charts-two{
+  background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0 .5rem 0;
+    max-height: 400px;
+}
+.calender-exams{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0.5rem 0 .5rem 1rem;
+}
+.table-charts{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0.5rem 2rem .5rem 0;
 }
 /* student statstics */
 
@@ -2860,6 +2856,32 @@ canvas#myChart {
   .index .all-corses .contant-course {
     flex-direction: column-reverse;
   }
+  .add-course .filler-course .search {
+    width: 70%;
+  }
+  canvas#myChart {
+    min-width: 360px !important;
+    min-height: 300px !important;
+}
+.circle-chart .grade {
+  top: 60%;
+}
+}
+@media only screen and (max-width: 1150px) {
+  canvas#myChart {
+    min-width: 300px !important;
+    min-height: 280px !important;
+}
+.charts-one {
+  height: 350px;
+}
+canvas#circel {
+  min-width: 200px !important;
+  min-height: 200px !important;
+}
+.circle-chart .grade {
+  left: 30%;
+}
 }
 @media only screen and (max-width: 1024.98px) {
   .add-course .filler-course .search {
@@ -2885,7 +2907,7 @@ canvas#myChart {
   }
   .index .student-information .details .notificaion-wats {
     gap: 1.5rem;
-    justify-content: end;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     margin-bottom: 2rem;
@@ -2982,6 +3004,30 @@ canvas#myChart {
     margin-top: 3rem !important;
     margin-right: 17%;
   }
+  canvas#myChart {
+    min-width: 200px !important;
+    min-height: 280px !important;
+}
+canvas#circel {
+  max-width: 400px !important;
+  max-height: 300px !important;
+}
+.circle-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle-chart .grade {
+  top: 51%;
+  left: 47%;
+}
+
+}
+@media only screen and (max-width: 700px) {
+  .index .Description-class {
+    flex-direction: column;
+}
 }
 @media only screen and (max-width: 550px) {
   .add-course .filler-course {
@@ -3188,4 +3234,35 @@ canvas#myChart {
   .all-corses .modal-content {
     max-width: 90%;
   }
+  .courses-exams .Overall-evaluation {
+    width: 50%;
+  }
+  canvas#circel {
+    max-width: 200px !important;
+    max-height: 200px !important;
+}
+.circle-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle-chart .grade {
+  top: 60%;
+  left: 45%;
+}
+.charts-one {
+  height: 250px;
+}
+.index .Description-class .describion-video .Education-icontwo {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.index .Description-class .describion-video .Education-icontwo .Education {
+  margin: .5rem 0;
+}
+.index .Description-class .describion-video .title .cases {
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
 }

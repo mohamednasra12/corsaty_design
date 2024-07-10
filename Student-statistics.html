@@ -364,42 +364,11 @@
         </div>
         <!-- <div class="container"> -->
         <div class="row">
-          <div class="col-lg-6 col-md-4 col-12">
-            <div class="Passed-tests">
-              <div class="circle-charts">
-                <div class="circle-chart">
-                  <h5>المستوي العام لاداء الطالب</h5>
-                  <div class="grade">
-                    <h4>75%</h4>
-                    <h6>جيد جداً</h6>
-                  </div>
-                  <canvas id="circel"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-8 col-12">
-            <div class="subjects">
-              <div class="line-charts">
-                <div class="Student-progress">
-                  <h4>مستوي تقدم الطالب</h4>
-                  <div class="select">
-                    <select name="" id="">
-                      <option value="">خلال الشهر</option>
-                      <option value="">99</option>
-                      <option value="">0</option>
-                      <option value="">66</option>
-                    </select>
-                  </div>
-                </div>
-                <canvas id="myChart"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="Students-levels">
+          <div class="col-lg-8 col-md-8 col-12">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-12">
                 <div class="Passed-tests">
-                  <div class="circle-charts">
+                  <div class="charts-one">
                     <div class="circle-chart">
                       <h5>المستوي العام لاداء الطالب</h5>
                       <div class="grade">
@@ -410,8 +379,10 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="col-lg-7 col-md-7 col-12">
                 <div class="subjects">
-                  <div class="line-charts">
+                  <div class="charts-two">
                     <div class="Student-progress">
                       <h4>مستوي تقدم الطالب</h4>
                       <div class="select">
@@ -426,362 +397,364 @@
                     <canvas id="myChart"></canvas>
                   </div>
                 </div>
-              </div> -->
-        <div class="row">
-          <div class="col-lg-6 col-md-7 col-12">
-            <div class="circle-charts">
-              <div class="passed-exams">
-                <div class="title">
-                  <h5>اخر امتحانات مُجتازة للطالب</h5>
-                  <div class="select">
-                    <select name="" id="">
-                      <option value="">خلال الشهر</option>
-                      <option value="">99</option>
-                      <option value="">0</option>
-                      <option value="">66</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="add-course">
-                  <div class="table-responsive">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th scope="col">ID</th>
-                          <th scope="col">اسم الامتحان</th>
-                          <th scope="col">درجة الطالب</th>
-                          <th scope="col">تاريخ الامتحان</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">15657</th>
-                          <td>امتحان دور اول كيمياء</td>
-                          <td>50/50</td>
-                          <td>2024-05-13 12:43 PM</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">15657</th>
-                          <td>امتحان دور اول كيمياء</td>
-                          <td>50/50</td>
-                          <td>2024-05-13 12:43 PM</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">15657</th>
-                          <td>امتحان دور اول كيمياء</td>
-                          <td>50/50</td>
-                          <td>2024-05-13 12:43 PM</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">15657</th>
-                          <td>امتحان دور اول كيمياء</td>
-                          <td>50/50</td>
-                          <td>2024-05-13 12:43 PM</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">15657</th>
-                          <td>امتحان دور اول كيمياء</td>
-                          <td>50/50</td>
-                          <td>2024-05-13 12:43 PM</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">15657</th>
-                          <td>امتحان دور اول كيمياء</td>
-                          <td>50/50</td>
-                          <td>2024-05-13 12:43 PM</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">15657</th>
-                          <td>امتحان دور اول كيمياء</td>
-                          <td>50/50</td>
-                          <td>2024-05-13 12:43 PM</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="pagenation">
-                    <div class="page">
-                      <select aria-label="Default select example">
-                        <option selected>10</option>
-                        <option value="1">20</option>
-                        <option value="2">30</option>
-                        <option value="3">40</option>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="table-charts">
+                <div class="passed-exams">
+                  <div class="title">
+                    <h5>اخر امتحانات مُجتازة للطالب</h5>
+                    <div class="select">
+                      <select name="" id="">
+                        <option value="">خلال الشهر</option>
+                        <option value="">99</option>
+                        <option value="">0</option>
+                        <option value="">66</option>
                       </select>
-                      <label for="">Show Entries</label>
                     </div>
-
-                    <nav aria-label="Page navigation example">
-                      <ul class="pagination">
-                        <li class="page-item">
-                          <a class="page-link" href="#">Previous</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">Next</a>
-                        </li>
-                      </ul>
-                    </nav>
-                    <h4>Showing 1 to 24 of 24 entries</h4>
+                  </div>
+                  <div class="add-course">
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">اسم الامتحان</th>
+                            <th scope="col">درجة الطالب</th>
+                            <th scope="col">تاريخ الامتحان</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">15657</th>
+                            <td>امتحان دور اول كيمياء</td>
+                            <td>50/50</td>
+                            <td>2024-05-13 12:43 PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">15657</th>
+                            <td>امتحان دور اول كيمياء</td>
+                            <td>50/50</td>
+                            <td>2024-05-13 12:43 PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">15657</th>
+                            <td>امتحان دور اول كيمياء</td>
+                            <td>50/50</td>
+                            <td>2024-05-13 12:43 PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">15657</th>
+                            <td>امتحان دور اول كيمياء</td>
+                            <td>50/50</td>
+                            <td>2024-05-13 12:43 PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">15657</th>
+                            <td>امتحان دور اول كيمياء</td>
+                            <td>50/50</td>
+                            <td>2024-05-13 12:43 PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">15657</th>
+                            <td>امتحان دور اول كيمياء</td>
+                            <td>50/50</td>
+                            <td>2024-05-13 12:43 PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">15657</th>
+                            <td>امتحان دور اول كيمياء</td>
+                            <td>50/50</td>
+                            <td>2024-05-13 12:43 PM</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="pagenation">
+                      <div class="page">
+                        <select aria-label="Default select example">
+                          <option selected>10</option>
+                          <option value="1">20</option>
+                          <option value="2">30</option>
+                          <option value="3">40</option>
+                        </select>
+                        <label for="">Show Entries</label>
+                      </div>
+  
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#">Previous</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                      <h4>Showing 1 to 24 of 24 entries</h4>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-5 col-12">
-            <div class="circle-charts">
-              <div class="calender">
-                <input
-                    type="hidden"
-                    id="constrained"
-                    data-inline="true"
-                    data-multiple="true"
-                    data-open-on="today"
-                    data-time="true"
-                  />
-              </div>
-              <div class="Upcoming-exams">
-                <div class="title">
-                  <h5>الامتحانات القادمة</h5>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="calender-exams">
+                <div class="calender">
+                  <input
+                      type="hidden"
+                      id="constrained"
+                      data-inline="true"
+                      data-multiple="true"
+                      data-open-on="today"
+                      data-time="true"
+                    />
                 </div>
-                <!-- details exam name , quesion and ... -->
-                <div class="exam">
-                  <div class="name-dropdown">
-                    <div class="name-mark">
-                      <h5>امتحان كيمياء دور اول</h5>
-                      <p>50 درجة</p>
-                    </div>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                          <img src="photo/Group 301.svg" alt=""   />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                <div class="Upcoming-exams">
+                  <div class="title">
+                    <h5>الامتحانات القادمة</h5>
+                  </div>
+                  <!-- details exam name , quesion and ... -->
+                  <div class="exam">
+                    <div class="name-dropdown">
+                      <div class="name-mark">
+                        <h5>امتحان كيمياء دور اول</h5>
+                        <p>50 درجة</p>
                       </div>
-                  </div>
-                  <div class="time-quesion">
-                    <div class="quesion">
-                      <img src="photo/task-square.svg" alt="">
-                      <h6>20 سؤال</h6>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <img src="photo/Group 301.svg" alt=""   />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
                     </div>
-                    <div class="quesion">
-                      <img src="photo/timer.svg" alt="">
-                      <h6>60 دقيقة </h6>
-                    </div>
-                  </div>
-                  <div class="quesion">
-                    <img src="photo/calendar1.svg" alt="">
-                    <h6>السبت, 22مايو - 8:30 ص   </h6>
-                  </div>
-                </div>
-                <div class="exam">
-                  <div class="name-dropdown">
-                    <div class="name-mark">
-                      <h5>امتحان كيمياء دور اول</h5>
-                      <p>50 درجة</p>
-                    </div>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                          <img src="photo/Group 301.svg" alt=""   />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <div class="time-quesion">
+                      <div class="quesion">
+                        <img src="photo/task-square.svg" alt="">
+                        <h6>20 سؤال</h6>
                       </div>
-                  </div>
-                  <div class="time-quesion">
-                    <div class="quesion">
-                      <img src="photo/task-square.svg" alt="">
-                      <h6>20 سؤال</h6>
-                    </div>
-                    <div class="quesion">
-                      <img src="photo/timer.svg" alt="">
-                      <h6>60 دقيقة </h6>
-                    </div>
-                  </div>
-                  <div class="quesion">
-                    <img src="photo/calendar1.svg" alt="">
-                    <h6>السبت, 22مايو - 8:30 ص   </h6>
-                  </div>
-                </div>
-                <div class="exam">
-                  <div class="name-dropdown">
-                    <div class="name-mark">
-                      <h5>امتحان كيمياء دور اول</h5>
-                      <p>50 درجة</p>
-                    </div>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                          <img src="photo/Group 301.svg" alt=""   />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                      <div class="quesion">
+                        <img src="photo/timer.svg" alt="">
+                        <h6>60 دقيقة </h6>
                       </div>
-                  </div>
-                  <div class="time-quesion">
-                    <div class="quesion">
-                      <img src="photo/task-square.svg" alt="">
-                      <h6>20 سؤال</h6>
                     </div>
                     <div class="quesion">
-                      <img src="photo/timer.svg" alt="">
-                      <h6>60 دقيقة </h6>
+                      <img src="photo/calendar1.svg" alt="">
+                      <h6>السبت, 22مايو - 8:30 ص   </h6>
                     </div>
                   </div>
-                  <div class="quesion">
-                    <img src="photo/calendar1.svg" alt="">
-                    <h6>السبت, 22مايو - 8:30 ص   </h6>
-                  </div>
-                </div>
-                <div class="exam">
-                  <div class="name-dropdown">
-                    <div class="name-mark">
-                      <h5>امتحان كيمياء دور اول</h5>
-                      <p>50 درجة</p>
-                    </div>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                          <img src="photo/Group 301.svg" alt=""   />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                  <div class="exam">
+                    <div class="name-dropdown">
+                      <div class="name-mark">
+                        <h5>امتحان كيمياء دور اول</h5>
+                        <p>50 درجة</p>
                       </div>
-                  </div>
-                  <div class="time-quesion">
-                    <div class="quesion">
-                      <img src="photo/task-square.svg" alt="">
-                      <h6>20 سؤال</h6>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <img src="photo/Group 301.svg" alt=""   />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
                     </div>
-                    <div class="quesion">
-                      <img src="photo/timer.svg" alt="">
-                      <h6>60 دقيقة </h6>
-                    </div>
-                  </div>
-                  <div class="quesion">
-                    <img src="photo/calendar1.svg" alt="">
-                    <h6>السبت, 22مايو - 8:30 ص   </h6>
-                  </div>
-                </div>
-                <div class="exam">
-                  <div class="name-dropdown">
-                    <div class="name-mark">
-                      <h5>امتحان كيمياء دور اول</h5>
-                      <p>50 درجة</p>
-                    </div>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                          <img src="photo/Group 301.svg" alt=""   />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <div class="time-quesion">
+                      <div class="quesion">
+                        <img src="photo/task-square.svg" alt="">
+                        <h6>20 سؤال</h6>
                       </div>
-                  </div>
-                  <div class="time-quesion">
-                    <div class="quesion">
-                      <img src="photo/task-square.svg" alt="">
-                      <h6>20 سؤال</h6>
-                    </div>
-                    <div class="quesion">
-                      <img src="photo/timer.svg" alt="">
-                      <h6>60 دقيقة </h6>
-                    </div>
-                  </div>
-                  <div class="quesion">
-                    <img src="photo/calendar1.svg" alt="">
-                    <h6>السبت, 22مايو - 8:30 ص   </h6>
-                  </div>
-                </div>
-                <div class="exam">
-                  <div class="name-dropdown">
-                    <div class="name-mark">
-                      <h5>امتحان كيمياء دور اول</h5>
-                      <p>50 درجة</p>
-                    </div>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                          <img src="photo/Group 301.svg" alt=""   />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                      <div class="quesion">
+                        <img src="photo/timer.svg" alt="">
+                        <h6>60 دقيقة </h6>
                       </div>
-                  </div>
-                  <div class="time-quesion">
-                    <div class="quesion">
-                      <img src="photo/task-square.svg" alt="">
-                      <h6>20 سؤال</h6>
                     </div>
                     <div class="quesion">
-                      <img src="photo/timer.svg" alt="">
-                      <h6>60 دقيقة </h6>
+                      <img src="photo/calendar1.svg" alt="">
+                      <h6>السبت, 22مايو - 8:30 ص   </h6>
                     </div>
                   </div>
-                  <div class="quesion">
-                    <img src="photo/calendar1.svg" alt="">
-                    <h6>السبت, 22مايو - 8:30 ص   </h6>
-                  </div>
-                </div>
-                <div class="exam">
-                  <div class="name-dropdown">
-                    <div class="name-mark">
-                      <h5>امتحان كيمياء دور اول</h5>
-                      <p>50 درجة</p>
-                    </div>
-                      <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                          <img src="photo/Group 301.svg" alt=""   />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                  <div class="exam">
+                    <div class="name-dropdown">
+                      <div class="name-mark">
+                        <h5>امتحان كيمياء دور اول</h5>
+                        <p>50 درجة</p>
                       </div>
-                  </div>
-                  <div class="time-quesion">
-                    <div class="quesion">
-                      <img src="photo/task-square.svg" alt="">
-                      <h6>20 سؤال</h6>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <img src="photo/Group 301.svg" alt=""   />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="time-quesion">
+                      <div class="quesion">
+                        <img src="photo/task-square.svg" alt="">
+                        <h6>20 سؤال</h6>
+                      </div>
+                      <div class="quesion">
+                        <img src="photo/timer.svg" alt="">
+                        <h6>60 دقيقة </h6>
+                      </div>
                     </div>
                     <div class="quesion">
-                      <img src="photo/timer.svg" alt="">
-                      <h6>60 دقيقة </h6>
+                      <img src="photo/calendar1.svg" alt="">
+                      <h6>السبت, 22مايو - 8:30 ص   </h6>
                     </div>
                   </div>
-                  <div class="quesion">
-                    <img src="photo/calendar1.svg" alt="">
-                    <h6>السبت, 22مايو - 8:30 ص   </h6>
+                  <div class="exam">
+                    <div class="name-dropdown">
+                      <div class="name-mark">
+                        <h5>امتحان كيمياء دور اول</h5>
+                        <p>50 درجة</p>
+                      </div>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <img src="photo/Group 301.svg" alt=""   />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="time-quesion">
+                      <div class="quesion">
+                        <img src="photo/task-square.svg" alt="">
+                        <h6>20 سؤال</h6>
+                      </div>
+                      <div class="quesion">
+                        <img src="photo/timer.svg" alt="">
+                        <h6>60 دقيقة </h6>
+                      </div>
+                    </div>
+                    <div class="quesion">
+                      <img src="photo/calendar1.svg" alt="">
+                      <h6>السبت, 22مايو - 8:30 ص   </h6>
+                    </div>
+                  </div>
+                  <div class="exam">
+                    <div class="name-dropdown">
+                      <div class="name-mark">
+                        <h5>امتحان كيمياء دور اول</h5>
+                        <p>50 درجة</p>
+                      </div>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <img src="photo/Group 301.svg" alt=""   />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="time-quesion">
+                      <div class="quesion">
+                        <img src="photo/task-square.svg" alt="">
+                        <h6>20 سؤال</h6>
+                      </div>
+                      <div class="quesion">
+                        <img src="photo/timer.svg" alt="">
+                        <h6>60 دقيقة </h6>
+                      </div>
+                    </div>
+                    <div class="quesion">
+                      <img src="photo/calendar1.svg" alt="">
+                      <h6>السبت, 22مايو - 8:30 ص   </h6>
+                    </div>
+                  </div>
+                  <div class="exam">
+                    <div class="name-dropdown">
+                      <div class="name-mark">
+                        <h5>امتحان كيمياء دور اول</h5>
+                        <p>50 درجة</p>
+                      </div>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <img src="photo/Group 301.svg" alt=""   />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="time-quesion">
+                      <div class="quesion">
+                        <img src="photo/task-square.svg" alt="">
+                        <h6>20 سؤال</h6>
+                      </div>
+                      <div class="quesion">
+                        <img src="photo/timer.svg" alt="">
+                        <h6>60 دقيقة </h6>
+                      </div>
+                    </div>
+                    <div class="quesion">
+                      <img src="photo/calendar1.svg" alt="">
+                      <h6>السبت, 22مايو - 8:30 ص   </h6>
+                    </div>
+                  </div>
+                  <div class="exam">
+                    <div class="name-dropdown">
+                      <div class="name-mark">
+                        <h5>امتحان كيمياء دور اول</h5>
+                        <p>50 درجة</p>
+                      </div>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <img src="photo/Group 301.svg" alt=""   />
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="time-quesion">
+                      <div class="quesion">
+                        <img src="photo/task-square.svg" alt="">
+                        <h6>20 سؤال</h6>
+                      </div>
+                      <div class="quesion">
+                        <img src="photo/timer.svg" alt="">
+                        <h6>60 دقيقة </h6>
+                      </div>
+                    </div>
+                    <div class="quesion">
+                      <img src="photo/calendar1.svg" alt="">
+                      <h6>السبت, 22مايو - 8:30 ص   </h6>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
-       
-
         <!-- content -->
       </section>
     </div>
@@ -866,7 +839,6 @@
                 "rgb(255 255 255)", // Border color for Branch 1
               ],
               borderWidth: 2,
-              borderRadius: 5,
             },
           ],
         };
@@ -1012,21 +984,21 @@
       };
 
       // Actions
-      const actions = [
-        {
-          name: "Randomize",
-          handler(chart) {
-            chart.data.datasets.forEach((dataset) => {
-              dataset.data = Utils.numbers({
-                count: chart.data.labels.length,
-                min: 0,
-                max: 200,
-              }); // Update data range here
-            });
-            chart.update();
-          },
-        },
-      ];
+      // const actions = [
+      //   {
+      //     name: "Randomize",
+      //     handler(chart) {
+      //       chart.data.datasets.forEach((dataset) => {
+      //         dataset.data = Utils.numbers({
+      //           count: chart.data.labels.length,
+      //           min: 0,
+      //           max: 200,
+      //         }); // Update data range here
+      //       });
+      //       chart.update();
+      //     },
+      //   },
+      // ];
 
       // Create the chart and add action buttons
       window.onload = function () {
