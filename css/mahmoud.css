@@ -1005,7 +1005,7 @@ svg.svg-inline--fa.fa-angles-right {
 }
 .add-course .filler .search-qr input {
   border: 0;
-  width: 90%;
+  width: 95%;
   outline: 0;
   padding: 0 0.5rem;
 }
@@ -1156,9 +1156,10 @@ svg.svg-inline--fa.fa-angles-right {
   font-family: "regular";
 }
 .btn-main .modal .modal-footer .btn {
-  padding: 1rem 9rem;
+  padding: .5rem 0;
   font-size: 1rem;
   font-family: "regular";
+  width: 100%;
 }
 /* .btn-main .modal .modal-footer a{
 width: 90%;
@@ -1472,6 +1473,7 @@ div[role="progressbar"]::before {
   background-position: left 0.75rem center !important;
   font-family: "regular";
   color: #576b74;
+  height: 55px;
 }
 .content table tbody .video img {
   width: 70px;
@@ -1577,6 +1579,9 @@ table tbody .end {
   font-family: "medium";
   margin: 0 1rem;
 }
+.checkbox{
+  text-align: end;
+}
 .index .content table thead .chose {
   display: flex;
   align-items: center;
@@ -1645,7 +1650,7 @@ table tbody .end {
 .index table tbody .icon-seting {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 .index table tbody .book {
   width: 30px;
@@ -2110,7 +2115,10 @@ table tbody .end {
   color: #5071eb;
 }
 .index .modal-dialog .modal-footer {
-  justify-content: space-between;
+  justify-content: space-between !important;
+}
+.index .modal-dialog .modal-footer .add-course{
+  width: 100%;
 }
 .index .modal-dialog .Transferring-student .img img {
   width: 70%;
@@ -2256,6 +2264,7 @@ table tbody .end {
   justify-content: space-between;
   align-items: end;
 }
+
 .index .modal-dialog .modal-contente table tbody .img img {
   width: 40px;
 }
@@ -2750,6 +2759,10 @@ canvas#myChart {
   overflow-y: scroll;
   height: 500px;
 }
+.Upcoming-exams .title h5{
+font-size: 1rem;
+font-family: "bold";
+}
 .calender {
   width: 100%;
 }
@@ -3022,7 +3035,22 @@ canvas#circel {
   top: 51%;
   left: 47%;
 }
-
+.modal-dialog {
+   /* margin-top: 6% !important; 
+  margin-right: 0 !important; */
+  max-width: 90%;
+  margin: 1rem auto !important;
+}
+.index .modal-dialog .modal-content .model-add-student .search-courses {
+  width: 75%;
+}
+.index .modal-dialog .modal-content .model-add-student .select-main {
+  width: 20%;
+}
+.index .modal-dialog .modal-content .model-add-student .more-slect {
+  flex-wrap: wrap;
+  gap: 10px;
+}
 }
 @media only screen and (max-width: 700px) {
   .index .Description-class {
@@ -3264,5 +3292,14 @@ canvas#circel {
 .index .Description-class .describion-video .title .cases {
   flex-wrap: wrap;
   margin-top: 1rem;
+}
+.index .modal-dialog .modal-content .model-add-student .search-courses {
+  width: 100%;
+}
+.index .modal-dialog .modal-content .model-add-student .select-main {
+  width: 40%;
+}
+.index .modal-dialog .modal-content .model-add-student .search-select {
+  flex-wrap: wrap;
 }
 }
