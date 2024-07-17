@@ -35,9 +35,9 @@
     <!-- ? Custom JavaScript -->
 
     <title>الدورات التعلميه الشهريه</title>
-        <!-- ? Favicon img -->
-        <link rel="icon" href="photo/Group 25861.png" type="image" />
-        <!-- ? Favicon img-->
+    <!-- ? Favicon img -->
+    <link rel="icon" href="photo/Group 25861.png" type="image" />
+    <!-- ? Favicon img-->
   </head>
   <body>
     <div class="d-flex sidemobile p-0">
@@ -59,12 +59,12 @@
               <span>الرئيسية</span>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link align-middle">
               <i class="fa-solid fa-id-card-clip ico"></i>
-              <span>المساعدين</span>
+              <span>الاحصائيات</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#" class="nav-link align-middle">
               <i class="fa-solid fa-graduation-cap ico"></i>
@@ -72,7 +72,25 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a href="Monthly_learning_courses.html" class="nav-link align-middle">
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span>الدورات التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="educational-stages.html" class="nav-link align-middle">
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span>المراحل التعليمية</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="educational-stages.html" class="nav-link align-middle">
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span> الدورات التعلميه </span>
+            </a>
+          </li> -->
+          <li class="nav-item">
+            <a href="all-student.html" class="nav-link align-middle">
               <i class="fa-solid fa-people-group ico"></i>
               <span>الطلاب</span>
             </a>
@@ -169,1010 +187,1008 @@
 
         <div class="index">
           <div class="content">
-            <div class="container">
-              <div class="adress">
-                <h4>الدورات التعلميه الشهريه</h4>
-                <a href="#">
-                  <button class="btn add">اضافة دورة تعليمية +</button>
-                </a>
+            <div class="adress">
+              <h4>الدورات التعلميه الشهريه</h4>
+              <a href="Add_monthly_educational_course.html">
+                <button class="btn">+ اضافة دورة تعليمية</button>
+              </a>
+            </div>
+            <div class="add-course">
+              <div class="filler">
+                <div class="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" placeholder="بحث" />
+                </div>
+                <div class="select">
+                  <select name="" id="">
+                    <option value="">جميع المراحل التعليمية</option>
+                    <option value="">التاريخ</option>
+                    <option value="">التاريخ</option>
+                    <option value="">التاريخ</option>
+                  </select>
+                </div>
+                <div class="select">
+                  <select name="" id="">
+                    <option value="">جميع الصفوف</option>
+                    <option value="">التاريخ</option>
+                    <option value="">التاريخ</option>
+                    <option value="">التاريخ</option>
+                  </select>
+                </div>
+                <div class="select">
+                  <select name="" id="">
+                    <option value="">جميع المواد التعليمية</option>
+                    <option value="">التاريخ</option>
+                    <option value="">التاريخ</option>
+                    <option value="">التاريخ</option>
+                  </select>
+                </div>
+                <div class="main-date">
+                  <input type="date" placeholder="التاريخ" />
+                </div>
               </div>
-              <div class="add-course">
-                <div class="filler">
-                  <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="بحث" />
-                  </div>
-                  <div class="select">
-                    <select name="" id="">
-                      <option value="">جميع المراحل التعليمية</option>
-                      <option value="">التاريخ</option>
-                      <option value="">التاريخ</option>
-                      <option value="">التاريخ</option>
-                    </select>
-                  </div>
-                  <div class="select">
-                    <select name="" id="">
-                      <option value="">جميع الصفوف</option>
-                      <option value="">التاريخ</option>
-                      <option value="">التاريخ</option>
-                      <option value="">التاريخ</option>
-                    </select>
-                  </div>
-                  <div class="select">
-                    <select name="" id="">
-                      <option value="">جميع المواد التعليمية</option>
-                      <option value="">التاريخ</option>
-                      <option value="">التاريخ</option>
-                      <option value="">التاريخ</option>
-                    </select>
-                  </div>
-                  <div class="main-date">
-                    <input type="date" placeholder="التاريخ" />
-                  </div>
+              <div class="table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">الدورة التعليمية</th>
+                      <th scope="col">المدرس</th>
+                      <th scope="col">المنصة</th>
+                      <th scope="col">المادة</th>
+                      <th scope="col">الصف</th>
+                      <th scope="col">التاريخ</th>
+                      <th scope="col">الاعدادات</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">502</th>
+                      <td>الدورة التعليمية الاولي</td>
+                      <td>Mr Ebrahim Abbas</td>
+                      <td>Eagle Online</td>
+                      <td>انجليزي - 2ث</td>
+                      <td>الصف الثاني الثانوي</td>
+                      <td>2024-05-02</td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="Course_details.html"
+                                ><i class="fa-solid fa-eye"></i>عرض تفاصيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-regular fa-pen-to-square"></i
+                                >تعديل تفاصيل الدورة
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="all-student.html"
+                                ><i class="fa-solid fa-people-group"></i>جميع
+                                الطلاب</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-user-doctor"></i>جميع
+                                الطلاب المحذوفين</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="course-exam.html"
+                                ><i class="fa-solid fa-sheet-plastic"></i>جميع
+                                الامتحانات</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-qrcode"></i>انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html"
+                                ><i class="fa-solid fa-barcode"></i> QR Code
+                                History</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-gear"></i>اعدادات امان
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="fa-solid fa-ban"></i>الغاء تفعيل
+                                الدورة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item text-danger" href="#"
+                                ><i class="fa-solid fa-trash-can delelt"></i>حذف
+                                الدورة</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagenation">
+                <div class="page">
+                  <select aria-label="Default select example">
+                    <option selected>10</option>
+                    <option value="1">20</option>
+                    <option value="2">30</option>
+                    <option value="3">40</option>
+                  </select>
+                  <label for="">Show Entries</label>
                 </div>
-                <div class="table-responsive">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">الدورة التعليمية</th>
-                        <th scope="col">المدرس</th>
-                        <th scope="col">المنصة</th>
-                        <th scope="col">المادة</th>
-                        <th scope="col">الصف</th>
-                        <th scope="col">التاريخ</th>
-                        <th scope="col">الاعدادات</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">502</th>
-                        <td>الدورة التعليمية الاولي</td>
-                        <td>Mr Ebrahim Abbas</td>
-                        <td>Eagle Online</td>
-                        <td>انجليزي - 2ث</td>
-                        <td>الصف الثاني الثانوي</td>
-                        <td>2024-05-02</td>
-                        <td>
-                          <div class="dropdown">
-                            <button
-                              class="btn dropdown-toggle"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-eye"></i>عرض تفاصيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-regular fa-pen-to-square"></i
-                                  >تعديل تفاصيل الدورة
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-people-group"></i>جميع
-                                  الطلاب</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-user-doctor"></i>جميع
-                                  الطلاب المحذوفين</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-sheet-plastic"></i>جميع
-                                  الامتحانات</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-qrcode"></i>انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-barcode"></i> QR Code
-                                  History</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-gear"></i>اعدادات امان
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  ><i class="fa-solid fa-ban"></i>الغاء تفعيل
-                                  الدورة</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item text-danger" href="#"
-                                  ><i class="fa-solid fa-trash-can delelt"></i
-                                  >حذف الدورة</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="pagenation">
-                  <div class="page">
-                    <select aria-label="Default select example">
-                      <option selected>10</option>
-                      <option value="1">20</option>
-                      <option value="2">30</option>
-                      <option value="3">40</option>
-                    </select>
-                    <label for="">Show Entries</label>
-                  </div>
 
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link" href="#">Previous</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <h4>Showing 1 to 24 of 24 entries</h4>
-                </div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#">Previous</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+                <h4>Showing 1 to 24 of 24 entries</h4>
               </div>
             </div>
           </div>

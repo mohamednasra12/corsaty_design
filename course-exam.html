@@ -35,9 +35,9 @@
     <!-- ? Custom JavaScript -->
 
     <title>امتحانات الدورة</title>
-        <!-- ? Favicon img -->
-        <link rel="icon" href="photo/Group 25861.png" type="image" />
-        <!-- ? Favicon img-->
+    <!-- ? Favicon img -->
+    <link rel="icon" href="photo/Group 25861.png" type="image" />
+    <!-- ? Favicon img-->
   </head>
   <body>
     <div class="d-flex sidemobile p-0">
@@ -59,12 +59,12 @@
               <span>الرئيسية</span>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link align-middle">
               <i class="fa-solid fa-id-card-clip ico"></i>
-              <span>المساعدين</span>
+              <span>الاحصائيات</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#" class="nav-link align-middle">
               <i class="fa-solid fa-graduation-cap ico"></i>
@@ -72,7 +72,28 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a
+              href="Monthly_learning_courses.html"
+              class="nav-link align-middle"
+            >
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span>الدورات التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="educational-stages.html" class="nav-link align-middle">
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span>المراحل التعليمية</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="educational-stages.html" class="nav-link align-middle">
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span> الدورات التعلميه </span>
+            </a>
+          </li> -->
+          <li class="nav-item">
+            <a href="all-student.html" class="nav-link align-middle">
               <i class="fa-solid fa-people-group ico"></i>
               <span>الطلاب</span>
             </a>
@@ -103,211 +124,241 @@
       <section class="index_cards">
         <!-- ======= Start navbar ======= -->
         <nav class="navbar">
-            <div class="logo-menu">
-              <div class="menu">
-                <i class="fa-solid fa-angles-right"></i>
-              </div>
-              <div class="name-page">
-               <h4>الدورات التعليمية / تفاصيل الدورة  / امتحانات الدورة</h4>
-              </div>
+          <div class="logo-menu">
+            <div class="menu">
+              <i class="fa-solid fa-angles-right"></i>
             </div>
-  
-            <div>
-              <div class="dropdown d-flex align-items-center">
-                <div class="changelocal d-inline-block">
-                  <div class="dropdown lang">
-                    <a
-                      class="btn dropdown-toggle"
-                      href="#"
-                      role="button"
-                      id="notification"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <!-- lang -->
-                      <i class="fa-regular fa-bell"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="notification">
-                      <li>
-                        <a class="dropdown-item"> الاشعارات </a>
-                      </li>
-                    </ul>
+            <div class="name-page">
+              <h4>الدورات التعليمية / تفاصيل الدورة / امتحانات الدورة</h4>
+            </div>
+          </div>
+
+          <div>
+            <div class="dropdown d-flex align-items-center">
+              <div class="changelocal d-inline-block">
+                <div class="dropdown lang">
+                  <a
+                    class="btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="notification"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <!-- lang -->
+                    <i class="fa-regular fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="notification">
+                    <li>
+                      <a class="dropdown-item"> الاشعارات </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="dropdown-toggle profile-btn"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="all-pro">
+                  <div class="profile">
+                    <img
+                      class="profile-img"
+                      src="photo/profilenav.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="emmil">
+                    <h4>mohamed nasra</h4>
+                    <p>mohame@gmail.com</p>
                   </div>
                 </div>
-                <button
-                  class="dropdown-toggle profile-btn"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <div class="all-pro">
-                    <div class="profile">
-                      <img
-                        class="profile-img"
-                        src="photo/profilenav.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="emmil">
-                      <h4>mohamed nasra</h4>
-                      <p>mohame@gmail.com</p>
-                    </div>
-                  </div>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li>
-                    <a class="dropdown-item" href="#">Reports</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Setting</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
             </div>
-          </nav>
+          </div>
+        </nav>
         <!-- ======= End navbar ======= -->
         <!-- content -->
 
         <div class="index">
           <div class="content">
-            <div class="container">
-              <div class="add-course">
-                <div class="filler-exam">
-                  <div class="search-exam">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="ابحث هنا.." />
-                  </div>
+            <div class="add-course">
+              <div class="filler-exam">
+                <div class="search-exam">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" placeholder="ابحث هنا.." />
                 </div>
-                <div class="table-responsive">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col"> اسم الطالب</th>
-                        <th scope="col">رقم الهاتف</th>
-                        <th scope="col">درجة الطالب</th>
-                        <th scope="col">تاريخ البدأ</th>
-                        <th scope="col"> ..</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">#87978</th>
-                        <td class="name"><h6>Jane Cooper</h6></td>
-                        <td>01211654789</td>
-                        <td>50/50</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td><div class="eye">
-                            <a href="#"><img src="photo/eye.svg" alt=""></a>
-                        </div></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#87978</th>
-                        <td class="name"><h6>Jane Cooper</h6></td>
-                        <td>01211654789</td>
-                        <td>50/50</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td><div class="eye">
-                            <a href="#"><img src="photo/eye.svg" alt=""></a>
-                        </div></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#87978</th>
-                        <td class="name"><h6>Jane Cooper</h6></td>
-                        <td>01211654789</td>
-                        <td>50/50</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td><div class="eye">
-                            <a href="#"><img src="photo/eye.svg" alt=""></a>
-                        </div></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#87978</th>
-                        <td class="name"><h6>Jane Cooper</h6></td>
-                        <td>01211654789</td>
-                        <td>50/50</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td><div class="eye">
-                            <a href="#"><img src="photo/eye.svg" alt=""></a>
-                        </div></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#87978</th>
-                        <td class="name"><h6>Jane Cooper</h6></td>
-                        <td>01211654789</td>
-                        <td>50/50</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td><div class="eye">
-                            <a href="#"><img src="photo/eye.svg" alt=""></a>
-                        </div></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#87978</th>
-                        <td class="name"><h6>Jane Cooper</h6></td>
-                        <td>01211654789</td>
-                        <td>50/50</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td><div class="eye">
-                            <a href="#"><img src="photo/eye.svg" alt=""></a>
-                        </div></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#87978</th>
-                        <td class="name"><h6>Jane Cooper</h6></td>
-                        <td>01211654789</td>
-                        <td>50/50</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td><div class="eye">
-                            <a href="#"><img src="photo/eye.svg" alt=""></a>
-                        </div></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#87978</th>
-                        <td class="name"><h6>Jane Cooper</h6></td>
-                        <td>01211654789</td>
-                        <td>50/50</td>
-                        <td>2024-05-13 12:43 PM</td>
-                        <td><div class="eye">
-                            <a href="#"><img src="photo/eye.svg" alt=""></a>
-                        </div></td>
-                      </tr>
-                    </tbody>
-                  </table>
+              </div>
+              <div class="table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">اسم الطالب</th>
+                      <th scope="col">رقم الهاتف</th>
+                      <th scope="col">درجة الطالب</th>
+                      <th scope="col">تاريخ البدأ</th>
+                      <th scope="col">..</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">#87978</th>
+                      <td class="name"><h6>Jane Cooper</h6></td>
+                      <td>01211654789</td>
+                      <td>50/50</td>
+                      <td>2024-05-13 12:43 PM</td>
+                      <td>
+                        <a href="quesion-student-details.html">
+                          <div class="eye">
+                            <img src="photo/eye.svg" alt="" />
+                          </div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#87978</th>
+                      <td class="name"><h6>Jane Cooper</h6></td>
+                      <td>01211654789</td>
+                      <td>50/50</td>
+                      <td>2024-05-13 12:43 PM</td>
+                      <td>
+                        <a href="quesion-student-details.html">
+                          <div class="eye">
+                            <img src="photo/eye.svg" alt="" />
+                          </div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#87978</th>
+                      <td class="name"><h6>Jane Cooper</h6></td>
+                      <td>01211654789</td>
+                      <td>50/50</td>
+                      <td>2024-05-13 12:43 PM</td>
+                      <td>
+                        <a href="quesion-student-details.html">
+                          <div class="eye">
+                            <img src="photo/eye.svg" alt="" />
+                          </div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#87978</th>
+                      <td class="name"><h6>Jane Cooper</h6></td>
+                      <td>01211654789</td>
+                      <td>50/50</td>
+                      <td>2024-05-13 12:43 PM</td>
+                      <td>
+                        <a href="quesion-student-details.html">
+                          <div class="eye">
+                            <img src="photo/eye.svg" alt="" />
+                          </div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#87978</th>
+                      <td class="name"><h6>Jane Cooper</h6></td>
+                      <td>01211654789</td>
+                      <td>50/50</td>
+                      <td>2024-05-13 12:43 PM</td>
+                      <td>
+                        <a href="quesion-student-details.html">
+                          <div class="eye">
+                            <img src="photo/eye.svg" alt="" />
+                          </div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#87978</th>
+                      <td class="name"><h6>Jane Cooper</h6></td>
+                      <td>01211654789</td>
+                      <td>50/50</td>
+                      <td>2024-05-13 12:43 PM</td>
+                      <td>
+                        <a href="quesion-student-details.html">
+                          <div class="eye">
+                            <img src="photo/eye.svg" alt="" />
+                          </div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#87978</th>
+                      <td class="name"><h6>Jane Cooper</h6></td>
+                      <td>01211654789</td>
+                      <td>50/50</td>
+                      <td>2024-05-13 12:43 PM</td>
+                      <td>
+                        <a href="quesion-student-details.html">
+                          <div class="eye">
+                            <img src="photo/eye.svg" alt="" />
+                          </div>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#87978</th>
+                      <td class="name"><h6>Jane Cooper</h6></td>
+                      <td>01211654789</td>
+                      <td>50/50</td>
+                      <td>2024-05-13 12:43 PM</td>
+                      <td>
+                        <a href="quesion-student-details.html">
+                          <div class="eye">
+                            <img src="photo/eye.svg" alt="" />
+                          </div>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagenation">
+                <div class="page">
+                  <select aria-label="Default select example">
+                    <option selected>10</option>
+                    <option value="1">20</option>
+                    <option value="2">30</option>
+                    <option value="3">40</option>
+                  </select>
+                  <label for="">Show Entries</label>
                 </div>
-                <div class="pagenation">
-                  <div class="page">
-                    <select aria-label="Default select example">
-                      <option selected>10</option>
-                      <option value="1">20</option>
-                      <option value="2">30</option>
-                      <option value="3">40</option>
-                    </select>
-                    <label for="">Show Entries</label>
-                  </div>
 
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link" href="#">Previous</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <h4>Showing 1 to 24 of 24 entries</h4>
-                </div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#">Previous</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+                <h4>Showing 1 to 24 of 24 entries</h4>
               </div>
             </div>
           </div>

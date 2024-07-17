@@ -72,12 +72,12 @@
               <span>الرئيسية</span>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link align-middle">
               <i class="fa-solid fa-id-card-clip ico"></i>
-              <span>المساعدين</span>
+              <span>الاحصائيات</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#" class="nav-link align-middle">
               <i class="fa-solid fa-graduation-cap ico"></i>
@@ -85,7 +85,25 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a href="Monthly_learning_courses.html" class="nav-link align-middle">
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span>الدورات التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="educational-stages.html" class="nav-link align-middle">
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span>المراحل التعليمية</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="educational-stages.html" class="nav-link align-middle">
+              <i class="fa-solid fa-graduation-cap ico"></i>
+              <span> الدورات التعلميه </span>
+            </a>
+          </li> -->
+          <li class="nav-item">
+            <a href="all-student.html" class="nav-link align-middle">
               <i class="fa-solid fa-people-group ico"></i>
               <span>الطلاب</span>
             </a>
@@ -121,7 +139,7 @@
               <i class="fa-solid fa-angles-right"></i>
             </div>
             <div class="name-page">
-              <h4>اضافة حصة</h4>
+              <h4> اضافة طالب جديد</h4>
             </div>
           </div>
 
@@ -185,278 +203,242 @@
 
         <div class="index">
           <div class="content">
-            <div class="container">
-              <div class="add-studen">
-                <!-- student name activation -->
-                <div class="Student-activation">
+            <div class="add-studen">
+              <!-- student name activation -->
+              <div class="Student-activation">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                  <div class="form-group">
+                    <label for="inputname">اسم الطالب</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputname"
+                      placeholder="اكتب اسم الطالب"
+                    />
+                  </div>
+                </div>
+                <div class="activation-toggle-main">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                    />
+                    <label class="form-check-label">تفعيل الطالب </label>
+                  </div>
+                </div>
+              </div>
+              <!-- number , email -->
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <div class="form-group">
+                    <label for="phone">رقم الجوال</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      placeholder="ادخل رقم الجوال"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1"
+                      >البريد الالكترونى</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="ادخل البريد الالكترونى"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="student-checkbox">
+                <div class="student-lable">
+                  <div class="contant-checkbox">
+                    <input
+                      type="checkbox"
+                      id="option1"
+                      onchange="toggleStage('option1')"
+                    />
+                    <p>تعليم اساسي</p>
+                  </div>
+                  <div class="contant-checkbox">
+                    <input
+                      type="checkbox"
+                      id="option2"
+                      onchange="toggleStage('option2')"
+                    />
+                    <p>تعليم جامعي</p>
+                  </div>
+                  <div class="contant-checkbox">
+                    <input
+                      type="checkbox"
+                      id="option3"
+                      onchange="toggleStage('option3')"
+                    />
+                    <p>تعليم حر</p>
+                  </div>
+                </div>
+                <!-- المحتوي الي هيظهر لما يختار نوع التعليم -->
+                <div class="student-contant">
                   <div class="col-lg-8 col-md-8 col-sm-12">
-                    <div class="form-group">
-                      <label for="inputname">اسم الطالب</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputname"
-                        placeholder="اكتب اسم الطالب"
-                      />
-                    </div>
-                  </div>
-                  <div class="activation-toggle-main">
-                    <div class="form-check form-switch">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        role="switch"
-                      />
-                      <label class="form-check-label">تفعيل الطالب </label>
-                    </div>
-                  </div>
-                </div>
-                <!-- number , email -->
-                <div class="row">
-                  <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="form-group">
-                      <label for="phone">رقم الجوال</label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="phone"
-                        name="phone"
-                        placeholder="ادخل رقم الجوال"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="form-group">
-                      <label for="exampleFormControlInput1"
-                        >البريد الالكترونى</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="ادخل البريد الالكترونى"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="student-checkbox">
-                  <div class="student-lable">
-                    <div class="contant-checkbox">
-                      <input
-                        type="checkbox"
-                        id="option1"
-                        onchange="toggleStage('option1')"
-                      />
-                      <p>تعليم اساسي</p>
-                    </div>
-                    <div class="contant-checkbox">
-                      <input
-                        type="checkbox"
-                        id="option2"
-                        onchange="toggleStage('option2')"
-                      />
-                      <p>تعليم جامعي</p>
-                    </div>
-                    <div class="contant-checkbox">
-                      <input
-                        type="checkbox"
-                        id="option3"
-                        onchange="toggleStage('option3')"
-                      />
-                      <p>تعليم حر</p>
-                    </div>
-                  </div>
-                  <!-- المحتوي الي هيظهر لما يختار نوع التعليم -->
-                  <div class="student-contant">
-                    <div class="col-lg-8 col-md-8 col-sm-12">
-                      <div id="stage1" class="stage">
-                        <div class="select-main">
-                          <label for="defaultSelect" class="form-label">
-                            المستوي التعليمي
-                          </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option selected>حكومي</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
+                    <div id="stage1" class="stage">
+                      <div class="select-main">
+                        <label for="defaultSelect" class="form-label">
+                          المستوي التعليمي
+                        </label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>حكومي</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          <!-- input group -->
+                          <div class="select-main">
+                            <label for="defaultSelect" class="form-label">
+                              المرحلة التعليمية
+                            </label>
+                            <select
+                              required
+                              class="selectpicker"
+                              multiple
+                              data-selected-text-format="count > 1"
+                              data-icon="bi bi-trash"
+                              data-live-search="true"
+                              data-placeholder="المرحلة التعليمية"
+                            >
+                              <option value="1">مرحلة ابتدائية</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <!-- input group -->
                         </div>
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6 col-sm-6">
-                            <!-- input group -->
-                            <div class="select-main">
-                              <label for="defaultSelect" class="form-label">
-                                المرحلة التعليمية
-                              </label>
-                              <select
-                                required
-                                class="selectpicker"
-                                multiple
-                                data-selected-text-format="count > 1"
-                                data-icon="bi bi-trash"
-                                data-live-search="true"
-                                data-placeholder="المرحلة التعليمية"
-                              >
-                                <option value="1">مرحلة ابتدائية</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                            </div>
-                            <!-- input group -->
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          <!-- input group -->
+                          <div class="select-main">
+                            <label for="defaultSelect" class="form-label">
+                              الصف الدراسي
+                            </label>
+                            <select
+                              required
+                              class="selectpicker"
+                              multiple
+                              data-selected-text-format="count > 1"
+                              data-icon="bi bi-trash"
+                              data-live-search="true"
+                              data-placeholder="المرحلة التعليمية"
+                            >
+                              <option value="1">الاول ابتدائي</option>
+                              <option value="2">الثاني ابتدائي</option>
+                              <option value="3">Three</option>
+                            </select>
                           </div>
-                          <div class="col-lg-6 col-md-6 col-sm-6">
-                            <!-- input group -->
-                            <div class="select-main">
-                              <label for="defaultSelect" class="form-label">
-                                الصف الدراسي
-                              </label>
-                              <select
-                                required
-                                class="selectpicker"
-                                multiple
-                                data-selected-text-format="count > 1"
-                                data-icon="bi bi-trash"
-                                data-live-search="true"
-                                data-placeholder="المرحلة التعليمية"
-                              >
-                                <option value="1">الاول ابتدائي</option>
-                                <option value="2">الثاني ابتدائي</option>
-                                <option value="3">Three</option>
-                              </select>
-                            </div>
-                            <!-- input group -->
-                          </div>
+                          <!-- input group -->
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12">
-                      <div id="stage2" class="stage">
-                        <div class="select-main">
-                          <label for="defaultSelect" class="form-label">
-                            المستوي التعليمي
-                          </label>
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option selected>خاص</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="select-main">
-                              <label for="defaultSelect" class="form-label">
-                                الجامعة
-                              </label>
-                              <select
-                                class="form-select"
-                                aria-label="Default select example"
-                              >
-                                <option selected>المنصورة</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="select-main">
-                              <label for="defaultSelect" class="form-label">
-                                الكلية
-                              </label>
-                              <select
-                                class="form-select"
-                                aria-label="Default select example"
-                              >
-                                <option selected>تجارة</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                            </div>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div id="stage2" class="stage">
+                      <div class="select-main">
+                        <label for="defaultSelect" class="form-label">
+                          المستوي التعليمي
+                        </label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>خاص</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          <div class="select-main">
+                            <label for="defaultSelect" class="form-label">
+                              الجامعة
+                            </label>
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>المنصورة</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6 col-sm-6">
-                            <!-- input group -->
-                            <div class="select-main">
-                              <label for="defaultSelect" class="form-label">
-                                القسم
-                              </label>
-                              <select
-                                required
-                                class="selectpicker"
-                                multiple
-                                data-selected-text-format="count > 1"
-                                data-icon="bi bi-trash"
-                                data-live-search="true"
-                                data-placeholder=" "
-                              >
-                                <option value="1">محاسبة</option>
-                                <option value="2">اقتصاد</option>
-                                <option value="3">Three</option>
-                              </select>
-                            </div>
-                            <!-- input group -->
-                          </div>
-                          <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="select-main">
-                              <label for="defaultSelect" class="form-label">
-                                الفرق
-                              </label>
-                              <select
-                                required
-                                class="selectpicker"
-                                multiple
-                                data-selected-text-format="count > 1"
-                                data-icon="bi bi-trash"
-                                data-live-search="true"
-                                data-placeholder=" "
-                              >
-                                <option value="1">فرقة اولي</option>
-                                <option value="2">one</option>
-                                <option value="3">Three</option>
-                              </select>
-                            </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          <div class="select-main">
+                            <label for="defaultSelect" class="form-label">
+                              الكلية
+                            </label>
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>تجارة</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12">
-                      <div id="stage3" class="stage">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          <!-- input group -->
                           <div class="select-main">
                             <label for="defaultSelect" class="form-label">
                               القسم
                             </label>
                             <select
-                              class="form-select"
-                              aria-label="Default select example"
+                              required
+                              class="selectpicker"
+                              multiple
+                              data-selected-text-format="count > 1"
+                              data-icon="bi bi-trash"
+                              data-live-search="true"
+                              data-placeholder="محاسبة "
                             >
-                              <option selected>هندسة</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
+                              <option value="1">محاسبة</option>
+                              <option value="2">اقتصاد</option>
                               <option value="3">Three</option>
                             </select>
                           </div>
+                          <!-- input group -->
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
                           <div class="select-main">
                             <label for="defaultSelect" class="form-label">
-                              التخصص
+                              الفرق
                             </label>
                             <select
-                              class="form-select"
-                              aria-label="Default select example"
+                              required
+                              class="selectpicker"
+                              multiple
+                              data-selected-text-format="count > 1"
+                              data-icon="bi bi-trash"
+                              data-live-search="true"
+                              data-placeholder=" فرقة اولي"
                             >
-                              <option selected>ميكانيكا</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
+                              <option value="1">فرقة اولي</option>
+                              <option value="2">one</option>
                               <option value="3">Three</option>
                             </select>
                           </div>
@@ -464,10 +446,44 @@
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="btn btn-primary">
-                    الاضافة والحفظ
-                  </button>
+                  <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div id="stage3" class="stage">
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="select-main">
+                          <label for="defaultSelect" class="form-label">
+                            القسم
+                          </label>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>هندسة</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="select-main">
+                          <label for="defaultSelect" class="form-label">
+                            التخصص
+                          </label>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>ميكانيكا</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <button type="button" class="btn btn-primary">
+                  الاضافة والحفظ
+                </button>
               </div>
             </div>
           </div>
