@@ -677,6 +677,7 @@ svg.svg-inline--fa.fa-angles-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
   width: 100%;
 }
 .index .buttons-add-quesions a {
@@ -1601,9 +1602,14 @@ table tbody .end {
 }
 .details-content {
   background-color: white;
-  margin: 1rem 1rem 1rem 0;
+  /* margin: 1rem 1rem 1rem 0; */
   padding: 1rem;
   margin: .5rem 1.5rem;
+}
+.details-contents {
+  background-color: white;
+  padding: 1rem;
+  margin: .5rem 1.5rem .5rem 0;
 }
 /* details-lesson */
 /* course exam */

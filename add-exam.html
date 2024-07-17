@@ -285,30 +285,30 @@
               </div>
             </form>
             <div class="buttons-add-quesions">
-              <a href="#">
+              
                 <button
                   class="btn add-quesion"
                   onclick="showContent('quesion1')"
                 >
                   + اضافة سؤال عام
                 </button>
-              </a>
-              <a href="#">
+             
+            
                 <button
                   class="btn add-quesion"
                   onclick="showContent('quesion2')"
                 >
                   + اضافة سؤال من بنك الاسئلة العام
                 </button>
-              </a>
-              <a href="#">
+            
+             
                 <button
                   class="btn add-quesion"
                   onclick="showContent('quesion3')"
                 >
                   + اضافة سؤال من بنك الاسئلة الخاص
                 </button>
-              </a>
+             
             </div>
             <!-- هنا علشان لو عاوز يضيف اسئله -->
             <div class="quesions" id="quesion1">
@@ -610,7 +610,7 @@
                     <label class="uploadphoto" for="photo">
                       <img
                         class="Default"
-                        id="photoPreview"
+                        id="photoPreviewtwo"
                         src="photo/import.png"
                         alt=""
                       />
@@ -621,7 +621,7 @@
                     </label>
                     <input
                       style="display: none"
-                      id="photo"
+                      id="phototwo"
                       type="file"
                       class="form-control"
                     />
@@ -888,7 +888,7 @@
                     <label class="uploadphoto" for="photo">
                       <img
                         class="Default"
-                        id="photoPreview"
+                        id="photoPreviewthree"
                         src="photo/import.png"
                         alt=""
                       />
@@ -899,7 +899,7 @@
                     </label>
                     <input
                       style="display: none"
-                      id="photo"
+                      id="photothree"
                       type="file"
                       class="form-control"
                     />
@@ -1190,6 +1190,31 @@
           }
         });
     </script>
+   <script>
+    // For the first section with id="phototwo"
+    document.getElementById("phototwo").addEventListener("change", function (event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          document.getElementById("photoPreviewtwo").src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  
+    // For the second section with id="photothree"
+    document.getElementById("photothree").addEventListener("change", function (event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          document.getElementById("photoPreviewthree").src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
      <!-- add img -->
     <script>
       document
