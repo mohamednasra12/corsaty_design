@@ -181,3 +181,23 @@ function showContent(contentId) {
   var selectedContent = document.getElementById(contentId);
   selectedContent.style.display = "block";
 }
+// ----------------------------------------------
+// reload img
+        document.getElementById("imageInput").addEventListener("change", function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imgPreviewContainer = document.getElementById("imgPreviewContainer");
+                    const imgPreview = document.getElementById("imgPreview");
+                    imgPreview.src = e.target.result;
+                    imgPreviewContainer.style.display = "block"; // Show the div
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        document.getElementById("imgPreviewContainer").addEventListener("click", function () {
+            const imgPreviewContainer = document.getElementById("imgPreviewContainer");
+            imgPreviewContainer.style.display = "none"; // Hide the div on click
+        });

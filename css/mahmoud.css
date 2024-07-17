@@ -55,7 +55,48 @@ svg.svg-inline--fa.fa-angles-right {
   font-family: "regular";
   color: #576b74;
 }
-
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+   padding: 0 1rem; 
+}
+/*  */
+.imgPreviewContainer {
+  display: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.imgPreview {
+  width: 80%;
+  height: 200px;
+  border-radius: 10px;
+  /* max-width: 100%;
+  height: auto; */
+}
+.triggerImage {
+  cursor: pointer;
+  max-width: 100px;
+  border: 1px solid #C1CAD6;
+  border-radius: 10px;
+  padding: .7rem;
+}
+.imageInput {
+  display: none;
+}
+.upload-img{
+  display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: .5rem 0;
+}
+.upload-img .form{
+ width: 80%;
+}
+.upload-img .form input{
+  background-color: white;
+  border: 1px solid #c1cad6;
+  border-radius: 10px;
+}
 /* index coursat details */
 .index .all-icons .details {
   display: flex;
@@ -82,7 +123,7 @@ svg.svg-inline--fa.fa-angles-right {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.index .content .explain p {
+.explain p {
   font-size: 1rem;
   font-family: "regular";
 }
@@ -320,6 +361,7 @@ svg.svg-inline--fa.fa-angles-right {
 }
 .index .all-corses .contant-course .vidio {
   position: relative;
+  height: 100%;
 }
 .index .all-corses .contant-course .vidio img {
   width: 100%;
@@ -341,7 +383,7 @@ svg.svg-inline--fa.fa-angles-right {
 }
 .index .all-corses .contant-course .vidio .watch-vidio {
   position: absolute;
-  bottom: 25px;
+  bottom: 15px;
   width: 100%;
 }
 .index .contant-course .description h4 {
@@ -469,6 +511,7 @@ svg.svg-inline--fa.fa-angles-right {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 30%;
+  height: 130px;
 }
 .all-corses .modal-content {
   max-width: 100%;
@@ -719,6 +762,21 @@ svg.svg-inline--fa.fa-angles-right {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.add-education{
+  background-color: #5071EB;
+    color: white;
+    font-family: "medium";
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+.add-education:hover{
+  background-color: rgb(80 113 235 / 80%);
+    color: white;
+transition: .5s;
+}
+.add-education a{
+    color: white;
 }
 .index .quesions .quesion-one .add-quesion .Default {
   width: 40px !important;
@@ -993,6 +1051,14 @@ svg.svg-inline--fa.fa-angles-right {
 /* details-student */
 
 /* table qr */
+.qr-select .btn-primary {
+  background-color: white;
+  color: #5071EB;
+  width: 70px !important;
+  border-radius: 8px;
+    height: 40px;
+    border: 2px solid #5071eb;
+}
 .add-course .filler .search-qr {
   border: 1px solid rgba(0, 0, 0, 0.103);
   border-radius: 10px;
@@ -1537,9 +1603,9 @@ table tbody .end {
   background-color: white;
   margin: 1rem 1rem 1rem 0;
   padding: 1rem;
+  margin: .5rem 1.5rem;
 }
 /* details-lesson */
-
 /* course exam */
 .index .filler-exam .search-exam {
   border: 1px solid rgba(0, 0, 0, 0.103);
@@ -1573,6 +1639,7 @@ table tbody .end {
 .index .btn-add-std .file {
   background-color: #ffffff;
   border: 1px solid #ebedf0;
+  color: #3D4C5E;
   border-radius: 4px;
   padding: 0.9rem 2rem;
   font-size: 1rem;
@@ -2095,9 +2162,9 @@ table tbody .end {
   justify-content: center;
   flex-direction: column;
 }
-.index .modal-dialog .modal-header {
+/* .index .modal-dialog .modal-header {
   margin-bottom: 2rem;
-}
+} */
 .index .modal-dialog .modal-footer .sure {
   width: 45%;
   background-color: #5071eb;
@@ -2328,7 +2395,45 @@ table tbody .end {
 .index .modal-dialog .modal-content .add-table .modal-footer .add-course {
   width: 100%;
 }
-
+/* corse-details */
+.qr-contant .img {
+text-align: center;
+margin: 0 auto;
+}
+.qr-contant .img img{
+ width: 150px;
+}
+.qr-contant .img h4{
+ font-size: 1.3rem;
+ font-family: "bold";
+}
+.qr-contant .form label{
+  font-size: 1rem;
+ font-family: "medium";
+}
+.qr-contant .form input{
+width: 100%;
+background-color: #F6F6FA;
+border: none;
+padding: 1rem;
+margin: .5rem;
+}
+.qr-save{
+  background-color: #5071EB;
+  color: white;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "bold";
+}
+.print-qr{
+  background-color: white;
+  border: 1px solid #5071EB;
+  color: #5071EB;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "bold";
+}
+/* corse-details */
 /* student-details */
 /* add new student */
 .index .Student-activation {
