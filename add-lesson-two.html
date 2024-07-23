@@ -79,7 +79,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="Monthly_learning_courses.html" class="nav-link align-middle">
+            <a
+              href="Monthly_learning_courses.html"
+              class="nav-link align-middle"
+            >
               <i class="fa-solid fa-graduation-cap ico"></i>
               <span>الدورات التعليمية</span>
             </a>
@@ -197,210 +200,223 @@
 
         <div class="index">
           <div class="content">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="toggle-main">
-                  <div class="form-check form-switch">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      role="switch"
-                    />
-                    <label class="form-check-label"
-                      >اضافة حصة مُخصصة
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <!-- this div show sitting -->
-              <div class="show-option" >
-                <div class="col-lg-7 col-md-10 col-sm-12">
-                  <div class="tabs-language">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <button
-                          class="nav-link active"
-                          id="home-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#home-tab-pane"
-                          type="button"
-                          role="tab"
-                          aria-controls="home-tab-pane"
-                          aria-selected="true"
-                        >
-                          اسم الحصة AR
-                        </button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button
-                          class="nav-link"
-                          id="profile-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#profile-tab-pane"
-                          type="button"
-                          role="tab"
-                          aria-controls="profile-tab-pane"
-                          aria-selected="false"
-                        >
-                          اسم الحصة EN
-                        </button>
-                      </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                      <div
-                        class="tab-pane fade show active"
-                        id="home-tab-pane"
-                        role="tabpanel"
-                        aria-labelledby="home-tab"
-                        tabindex="0"
-                      >
-                        <input
-                          class="form-control"
-                          type="text"
-                          placeholder="ادخل اسم الدورة"
-                        />
-                      </div>
-                      <div
-                        class="tab-pane fade"
-                        id="profile-tab-pane"
-                        role="tabpanel"
-                        aria-labelledby="profile-tab"
-                        tabindex="0"
-                      >
-                        <input
-                          id="English"
-                          class="form-control"
-                          type="text"
-                          placeholder="enter course name"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-7 col-md-10 col-sm-12">
-                  <div class="select-main">
-                    <label for="defaultSelect" class="form-label"
-                      >حدد الوحدة</label
-                    >
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>حدد الوحدة الخاصة بالحصه</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-10 col-sm-12">
-                  <div class="radio-main">
-                    <label for="" class="form-label">حالة الحصة</label>
-                    <div class="radio">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault1"
-                        checked
-                      />
-                      <div class="form-check">
-                        <label class="form-check-label" for="flexRadioDefault1"
-                          >مجاني</label
-                        >
-                      </div>
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault2"
-                      />
-                      <div class="form-check">
-                        <label class="form-check-label" for="flexRadioDefault2"
-                          >مدفوع</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-7 col-md-10 col-sm-12">
-                  <div class="form-group">
-                    <label for="formGroupExampleInput">سعر الحصة</label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="formGroupExampleInput"
-                      placeholder="ادخل السعر هنا ...."
-                    />
-                  </div>
-                </div>
-                <!-- this div show sitting -->
-                <!-- image and video -->
-                <div class="col-lg-7 col-md-10 col-sm-12">
-                  <div class="upload-main">
-                    <label for="video" class="form-label"
-                      >اضافة فيديو انترو</label
-                    >
-                    <label class="uploadphoto" for="video">
-                      <img
-                        class="Default"
-                        id="videoPreviewImg"
-                        src="photo/video-circle.jpg"
-                        alt=""
-                      />
-                      <video
-                        id="videoPreview"
-                        style="display: none"
-                        controls
-                      ></video>
-                      <h4>
-                        اسحب الفيديو واسقطه هنا اوقم بتحميل فيديو لتحميل الفديو
-                        من <span>هنا</span>
-                      </h4>
-                    </label>
-                    <input
-                      style="display: none"
-                      id="video"
-                      type="file"
-                      class="form-control"
-                    />
-                  </div>
-                </div>
-                <!-- scrpit for image and video -->
-                <script>
-                  document
-                    .getElementById("video")
-                    .addEventListener("change", function (event) {
-                      const file = event.target.files[0];
-                      if (file) {
-                        const video = document.getElementById("videoPreview");
-                        const img = document.getElementById("videoPreviewImg");
-                        img.style.display = "none"; // Hide the image preview
-                        video.style.display = "block"; // Show the video preview
-                        const reader = new FileReader();
-                        reader.onload = function (e) {
-                          video.src = e.target.result;
-                        };
-                        reader.readAsDataURL(file);
-                      }
-                    });
-                </script>
-                <!-- scrpit for image and video -->
-                <!-- image and video -->
-                <div class="btn-main">
-                  <button
-                    type="button"
-                    class="btn save"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    حفظ و تأكيد
-                  </button>
-                  <button type="button" class="btn delelt">
-                    حذف جميع البيانات
-                  </button>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="toggle-main">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                  />
+                  <label class="form-check-label">اضافة حصة مُخصصة </label>
                 </div>
               </div>
             </div>
+            <!-- this div show sitting -->
+            <div class="show-option">
+              <div class="col-lg-7 col-md-10 col-sm-12">
+                <div class="tabs-language">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#home-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="home-tab-pane"
+                        aria-selected="true"
+                      >
+                        اسم الحصة AR
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#profile-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="profile-tab-pane"
+                        aria-selected="false"
+                      >
+                        اسم الحصة EN
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="home-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                      tabindex="0"
+                    >
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="ادخل اسم الدورة"
+                      />
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="profile-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="profile-tab"
+                      tabindex="0"
+                    >
+                      <input
+                        id="English"
+                        class="form-control"
+                        type="text"
+                        placeholder="enter course name"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-10 col-sm-12">
+                <div class="select-main">
+                  <label for="defaultSelect" class="form-label"
+                    >حدد الوحدة</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>حدد الوحدة الخاصة بالحصه</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <!-- prise of lesson -->
+              <div class="col-lg-7 col-md-10 col-sm-12">
+                <div class="radio-main">
+                  <label for="" class="form-label"> حالة الحصة</label>
+                  <div class="radio">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                      checked
+                      onclick="hideField()"
+                    />
+                    <div class="form-check">
+                      <label class="form-check-label" for="flexRadioDefault1"
+                        >مجاني</label
+                      >
+                    </div>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      onclick="showField()"
+                    />
+                    <div class="form-check">
+                      <label class="form-check-label" for="flexRadioDefault2"
+                        >مدفوع</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- scrpit for price -->
+            <div
+              class="col-lg-7 col-md-10 col-sm-12"
+              id="price"
+              style="display: none"
+            >
+              <label for="" class="form-label">سعر الحصة </label>
+              <input
+                class="form-control"
+                type="number"
+                placeholder="ادخل السعر هنا ...."
+              />
+            </div>
+            <script>
+              function showField() {
+                document.getElementById("price").style.display = "block";
+              }
+              function hideField() {
+                document.getElementById("price").style.display = "none";
+              }
+            </script>
+            <!-- scrpit for price -->
+
+            <!-- this div show sitting -->
+            <!-- image and video -->
+            <div class="col-lg-7 col-md-10 col-sm-12">
+              <div class="upload-main">
+                <label for="video" class="form-label">
+                  اضافة فيديو انترو / صورة</label
+                >
+                <label class="uploadphoto" for="video">
+                    <img
+                    class="Default"
+                    id="videoPreviewImg"
+                    src="photo/video-circle.jpg"
+                    alt=""
+                  />
+                  <video
+                    id="videoPreview"
+                    style="display: none"
+                    controls
+                  ></video>
+                  <h4>
+                    اسحب الفيديو واسقطه هنا اوقم بتحميل فيديو لتحميل الفديو من
+                    <span>هنا</span>
+                  </h4>
+                </label>
+                <input
+                  style="display: none"
+                  id="video"
+                  type="file"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <!-- scrpit for image and video -->
+            <script>
+              document
+                .getElementById("video")
+                .addEventListener("change", function (event) {
+                  const file = event.target.files[0];
+                  if (file) {
+                    const video = document.getElementById("videoPreview");
+                    const img = document.getElementById("videoPreviewImg");
+                    img.style.display = "none"; // Hide the image preview
+                    video.style.display = "block"; // Show the video preview
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                      video.src = e.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                  }
+                });
+            </script>
+            <!-- scrpit for image and video -->
+            <!-- image and video -->
+            <div class="btn-main">
+              <button
+                type="button"
+                class="btn save"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                حفظ و تأكيد
+              </button>
+              <button type="button" class="btn delelt">
+                حذف جميع البيانات
+              </button>
+            </div>
+          </div>
         </div>
 
         <!-- content -->

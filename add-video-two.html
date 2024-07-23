@@ -283,47 +283,64 @@
                     <input type="number" name="number" placeholder="ادخل اللينك  هنا ...."/>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-10 col-sm-12">
-                  <div class="radio-main">
-                    <label for="" class="form-label">حالة الحصة</label>
-                    <div class="radio">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault1"
-                        checked
-                      />
-                      <div class="form-check">
-                        <label class="form-check-label" for="flexRadioDefault1"
-                          >مجاني</label
-                        >
-                      </div>
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault2"
-                      />
-                      <div class="form-check">
-                        <label class="form-check-label" for="flexRadioDefault2"
-                          >مدفوع</label
-                        >
-                      </div>
+
+              <!-- prise of lesson -->
+              <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="radio-main">
+                  <label for="" class="form-label"> حالة الحصة</label>
+                  <div class="radio">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                      checked
+                      onclick="hideField()"
+                    />
+                    <div class="form-check">
+                      <label class="form-check-label" for="flexRadioDefault1"
+                        >مجاني</label
+                      >
+                    </div>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      onclick="showField()"
+                    />
+                    <div class="form-check">
+                      <label class="form-check-label" for="flexRadioDefault2"
+                        >مدفوع</label
+                      >
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-8 col-md-10 col-sm-12">
-                  <div class="form-group">
-                    <label for="formGroupExampleInput">سعر الفيديو</label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="formGroupExampleInput"
-                      placeholder="ادخل السعر هنا ...."
-                    />
-                  </div>
-                </div>
+              </div>
+            </div>
+            <!-- scrpit for price -->
+            <div
+              class="col-lg-8 col-md-10 col-sm-12"
+              id="price"
+              style="display: none"
+            >
+              <label for="" class="form-label"> سعر الفيديو </label>
+              <input
+                class="form-control"
+                type="number"
+                placeholder="ادخل السعر هنا ...."
+              />
+            </div>
+            <script>
+              function showField() {
+                document.getElementById("price").style.display = "block";
+              }
+              function hideField() {
+                document.getElementById("price").style.display = "none";
+              }
+            </script>
+            <!-- scrpit for price -->
+
                 <div class="col-lg-8 col-md-10 col-sm-12">
                   <!-- upload file -->
                   <div class="upload-file">
