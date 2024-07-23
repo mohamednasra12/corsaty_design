@@ -3413,4 +3413,11 @@ canvas#circel {
 .index .modal-dialog .modal-content .model-add-student .search-select {
   flex-wrap: wrap;
 }
+.triggerImage {
+  cursor: pointer;
+  max-width: 100px;
+  border: 0px ;
+  border-radius: 10px;
+  padding: .3rem;
+}
 }

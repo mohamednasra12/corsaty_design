@@ -293,9 +293,10 @@
                   </select>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-10 col-sm-12">
+              <!-- prise of lesson -->
+              <div class="col-lg-7 col-md-10 col-sm-12">
                 <div class="radio-main">
-                  <label for="" class="form-label">حالة الحصة</label>
+                  <label for="" class="form-label"> حالة الحصة</label>
                   <div class="radio">
                     <input
                       class="form-check-input"
@@ -303,6 +304,7 @@
                       name="flexRadioDefault"
                       id="flexRadioDefault1"
                       checked
+                      onclick="hideField()"
                     />
                     <div class="form-check">
                       <label class="form-check-label" for="flexRadioDefault1"
@@ -314,6 +316,7 @@
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault2"
+                      onclick="showField()"
                     />
                     <div class="form-check">
                       <label class="form-check-label" for="flexRadioDefault2"
@@ -323,178 +326,189 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-7 col-md-10 col-sm-12">
-                <div class="form-group">
-                  <label for="formGroupExampleInput">سعر الحصة</label>
+            </div>
+            <!-- scrpit for price -->
+            <div
+              class="col-lg-7 col-md-10 col-sm-12"
+              id="price"
+              style="display: none"
+            >
+              <label for="" class="form-label">سعر الحصة </label>
+              <input
+                class="form-control"
+                type="number"
+                placeholder="ادخل السعر هنا ...."
+              />
+            </div>
+            <script>
+              function showField() {
+                document.getElementById("price").style.display = "block";
+              }
+              function hideField() {
+                document.getElementById("price").style.display = "none";
+              }
+            </script>
+            <!-- scrpit for price -->
+            <div class="col-lg-7 col-md-10 col-sm-12">
+              <!-- upload file -->
+              <div class="upload-file">
+                <p>ملف المذكرة</p>
+                <label for="fileInput" id="uploadLabel" class="img-file">
+                  <img src="photo/send-square.png" alt="" />
+                  <h4>
+                    اسحب الملف واسقطه هنا اوقم بتحميل ملف من
+                    <span>هنا</span>
+                  </h4>
+                </label>
+                <input
+                  type="file"
+                  id="fileInput"
+                  accept=".pdf,.doc,.docx"
+                  style="display: none"
+                />
+              </div>
+              <!-- upload file -->
+            </div>
+            <div class="col-lg-7 col-md-10 col-sm-12">
+              <div class="text-area-main">
+                <label for="" class="form-label">وصف الحصة</label>
+                <textarea
+                  name=""
+                  id=""
+                  class="discraption"
+                  placeholder="ادخل وصف الحصة"
+                ></textarea>
+              </div>
+            </div>
+            <!-- this div show sitting -->
+            <!-- image and video -->
+            <div class="row">
+              <div class="col-lg-5 col-md-10 col-sm-12">
+                <div class="upload-main">
+                  <label for="photo" class="form-label">اضافة صورة للحصة</label>
+                  <label class="uploadphoto" for="photo">
+                    <div class="img">
+                    <img
+                      class="Default"
+                      id="photoPreview"
+                      src="photo/uploadphoto1.png"
+                      alt=""
+                    />
+                  </div>
+                    <h4>
+                      سيتم وضع الصورة الافتراضية الخاصة بك ف حال عدم ارفاق صوره
+                      او قم اضافة صورة من <span>هنا</span>
+                    </h4>
+                  </label>
                   <input
-                    type="number"
+                    style="display: none"
+                    id="photo"
+                    type="file"
                     class="form-control"
-                    id="formGroupExampleInput"
-                    placeholder="ادخل السعر هنا ...."
                   />
                 </div>
               </div>
-              <div class="col-lg-7 col-md-10 col-sm-12">
-                <!-- upload file -->
-                <div class="upload-file">
-                  <p>ملف المذكرة</p>
-                  <label for="fileInput" id="uploadLabel" class="img-file">
-                    <img src="photo/send-square.png" alt="" />
+              <div class="col-lg-5 col-md-10 col-sm-12">
+                <div class="upload-main">
+                  <label for="video" class="form-label"
+                    >اضافة فيديو انترو</label
+                  >
+                  <label class="uploadphoto" for="video">
+                      <img
+                      class="Default"
+                      id="videoPreviewImg"
+                      src="photo/video-circle.jpg"
+                      alt=""
+                    />
+                    <video
+                      id="videoPreview"
+                      style="display: none"
+                      controls
+                    ></video>
                     <h4>
-                      اسحب الملف واسقطه هنا اوقم بتحميل ملف من
+                      اسحب الفيديو واسقطه هنا اوقم بتحميل فيديو لتحميل الفديو من
                       <span>هنا</span>
                     </h4>
                   </label>
                   <input
-                    type="file"
-                    id="fileInput"
-                    accept=".pdf,.doc,.docx"
                     style="display: none"
+                    id="video"
+                    type="file"
+                    class="form-control"
                   />
                 </div>
-                <!-- upload file -->
               </div>
-              <div class="col-lg-7 col-md-10 col-sm-12">
-                <div class="text-area-main">
-                  <label for="" class="form-label">وصف الحصة</label>
-                  <textarea
-                    name=""
-                    id=""
-                    class="discraption"
-                    placeholder="ادخل وصف الحصة"
-                  ></textarea>
-                </div>
-              </div>
-              <!-- this div show sitting -->
-              <!-- image and video -->
-              <div class="row">
-                <div class="col-lg-5 col-md-10 col-sm-12">
-                  <div class="upload-main">
-                    <label for="photo" class="form-label"
-                      >اضافة صورة للحصة</label
-                    >
-                    <label class="uploadphoto" for="photo">
-                      <img
-                        class="Default"
-                        id="photoPreview"
-                        src="photo/uploadphoto1.png"
-                        alt=""
-                      />
-                      <h4>
-                        سيتم وضع الصورة الافتراضية الخاصة بك ف حال عدم ارفاق
-                        صوره او قم اضافة صورة من <span>هنا</span>
-                      </h4>
-                    </label>
-                    <input
-                      style="display: none"
-                      id="photo"
-                      type="file"
-                      class="form-control"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-5 col-md-10 col-sm-12">
-                  <div class="upload-main">
-                    <label for="video" class="form-label"
-                      >اضافة فيديو انترو</label
-                    >
-                    <label class="uploadphoto" for="video">
-                      <img
-                        class="Default"
-                        id="videoPreviewImg"
-                        src="photo/video-circle.jpg"
-                        alt=""
-                      />
-                      <video
-                        id="videoPreview"
-                        style="display: none"
-                        controls
-                      ></video>
-                      <h4>
-                        اسحب الفيديو واسقطه هنا اوقم بتحميل فيديو لتحميل الفديو
-                        من <span>هنا</span>
-                      </h4>
-                    </label>
-                    <input
-                      style="display: none"
-                      id="video"
-                      type="file"
-                      class="form-control"
-                    />
-                  </div>
-                </div>
-              </div>
-              <!-- image and video -->
-              <div class="btn-main">
-                <button
-                  type="button"
-                  class="btn save"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  حفظ و تأكيد
-                </button>
-                <button type="button" class="btn delelt">
-                  حذف جميع البيانات
-                </button>
-                <!-- Button trigger modal -->
+            </div>
+            <!-- image and video -->
+            <div class="btn-main">
+              <button
+                type="button"
+                class="btn save"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                حفظ و تأكيد
+              </button>
+              <button type="button" class="btn delelt">
+                حذف جميع البيانات
+              </button>
+              <!-- Button trigger modal -->
 
-                <!-- Modal to btn-->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+              <!-- Modal to btn-->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-add-lesson">
+                        <div class="img">
+                          <lottie-player
+                            src="photo/Animation - 1721204982515.json"
+                            speed="1"
+                            style="width: 100px; height: 100px; margin: auto"
+                            loop
+                            autoplay
+                            direction="1"
+                            mode="normal"
+                          ></lottie-player>
+                        </div>
+
+                        <h5>تم اضافة الحصةبنجاح الى الدورة التعليمية</h5>
+                        <p>
+                          لقد قمت الآن باضافة الحصة الى قائمة الدورة التعليمية
+                          لديك ويمكنك التعديل على البيانات فيما بعد
+                        </p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="details-lesson.html">
+                        <button type="button" class="btn btn-primary">
+                          عرض تفاصيل الحصة
+                        </button>
+                      </a>
+                      <a href="#">
                         <button
                           type="button"
-                          class="btn-close"
+                          class="btn btn-light"
                           data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="modal-add-lesson">
-                          <div class="img">
-                            <lottie-player
-                              src="photo/Animation - 1721204982515.json"
-                              speed="1"
-                              style="width: 100px; height: 100px; margin: auto"
-                              loop
-                              autoplay
-                              direction="1"
-                              mode="normal"
-                            ></lottie-player>
-                          </div>
-
-                          <h5>تم اضافة الحصةبنجاح الى الدورة التعليمية</h5>
-                          <p>
-                            لقد قمت الآن باضافة الحصة الى قائمة الدورة التعليمية
-                            لديك ويمكنك التعديل على البيانات فيما بعد
-                          </p>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <a href="details-lesson.html">
-                          <button type="button" class="btn btn-primary">
-                            عرض تفاصيل الحصة
-                          </button>
-                        </a>
-                        <a href="#">
-                          <button
-                            type="button"
-                            class="btn btn-light"
-                            data-bs-dismiss="modal"
-                          >
-                            تعديل البيانات
-                          </button>
-                        </a>
-                      </div>
+                        >
+                          تعديل البيانات
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
