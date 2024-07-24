@@ -727,7 +727,7 @@ svg.svg-inline--fa.fa-trash-can.delelt {
 }
 /* add course */
 /* course details */
-.course-details {
+.img-review {
   position: relative;
 }
 .course-img {
@@ -973,6 +973,10 @@ button.btn.edit {
   .add-course .main-date {
     width: 100%;
   }
+  .img-review {
+    width: 50%;
+    margin: 0 auto;
+}
 }
 
 @media only screen and (max-width: 425px) {

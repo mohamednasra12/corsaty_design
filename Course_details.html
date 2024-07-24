@@ -54,7 +54,7 @@
             <img class="img-logo" src="photo/logosidebar.png" alt="" />
           </div>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a href="Course_details.html" class="nav-link align-middle">
               <i class="fa-solid fa-house-user ico"></i>
               <span>الرئيسية</span>
             </a>
@@ -112,7 +112,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link align-middle">
+            <a href="#" class="nav-link align-middle" onclick="remove()">
               <i class="fa-solid fa-right-from-bracket ico"></i>
               <span>تسجيل الخروج</span>
             </a>
@@ -196,9 +196,15 @@
             <div class="col-lg-4 col-md-12 col-sm-12">
               <div class="details-contents">
                 <div class="course-details">
-                  <img class="course-img" src="photo/corsedetals.png" alt="" />
-                  <div class="youtube-mian">
-                    <img class="youtube" src="photo/youtube.svg" alt="" />
+                  <div class="img-review">
+                    <img
+                      class="course-img"
+                      src="photo/corsedetals.png"
+                      alt=""
+                    />
+                    <div class="youtube-mian">
+                      <img class="youtube" src="photo/youtube.svg" alt="" />
+                    </div>
                   </div>
                   <div class="text-details">
                     <h4>المراجعة النهائية للأناتومي</h4>
@@ -331,12 +337,38 @@
                         </div>
                       </a>
                     </div>
-
-                    <a href="#">
-                      <div class="arrow">
-                        <i class="fa-solid fa-chevron-left"></i>
+                    <div class="total-exams">
+                      <div class="all-contant">
+                        <div class="img-sex">
+                          <!-- <img src="photo/g.svg" alt="" /> -->
+                        </div>
+                        <div class="explain">
+                          <h5>الطلاب المشتركين</h5>
+                          <p>120</p>
+                        </div>
                       </div>
-                    </a>
+                      <a href="#">
+                        <div class="arrow">
+                          <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="total-exams">
+                      <div class="all-contant">
+                        <div class="img-seven">
+                          <img src="photo/profile-delete.svg" alt="" />
+                        </div>
+                        <div class="explain">
+                          <h5>اجمالي فيديوهات اللايف</h5>
+                          <p>55</p>
+                        </div>
+                      </div>
+                      <a href="#">
+                        <div class="arrow">
+                          <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -351,65 +383,74 @@
                     <div class="icons">
                       <!-- divide all four icon to control it -->
                       <div class="divide-icon">
-                        <div class="edit-course">
-                          <a href="add-exam.html">
-                            <div class="img">
-                              <img src="photo/q.svg" alt="" />
-                            </div>
-                          </a>
-                        </div>
-                        <div class="edit-course">
-                          <a href="Participating-students.html">
-                            <div class="img">
-                              <img src="photo/w.svg" alt="" />
-                            </div>
-                          </a>
-                        </div>
-                        <div class="edit-course">
-                          <a href="Course-table.html">
-                            <div class="img">
-                              <img src="photo/e.svg" alt="" />
-                            </div>
-                          </a>
-                        </div>
-                        <div class="edit-course">
-                          <div class="dropdown">
-                            <a
-                              class="btn btn-primary dropdown-toggle"
-                              href="#"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <img src="photo/scan-barcode1.svg" alt="" />
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="#"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#construction-qr"
-                                >
-                                  <img src="photo/scan.svg" alt="" />انشاء QR
-                                  Code</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="table-Qr.html">
-                                  <img src="photo/scan-barcode2.svg" alt="" />QR
-                                  Code History</a
-                                >
-                              </li>
-                            </ul>
+                        <a href="add-exam.html">
+                          <div class="img">
+                            <img src="photo/q.svg" alt="" />
                           </div>
-                        </div>
+                        </a>
+                        <a href="#">
+                          <div class="img">
+                            <img src="photo/e.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="img">
+                            <img src="photo/setting-2.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="img">
+                            <img src="photo/w.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="img-user">
+                            <img src="photo/user-minus.svg" alt="" />
+                          </div>
+                        </a>
                       </div>
-                      <a href="#">
-                        <div class="arrow">
-                          <i class="fa-solid fa-chevron-left"></i>
+                      <div class="divide-icon">
+                        <div class="dropdown">
+                          <a
+                            class="btn btn-primary dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="photo/scan-barcode1.svg" alt="" />
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#construction-qr"
+                              >
+                                <img src="photo/scan.svg" alt="" />انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html">
+                                <img src="photo/scan-barcode2.svg" alt="" />QR
+                                Code History</a
+                              >
+                            </li>
+                          </ul>
                         </div>
-                      </a>
+                        <a href="#">
+                          <div class="block-student">
+                            <img src="photo/group.svg" alt="" />
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="delet-student">
+                            <img src="photo/de.svg" alt="" />
+                          </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -417,101 +458,6 @@
 
               <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="details-content">
-                  <div class="courses">
-                    <div class="title">
-                      <h4>الدورة التعليمية ل 3 ثانوي شهر 1</h4>
-                      <div class="icons">
-                        <!-- divide all four icon to control it -->
-                        <div class="divide-icon">
-                          <div class="edit-course">
-                            <a href="#">
-                              <div class="img">
-                                <img src="photo/q.svg" alt="" />
-                              </div>
-                            </a>
-                          </div>
-                          <div class="edit-course">
-                            <a href="course-exam.html">
-                              <div class="img">
-                                <img src="photo/w.svg" alt="" />
-                              </div>
-                            </a>
-                          </div>
-                          <div class="edit-course">
-                            <a href="#">
-                              <div class="img">
-                                <img src="photo/e.svg" alt="" />
-                              </div>
-                            </a>
-                          </div>
-                          <div class="qr-select">
-                            <div class="dropdown">
-                              <a
-                                class="btn btn-primary dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <img src="photo/scan-barcode1.svg" alt="" />
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a
-                                    class="dropdown-item"
-                                    href="#"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#construction-qr"
-                                  >
-                                    <img src="photo/scan.svg" alt="" />انشاء QR
-                                    Code</a
-                                  >
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="table-Qr.html">
-                                    <img
-                                      src="photo/scan-barcode2.svg"
-                                      alt=""
-                                    />QR Code History</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="divide-icon">
-                          <div class="edit-course">
-                            <a href="#">
-                              <div class="img">
-                                <img src="photo/q.svg" alt="" />
-                              </div>
-                            </a>
-                          </div>
-                          <div class="edit-course">
-                            <a href="#">
-                              <div class="img">
-                                <img src="photo/video-circle3.svg" alt="" />
-                              </div>
-                            </a>
-                          </div>
-                          <div class="block-cours">
-                            <a href="#">
-                              <div class="img">
-                                <img src="photo/y.svg" alt="" />
-                              </div>
-                            </a>
-                          </div>
-                          <div class="delet-cours">
-                            <a href="#">
-                              <div class="img" onclick="remove()">
-                                <img src="photo/delet.svg" alt="" />
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div class="all-corses">
                     <div class="courses">
                       <div class="head">
@@ -521,9 +467,7 @@
                         </div>
                         <div class="add-new-cours">
                           <div class="img">
-                            <a href="#">
-                              <img src="photo/search-normal.svg" alt=""
-                            /></a>
+                            <img src="photo/search-normal.svg" alt="" />
                           </div>
                           <a
                             class="btn btn-primary"
@@ -536,23 +480,23 @@
                       </div>
                       <div class="contant-course">
                         <div class="video-description">
-                          <div
-                            class="vidio"
-                            data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop"
-                          >
-                            <a href="#">
-                              <img src="photo/vidio.png" alt="" />
-                            </a>
-                            <div class="watch-vidio">
-                              <a href="#">
+                          <div class="vidio">
+                            <img src="photo/vidio.png" alt="" />
+                            <div
+                              class="watch-vidio"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              <div class="title-watch-vidio">
                                 <h6>
                                   <img src="photo/video-circle1.svg" alt="" />
                                   مشاهدة الفيديو
                                 </h6>
-                              </a>
+                              </div>
                             </div>
                           </div>
+                        </div>
+                        <div class="icons-description">
                           <div class="description">
                             <h4>
                               <p>01.</p>
@@ -623,94 +567,19 @@
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="icon-to-edit">
-                          <div class="divide-icon">
-                            <div class="edit-course">
+                          <div class="icons">
+                            <!-- divide all four icon to control it -->
+                            <div class="divide-icon">
                               <a href="#">
                                 <div class="img">
                                   <img src="photo/copy-left.svg" alt="" />
                                 </div>
                               </a>
-                            </div>
-                            <div class="edit-course">
                               <a href="#">
                                 <div class="img">
-                                  <img src="photo/e.svg" alt="" />
+                                  <img src="photo/note-22.svg" alt="" />
                                 </div>
                               </a>
-                            </div>
-                            <div class="edit-course">
-                              <div class="dropdown">
-                                <a
-                                  class="btn btn-primary dropdown-toggle"
-                                  href="#"
-                                  role="button"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <img src="photo/scan-barcode.svg" alt="" />
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a class="dropdown-item" href="#">
-                                      <img src="photo/scan.svg" alt="" />انشاء
-                                      QR Code</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">
-                                      <img
-                                        src="photo/scan-barcode2.svg"
-                                        alt=""
-                                      />QR Code History</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="edit-course">
-                              <a href="#">
-                                <div class="img">
-                                  <img src="photo/q.svg" alt="" />
-                                </div>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="divide-icon">
-                            <div class="edit-course">
-                              <a href="#">
-                                <div class="img">
-                                  <img src="photo/video-circle3.svg" alt="" />
-                                </div>
-                              </a>
-                            </div>
-                            <div class="block-cours">
-                              <a href="#">
-                                <div class="img">
-                                  <img src="photo/y.svg" alt="" />
-                                </div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="icon-to-edit">
-                          <div class="divide-icon">
-                            <div class="edit-course">
-                              <a href="course-exam.html">
-                                <div class="img">
-                                  <img src="photo/copy-left.svg" alt="" />
-                                </div>
-                              </a>
-                            </div>
-                            <div class="edit-course">
-                              <a href="#">
-                                <div class="img">
-                                  <img src="photo/e.svg" alt="" />
-                                </div>
-                              </a>
-                            </div>
-                            <div class="qr-select">
                               <div class="dropdown">
                                 <a
                                   class="btn btn-primary dropdown-toggle"
@@ -747,226 +616,137 @@
                                 </ul>
                               </div>
                             </div>
-                          </div>
-                          <div class="divide-icon">
-                            <div class="edit-course">
-                              <a href="#">
+                            <div class="divide-icon">
+                              <a href="edit-lesson.html">
                                 <div class="img">
                                   <img src="photo/q.svg" alt="" />
                                 </div>
                               </a>
-                            </div>
-                            <div class="edit-course">
                               <a href="#">
-                                <div class="img">
-                                  <img src="photo/video-circle3.svg" alt="" />
+                                <div
+                                  class="img"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop"
+                                >
+                                  <img src="photo/video-circle22.svg" alt="" />
                                 </div>
                               </a>
-                            </div>
-                            <div class="block-cours">
                               <a href="#">
-                                <div class="img">
-                                  <img src="photo/y.svg" alt="" />
+                                <div class="block-student">
+                                  <img src="photo/group.svg" alt="" />
                                 </div>
                               </a>
-                            </div>
-                            <div class="delet-cours">
                               <a href="#">
-                                <div class="img" onclick="remove()">
-                                  <img src="photo/delet.svg" alt="" />
+                                <div class="delet-student">
+                                  <img src="photo/de.svg" alt="" />
                                 </div>
                               </a>
                             </div>
                           </div>
                         </div>
-                        <div class="contant-course">
-                          <div class="video-description">
+                      </div>
+                      <div class="contant-course">
+                        <div class="video-description">
+                          <div class="vidio">
+                            <img src="photo/vidio.png" alt="" />
                             <div
-                              class="vidio"
+                              class="watch-vidio"
                               data-bs-toggle="modal"
                               data-bs-target="#staticBackdrop"
                             >
-                              <a href="#">
-                                <img src="photo/vidio.png" alt="" />
-                              </a>
-                              <div class="watch-vidio">
-                                <a href="#">
-                                  <h6>
-                                    <img src="photo/video-circle1.svg" alt="" />
-                                    مشاهدة الفيديو
-                                  </h6>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="description">
-                              <h4>
-                                <p>01.</p>
-                                الحصة الاولي - شرح الباب الاول
-                              </h4>
-                              <div class="details">
-                                <div class="price">
-                                  <h6>350 ر.س</h6>
-                                </div>
-                                <div class="price">
-                                  <h6>مخصصة</h6>
-                                </div>
-                                <div class="price">
-                                  <h6>الوحدة الاولي</h6>
-                                </div>
-                              </div>
-                              <div class="lesson">
-                                <div class="exams">
-                                  <div class="img">
-                                    <img src="photo/note-2.svg" alt="" />
-                                  </div>
-                                  <h5>
-                                    المذكرة :
-                                    <h6>تحضير الباب الاول pdf</h6>
-                                    <span>350 ر.س</span>
-                                  </h5>
-                                </div>
-                              </div>
-                              <div class="lesson">
-                                <div class="exams">
-                                  <div class="img">
-                                    <img src="photo/book-square.svg" alt="" />
-                                  </div>
-                                  <h5>
-                                    الامتحانات :
-                                    <h6>12 امتحان</h6>
-                                  </h5>
-                                </div>
-                              </div>
-                              <div class="lesson">
-                                <div class="exams">
-                                  <div class="img">
-                                    <img src="photo/video-circle.svg" alt="" />
-                                  </div>
-                                  <h5>
-                                    الفيديوهات : <a href="#">:13 فيديو </a>
-                                  </h5>
-                                </div>
-                              </div>
-                              <div class="lesson">
-                                <div class="exams">
-                                  <div class="img">
-                                    <img src="photo/video-circle.svg" alt="" />
-                                  </div>
-                                  <h5>
-                                    فيديوهات لايف :
-                                    <h6>12 فيديو</h6>
-                                  </h5>
-                                </div>
-                              </div>
-                              <div class="lesson">
-                                <div class="exams">
-                                  <div class="img">
-                                    <img src="photo/people.svg" alt="" />
-                                  </div>
-                                  <h5>
-                                    الطلاب
-                                    <h6>:95 طالب</h6>
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="icon-to-edit">
-                            <div class="divide-icon">
-                              <div class="edit-course">
-                                <a href="#">
-                                  <div class="img">
-                                    <img src="photo/copy-left.svg" alt="" />
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="edit-course">
-                                <a href="#">
-                                  <div class="img">
-                                    <img src="photo/e.svg" alt="" />
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="edit-course">
-                                <div class="dropdown">
-                                  <a
-                                    class="btn btn-primary dropdown-toggle"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                  >
-                                    <img src="photo/scan-barcode.svg" alt="" />
-                                  </a>
-                                  <ul class="dropdown-menu">
-                                    <li>
-                                      <a class="dropdown-item" href="#">
-                                        <img src="photo/scan.svg" alt="" />انشاء
-                                        QR Code</a
-                                      >
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item" href="#">
-                                        <img
-                                          src="photo/scan-barcode2.svg"
-                                          alt=""
-                                        />QR Code History</a
-                                      >
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="edit-course">
-                                <a href="#">
-                                  <div class="img">
-                                    <img src="photo/q.svg" alt="" />
-                                  </div>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="divide-icon">
-                              <div class="edit-course">
-                                <a href="#">
-                                  <div class="img">
-                                    <img src="photo/video-circle3.svg" alt="" />
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="block-cours">
-                                <a href="#">
-                                  <div class="img">
-                                    <img src="photo/y.svg" alt="" />
-                                  </div>
-                                </a>
-                              </div>
-                              <div class="delet-cours">
-                                <a href="#">
-                                  <div class="img" onclick="remove()">
-                                    <img src="photo/delet.svg" alt="" />
-                                  </div>
-                                </a>
+                              <div class="title-watch-vidio">
+                                <h6>
+                                  <img src="photo/video-circle1.svg" alt="" />
+                                  مشاهدة الفيديو
+                                </h6>
                               </div>
                             </div>
                           </div>
                         </div>
-
-                        <div class="icon-to-edit">
-                          <div class="divide-icon">
-                            <div class="edit-course">
-                              <a href="course-exam.html">
+                        <div class="icons-description">
+                          <div class="description">
+                            <h4>
+                              <p>01.</p>
+                              الحصة الاولي - شرح الباب الاول
+                            </h4>
+                            <div class="details">
+                              <div class="price">
+                                <h6>350 ر.س</h6>
+                              </div>
+                              <div class="price">
+                                <h6>مخصصة</h6>
+                              </div>
+                              <div class="price">
+                                <h6>الوحدة الاولي</h6>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/note-2.svg" alt="" />
+                                </div>
+                                <h5>
+                                  المذكرة :
+                                  <h6>تحضير الباب الاول pdf</h6>
+                                  <span>350 ر.س</span>
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/book-square.svg" alt="" />
+                                </div>
+                                <h5>
+                                  الامتحانات :
+                                  <h6>12 امتحان</h6>
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/video-circle.svg" alt="" />
+                                </div>
+                                <h5>الفيديوهات : <a href="#">:13 فيديو </a></h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/video-circle.svg" alt="" />
+                                </div>
+                                <h5>
+                                  فيديوهات لايف :
+                                  <h6>12 فيديو</h6>
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/people.svg" alt="" />
+                                </div>
+                                <h5>
+                                  الطلاب
+                                  <h6>:95 طالب</h6>
+                                </h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="icons">
+                            <!-- divide all four icon to control it -->
+                            <div class="divide-icon">
+                              <a href="#">
                                 <div class="img">
                                   <img src="photo/copy-left.svg" alt="" />
                                 </div>
                               </a>
-                            </div>
-                            <div class="edit-course">
                               <a href="#">
                                 <div class="img">
-                                  <img src="photo/e.svg" alt="" />
+                                  <img src="photo/note-22.svg" alt="" />
                                 </div>
                               </a>
-                            </div>
-                            <div class="qr-select">
                               <div class="dropdown">
                                 <a
                                   class="btn btn-primary dropdown-toggle"
@@ -1003,34 +783,363 @@
                                 </ul>
                               </div>
                             </div>
-                          </div>
-                          <div class="divide-icon">
-                            <div class="edit-course">
-                              <a href="#">
+                            <div class="divide-icon">
+                              <a href="edit-lesson.html">
                                 <div class="img">
                                   <img src="photo/q.svg" alt="" />
                                 </div>
                               </a>
-                            </div>
-
-                            <div class="edit-course">
                               <a href="#">
-                                <div class="img">
-                                  <img src="photo/video-circle3.svg" alt="" />
+                                <div
+                                  class="img"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop"
+                                >
+                                  <img src="photo/video-circle22.svg" alt="" />
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="block-student">
+                                  <img src="photo/group.svg" alt="" />
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="delet-student">
+                                  <img src="photo/de.svg" alt="" />
                                 </div>
                               </a>
                             </div>
-                            <div class="block-cours">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="contant-course">
+                        <div class="video-description">
+                          <div class="vidio">
+                            <img src="photo/vidio.png" alt="" />
+                            <div
+                              class="watch-vidio"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              <div class="title-watch-vidio">
+                                <h6>
+                                  <img src="photo/video-circle1.svg" alt="" />
+                                  مشاهدة الفيديو
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="icons-description">
+                          <div class="description">
+                            <h4>
+                              <p>01.</p>
+                              الحصة الاولي - شرح الباب الاول
+                            </h4>
+                            <div class="details">
+                              <div class="price">
+                                <h6>350 ر.س</h6>
+                              </div>
+                              <div class="price">
+                                <h6>مخصصة</h6>
+                              </div>
+                              <div class="price">
+                                <h6>الوحدة الاولي</h6>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/note-2.svg" alt="" />
+                                </div>
+                                <h5>
+                                  المذكرة :
+                                  <h6>تحضير الباب الاول pdf</h6>
+                                  <span>350 ر.س</span>
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/book-square.svg" alt="" />
+                                </div>
+                                <h5>
+                                  الامتحانات :
+                                  <h6>12 امتحان</h6>
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/video-circle.svg" alt="" />
+                                </div>
+                                <h5>الفيديوهات : <a href="#">:13 فيديو </a></h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/video-circle.svg" alt="" />
+                                </div>
+                                <h5>
+                                  فيديوهات لايف :
+                                  <h6>12 فيديو</h6>
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/people.svg" alt="" />
+                                </div>
+                                <h5>
+                                  الطلاب
+                                  <h6>:95 طالب</h6>
+                                </h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="icons">
+                            <!-- divide all four icon to control it -->
+                            <div class="divide-icon">
                               <a href="#">
                                 <div class="img">
-                                  <img src="photo/y.svg" alt="" />
+                                  <img src="photo/copy-left.svg" alt="" />
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="img">
+                                  <img src="photo/note-22.svg" alt="" />
+                                </div>
+                              </a>
+                              <div class="dropdown">
+                                <a
+                                  class="btn btn-primary dropdown-toggle"
+                                  href="#"
+                                  role="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img src="photo/scan-barcode1.svg" alt="" />
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="#"
+                                      data-bs-toggle="modal"
+                                      data-bs-target="#construction-qr"
+                                    >
+                                      <img src="photo/scan.svg" alt="" />انشاء
+                                      QR Code</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="table-Qr.html"
+                                    >
+                                      <img
+                                        src="photo/scan-barcode2.svg"
+                                        alt=""
+                                      />QR Code History</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="divide-icon">
+                              <a href="edit-lesson.html">
+                                <div class="img">
+                                  <img src="photo/q.svg" alt="" />
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div
+                                  class="img"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop"
+                                >
+                                  <img src="photo/video-circle22.svg" alt="" />
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="block-student">
+                                  <img src="photo/group.svg" alt="" />
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="delet-student">
+                                  <img src="photo/de.svg" alt="" />
                                 </div>
                               </a>
                             </div>
-                            <div class="delet-cours">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="contant-course">
+                        <div class="video-description">
+                          <div class="vidio">
+                            <img src="photo/vidio.png" alt="" />
+                            <div
+                              class="watch-vidio"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              <div class="title-watch-vidio">
+                                <h6>
+                                  <img src="photo/video-circle1.svg" alt="" />
+                                  مشاهدة الفيديو
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="icons-description">
+                          <div class="description">
+                            <h4>
+                              <p>01.</p>
+                              الحصة الاولي - شرح الباب الاول
+                            </h4>
+                            <div class="details">
+                              <div class="price">
+                                <h6>350 ر.س</h6>
+                              </div>
+                              <div class="price">
+                                <h6>مخصصة</h6>
+                              </div>
+                              <div class="price">
+                                <h6>الوحدة الاولي</h6>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/note-2.svg" alt="" />
+                                </div>
+                                <h5>
+                                  المذكرة :
+                                  <h6>تحضير الباب الاول pdf</h6>
+                                  <span>350 ر.س</span>
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/book-square.svg" alt="" />
+                                </div>
+                                <h5>
+                                  الامتحانات :
+                                  <h6>12 امتحان</h6>
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/video-circle.svg" alt="" />
+                                </div>
+                                <h5>الفيديوهات : <a href="#">:13 فيديو </a></h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/video-circle.svg" alt="" />
+                                </div>
+                                <h5>
+                                  فيديوهات لايف :
+                                  <h6>12 فيديو</h6>
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="lesson">
+                              <div class="exams">
+                                <div class="img">
+                                  <img src="photo/people.svg" alt="" />
+                                </div>
+                                <h5>
+                                  الطلاب
+                                  <h6>:95 طالب</h6>
+                                </h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="icons">
+                            <!-- divide all four icon to control it -->
+                            <div class="divide-icon">
                               <a href="#">
-                                <div class="img" onclick="remove()">
-                                  <img src="photo/delet.svg" alt="" />
+                                <div class="img">
+                                  <img src="photo/copy-left.svg" alt="" />
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="img">
+                                  <img src="photo/note-22.svg" alt="" />
+                                </div>
+                              </a>
+                              <div class="dropdown">
+                                <a
+                                  class="btn btn-primary dropdown-toggle"
+                                  href="#"
+                                  role="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img src="photo/scan-barcode1.svg" alt="" />
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="#"
+                                      data-bs-toggle="modal"
+                                      data-bs-target="#construction-qr"
+                                    >
+                                      <img src="photo/scan.svg" alt="" />انشاء
+                                      QR Code</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="table-Qr.html"
+                                    >
+                                      <img
+                                        src="photo/scan-barcode2.svg"
+                                        alt=""
+                                      />QR Code History</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="divide-icon">
+                              <a href="edit-lesson.html">
+                                <div class="img">
+                                  <img src="photo/q.svg" alt="" />
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div
+                                  class="img"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop"
+                                >
+                                  <img src="photo/video-circle22.svg" alt="" />
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="block-student">
+                                  <img src="photo/group.svg" alt="" />
+                                </div>
+                              </a>
+                              <a href="#">
+                                <div class="delet-student">
+                                  <img src="photo/de.svg" alt="" />
                                 </div>
                               </a>
                             </div>
