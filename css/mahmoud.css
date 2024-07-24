@@ -58,7 +58,7 @@ svg.svg-inline--fa.fa-angles-right {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-   padding: 0 1rem; 
+  padding: 0 1rem;
 }
 /*  */
 .imgPreviewContainer {
@@ -76,23 +76,23 @@ svg.svg-inline--fa.fa-angles-right {
 .triggerImage {
   cursor: pointer;
   max-width: 100px;
-  border: 1px solid #C1CAD6;
+  border: 1px solid #c1cad6;
   border-radius: 10px;
-  padding: .7rem;
+  padding: 0.7rem;
 }
 .imageInput {
   display: none;
 }
-.upload-img{
+.upload-img {
   display: flex;
-    justify-content: space-between;
-    align-items: end;
-    margin: .5rem 0;
+  justify-content: space-between;
+  align-items: end;
+  margin: 0.5rem 0;
 }
-.upload-img .form{
- width: 80%;
+.upload-img .form {
+  width: 80%;
 }
-.upload-img .form input{
+.upload-img .form input {
   background-color: white;
   border: 1px solid #c1cad6;
   border-radius: 10px;
@@ -180,11 +180,21 @@ svg.svg-inline--fa.fa-angles-right {
   justify-content: center;
   margin: 0 0.5rem;
 }
+.index .total .total-exams .img-sex {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
 .index .total .total-exams .img-seven {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgb(227 30 37 / 15%);
+  background-color: rgb(227 30 37 / 10%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,10 +245,10 @@ svg.svg-inline--fa.fa-angles-right {
 }
 .index .courses .icons {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: start;
+  flex-direction: column;
 }
-.index .courses .icons .edit-course .img {
+.index .courses .icons .img {
   width: 40px;
   height: 40px;
   border: 2px solid #5071eb;
@@ -247,6 +257,53 @@ svg.svg-inline--fa.fa-angles-right {
   align-items: center;
   justify-content: center;
   margin: 0.5rem;
+}
+.index .courses .icons .img-user {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e31e25;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.index .courses .icons .block-student {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #bb6400;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.index .courses .icons .delet-student {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e31e25;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.divide-icon .dropdown .btn-primary {
+  color: #5071eb;
+  background-color: white;
+  border: 2px solid #5071eb;
+  border-radius: 8px;
+  height: 40px;
+  margin: 0.5rem;
+}
+.divide-icon .dropdown .dropdown-menu {
+  text-align: start;
+  font-family: "regular";
+  font-size: 1rem;
+  color: black;
+}
+.divide-icon .dropdown img {
+  margin-left: 2rem;
 }
 .index .courses .icons .block-cours .img {
   width: 40px;
@@ -306,7 +363,7 @@ svg.svg-inline--fa.fa-angles-right {
 .index .courses .title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
 }
 .index .all-corses .head {
@@ -314,6 +371,7 @@ svg.svg-inline--fa.fa-angles-right {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 .index .all-corses .title-corses {
   display: flex;
@@ -334,6 +392,7 @@ svg.svg-inline--fa.fa-angles-right {
   font-size: 1rem;
   font-family: "medium";
   color: white;
+  background-color: #5071eb;
   padding: 0.7rem 1.8rem;
 }
 .index .all-corses .add-new-cours .img {
@@ -345,20 +404,21 @@ svg.svg-inline--fa.fa-angles-right {
   align-items: center;
   justify-content: center;
   margin: 0.5rem;
+  cursor: pointer;
 }
 .index .all-corses .courses {
   padding: 1rem;
   border: 1px solid rgb(178 187 198 / 50%);
   border-radius: 10px;
 }
-.index .all-corses .contant-course {
+/* .index .all-corses .contant-course {
   padding: 1rem 0.5rem;
   border: 2px dashed rgb(178 187 198 / 50%);
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
-}
+} */
 .index .all-corses .contant-course .vidio {
   position: relative;
   height: 100%;
@@ -382,9 +442,15 @@ svg.svg-inline--fa.fa-angles-right {
   width: 15%;
 }
 .index .all-corses .contant-course .vidio .watch-vidio {
+  width: 100%;
+}
+.title-watch-vidio {
   position: absolute;
   bottom: 15px;
-  width: 100%;
+  left: 10px;
+  width: 90%;
+  margin: 0 auto;
+  cursor: pointer;
 }
 .index .contant-course .description h4 {
   font-size: 0.9rem;
@@ -512,6 +578,19 @@ svg.svg-inline--fa.fa-angles-right {
   flex-wrap: wrap;
   width: 30%;
   height: 130px;
+}
+.contant-course {
+  display: flex;
+  border: 1.5px dashed #b2bbc6;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+.contant-course .video-description {
+  width: 30%;
+}
+.contant-course .icons-description {
+  display: flex;
 }
 .all-corses .modal-content {
   max-width: 100%;
@@ -764,20 +843,20 @@ svg.svg-inline--fa.fa-angles-right {
   align-items: center;
   justify-content: center;
 }
-.add-education{
-  background-color: #5071EB;
-    color: white;
-    font-family: "medium";
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+.add-education {
+  background-color: #5071eb;
+  color: white;
+  font-family: "medium";
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
-.add-education:hover{
+.add-education:hover {
   background-color: rgb(80 113 235 / 80%);
-    color: white;
-transition: .5s;
+  color: white;
+  transition: 0.5s;
 }
-.add-education a{
-    color: white;
+.add-education a {
+  color: white;
 }
 .index .quesions .quesion-one .add-quesion .Default {
   width: 40px !important;
@@ -1054,11 +1133,11 @@ transition: .5s;
 /* table qr */
 .qr-select .btn-primary {
   background-color: white;
-  color: #5071EB;
+  color: #5071eb;
   width: 70px !important;
   border-radius: 8px;
-    height: 40px;
-    border: 2px solid #5071eb;
+  height: 40px;
+  border: 2px solid #5071eb;
 }
 .add-course .filler .search-qr {
   border: 1px solid rgba(0, 0, 0, 0.103);
@@ -1223,7 +1302,7 @@ transition: .5s;
   font-family: "regular";
 }
 .btn-main .modal .modal-footer .btn {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-size: 1rem;
   font-family: "regular";
   width: 100%;
@@ -1603,13 +1682,14 @@ table tbody .end {
 .details-content {
   background-color: white;
   /* margin: 1rem 1rem 1rem 0; */
+  /* margin: .5rem 1.5rem; */
   padding: 1rem;
-  margin: .5rem 1.5rem;
+  margin: 0.8rem 0.5rem;
 }
 .details-contents {
   background-color: white;
   padding: 1rem;
-  margin: .5rem 1.5rem .5rem 0;
+  margin: 0.5rem 1.5rem 0.5rem 0;
 }
 /* details-lesson */
 /* course exam */
@@ -1645,14 +1725,14 @@ table tbody .end {
 .index .btn-add-std .file {
   background-color: #ffffff;
   border: 1px solid #ebedf0;
-  color: #3D4C5E;
+  color: #3d4c5e;
   border-radius: 4px;
   padding: 0.9rem 2rem;
   font-size: 1rem;
   font-family: "medium";
   margin: 0 1rem;
 }
-.checkbox{
+.checkbox {
   text-align: end;
 }
 .index .content table thead .chose {
@@ -2190,7 +2270,7 @@ table tbody .end {
 .index .modal-dialog .modal-footer {
   justify-content: space-between !important;
 }
-.index .modal-dialog .modal-footer .add-course{
+.index .modal-dialog .modal-footer .add-course {
   width: 100%;
 }
 .index .modal-dialog .Transferring-student .img img {
@@ -2403,38 +2483,38 @@ table tbody .end {
 }
 /* corse-details */
 .qr-contant .img {
-text-align: center;
-margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
-.qr-contant .img img{
- width: 150px;
+.qr-contant .img img {
+  width: 150px;
 }
-.qr-contant .img h4{
- font-size: 1.3rem;
- font-family: "bold";
+.qr-contant .img h4 {
+  font-size: 1.3rem;
+  font-family: "bold";
 }
-.qr-contant .form label{
+.qr-contant .form label {
   font-size: 1rem;
- font-family: "medium";
+  font-family: "medium";
 }
-.qr-contant .form input{
-width: 100%;
-background-color: #F6F6FA;
-border: none;
-padding: 1rem;
-margin: .5rem;
+.qr-contant .form input {
+  width: 100%;
+  background-color: #f6f6fa;
+  border: none;
+  padding: 1rem;
+  margin: 0.5rem;
 }
-.qr-save{
-  background-color: #5071EB;
+.qr-save {
+  background-color: #5071eb;
   color: white;
   width: 100%;
   font-size: 1.2rem;
   font-family: "bold";
 }
-.print-qr{
+.print-qr {
   background-color: white;
-  border: 1px solid #5071EB;
-  color: #5071EB;
+  border: 1px solid #5071eb;
+  color: #5071eb;
   width: 100%;
   font-size: 1.2rem;
   font-family: "bold";
@@ -2708,8 +2788,8 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
   font-family: "bold";
 }
 .index .all-courses .img img {
- width: 50px;
- height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .circle-chart {
   position: relative;
@@ -2764,7 +2844,7 @@ button.btn.dropdown-toggle.bs-placeholder.btn-light {
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
-  margin: 0.5rem 2rem .5rem 1rem;
+  margin: 0.5rem 2rem 0.5rem 1rem;
 }
 .line-charts {
   background-color: white;
@@ -2791,7 +2871,7 @@ canvas#myChart {
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
-  margin: 0.5rem 2rem .5rem 1rem;
+  margin: 0.5rem 2rem 0.5rem 1rem;
 }
 .table-charts .passed-exams .title {
   display: flex;
@@ -2870,9 +2950,9 @@ canvas#myChart {
   overflow-y: scroll;
   height: 471px;
 }
-.Upcoming-exams .title h5{
-font-size: 1rem;
-font-family: "bold";
+.Upcoming-exams .title h5 {
+  font-size: 1rem;
+  font-family: "bold";
 }
 .calender {
   width: 100%;
@@ -2936,31 +3016,31 @@ font-family: "bold";
   background-color: white;
   border: 1px solid #0084ff;
 }
-.charts-one{
-  background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    margin: 0.5rem 2rem .5rem 0;
-    height: 390px;
-}
-.charts-two{
-  background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    margin: 0.5rem 0 .5rem 0;
-    max-height: 400px;
-}
-.calender-exams{
+.charts-one {
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
-  margin: 0.5rem 0 .5rem 1rem;
+  margin: 0.5rem 2rem 0.5rem 0;
+  height: 390px;
 }
-.table-charts{
+.charts-two {
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
-  margin: 0.5rem 2rem .5rem 0;
+  margin: 0.5rem 0 0.5rem 0;
+  max-height: 400px;
+}
+.calender-exams {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+.table-charts {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0.5rem 2rem 0.5rem 0;
 }
 /* student statstics */
 
@@ -2978,7 +3058,11 @@ font-family: "bold";
     align-items: start;
   }
   .index .all-corses .contant-course {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  .contant-course .icons-description {
+    margin-top: 1rem;
+    justify-content: space-between;
   }
   .add-course .filler-course .search {
     width: 70%;
@@ -2986,26 +3070,40 @@ font-family: "bold";
   canvas#myChart {
     min-width: 360px !important;
     min-height: 300px !important;
-}
-.circle-chart .grade {
-  top: 60%;
-}
+  }
+  .circle-chart .grade {
+    top: 60%;
+  }
+  .contant-course .video-description {
+    width: 50%;
+    height: 25vh;
+  }
 }
 @media only screen and (max-width: 1150px) {
   canvas#myChart {
     min-width: 300px !important;
     min-height: 280px !important;
+  }
+  .charts-one {
+    height: 350px;
+  }
+  canvas#circel {
+    min-width: 200px !important;
+    min-height: 200px !important;
+  }
+  .circle-chart .grade {
+    left: 30%;
+  }
+  .contant-course .video-description {
+    width: 60%;
+    height: 30vh;
+  }
 }
-.charts-one {
-  height: 350px;
-}
-canvas#circel {
-  min-width: 200px !important;
-  min-height: 200px !important;
-}
-.circle-chart .grade {
-  left: 30%;
-}
+@media (max-width:1100px) and (min-width:990px) {
+  .contant-course .icons-description {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 }
 @media only screen and (max-width: 1024.98px) {
   .add-course .filler-course .search {
@@ -3059,7 +3157,10 @@ canvas#circel {
     width: 80%;
   }
   .index .all-corses .contant-course {
-    flex-direction: column-reverse;
+    flex-direction: row;
+  }
+  .contant-course .icons-description {
+    width: 100%;
   }
   .index .all-corses .contant-course .vidio {
     margin-bottom: 1rem;
@@ -3103,9 +3204,6 @@ canvas#circel {
   .index .Description-class .describion-video .title {
     justify-content: end;
   }
-  .course-details {
-    width: 40%;
-  }
 }
 @media only screen and (max-width: 800px) {
   .video-viwes {
@@ -3131,42 +3229,45 @@ canvas#circel {
   canvas#myChart {
     min-width: 200px !important;
     min-height: 280px !important;
-}
-canvas#circel {
-  max-width: 400px !important;
-  max-height: 300px !important;
-}
-.circle-chart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.circle-chart .grade {
-  top: 51%;
-  left: 47%;
-}
-.modal-dialog {
-   /* margin-top: 6% !important; 
+  }
+  canvas#circel {
+    max-width: 400px !important;
+    max-height: 300px !important;
+  }
+  .circle-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle-chart .grade {
+    top: 51%;
+    left: 47%;
+  }
+  .modal-dialog {
+    /* margin-top: 6% !important; 
   margin-right: 0 !important; */
-  max-width: 90%;
-  margin: 1rem auto !important;
-}
-.index .modal-dialog .modal-content .model-add-student .search-courses {
-  width: 75%;
-}
-.index .modal-dialog .modal-content .model-add-student .select-main {
-  width: 20%;
-}
-.index .modal-dialog .modal-content .model-add-student .more-slect {
-  flex-wrap: wrap;
-  gap: 10px;
-}
+    max-width: 90%;
+    margin: 1rem auto !important;
+  }
+  .index .modal-dialog .modal-content .model-add-student .search-courses {
+    width: 75%;
+  }
+  .index .modal-dialog .modal-content .model-add-student .select-main {
+    width: 20%;
+  }
+  .index .modal-dialog .modal-content .model-add-student .more-slect {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .contant-course .video-description {
+    width: 30%;
+  }
 }
 @media only screen and (max-width: 700px) {
   .index .Description-class {
     flex-direction: column;
-}
+  }
 }
 @media only screen and (max-width: 550px) {
   .add-course .filler-course {
@@ -3285,8 +3386,9 @@ canvas#circel {
     margin-bottom: 1rem;
   }
   .index .all-corses .contant-course .vidio {
-    width: 70%;
+    width: 100%;
     height: 40vh;
+    margin: 0 auto;
   }
   .index .contant-course .description {
     margin: 0;
@@ -3364,9 +3466,6 @@ canvas#circel {
     flex-direction: column;
     gap: 10px;
   }
-  .course-details {
-    width: 65%;
-  }
   .all-corses .modal-dialog {
     margin-right: 0 !important;
   }
@@ -3379,45 +3478,61 @@ canvas#circel {
   canvas#circel {
     max-width: 200px !important;
     max-height: 200px !important;
-}
-.circle-chart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.circle-chart .grade {
-  top: 60%;
-  left: 45%;
-}
-.charts-one {
-  height: 250px;
-}
-.index .Description-class .describion-video .Education-icontwo {
-  width: 100%;
-  flex-wrap: wrap;
-}
-.index .Description-class .describion-video .Education-icontwo .Education {
-  margin: .5rem 0;
-}
-.index .Description-class .describion-video .title .cases {
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-.index .modal-dialog .modal-content .model-add-student .search-courses {
-  width: 100%;
-}
-.index .modal-dialog .modal-content .model-add-student .select-main {
-  width: 40%;
-}
-.index .modal-dialog .modal-content .model-add-student .search-select {
-  flex-wrap: wrap;
-}
-.triggerImage {
-  cursor: pointer;
-  max-width: 100px;
-  border: 0px ;
-  border-radius: 10px;
-  padding: .3rem;
-}
+  }
+  .circle-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle-chart .grade {
+    top: 60%;
+    left: 45%;
+  }
+  .charts-one {
+    height: 250px;
+  }
+  .index .Description-class .describion-video .Education-icontwo {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .index .Description-class .describion-video .Education-icontwo .Education {
+    margin: 0.5rem 0;
+  }
+  .index .Description-class .describion-video .title .cases {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .index .modal-dialog .modal-content .model-add-student .search-courses {
+    width: 100%;
+  }
+  .index .modal-dialog .modal-content .model-add-student .select-main {
+    width: 40%;
+  }
+  .index .modal-dialog .modal-content .model-add-student .search-select {
+    flex-wrap: wrap;
+  }
+  .triggerImage {
+    cursor: pointer;
+    max-width: 100px;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0.3rem;
+  }
+  .index .all-corses .contant-course {
+    flex-direction: column;
+  }
+  .contant-course .video-description {
+    width: 100%;
+  }
+  .contant-course .icons-description {
+    flex-direction: column-reverse;
+    margin: 0.5rem 0;
+  }
+  .index .all-corses .contant-course .vidio .watch-vidio img {
+    width: 10%;
+  }
+  .index .contant-course .description {
+    margin-top: 0.5rem;
+  }
 }
