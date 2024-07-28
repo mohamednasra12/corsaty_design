@@ -24,33 +24,69 @@ function addratees() {
   });
 }
 
-function success(){
+function success() {
   Swal.fire({
-title: "تم اضافه مرحله تعليميه ",
-text: "",
-icon: "success"
-});
+    title: "تم اضافه مرحله تعليميه ",
+    text: "",
+    icon: "success",
+  });
 }
-function remove(){
+function remove() {
   Swal.fire({
-title: "Are you sure?",
-text: "You won't be able to revert this!",
-icon: "warning",
-showCancelButton: true,
-confirmButtonColor: "#3085d6",
-cancelButtonColor: "#d33",
-confirmButtonText: "Yes, delete it!"
-}).then((result) => {
-if (result.isConfirmed) {
-Swal.fire({
-title: "Deleted!",
-text: "Your file has been deleted.",
-icon: "success"
-});
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: "Deleted!",
+        text: "Your file has been deleted.",
+        icon: "success",
+      });
+    }
+  });
 }
-});
+function prohibition() {
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: "btn btn-success",
+      cancelButton: "btn btn-danger",
+    },
+    buttonsStyling: false,
+  });
+  swalWithBootstrapButtons
+    .fire({
+      title: "Are you sure?",
+      text: "Do you want to remove the ban?!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Yes, i want ",
+      cancelButtonText: "No, cancel!",
+      reverseButtons: true,
+    })
+    .then((result) => {
+      if (result.isConfirmed) {
+        swalWithBootstrapButtons.fire({
+          title: "prohibition!",
+          text: "Your student has been deleted.",
+          icon: "success",
+        });
+      } else if (
+        /* Read more about handling dismissals below */
+        result.dismiss === Swal.DismissReason.cancel
+      ) {
+        swalWithBootstrapButtons.fire({
+          title: "Cancelled",
+          // text: "Your imaginary file is safe :)",
+          icon: "error",
+        });
+      }
+    });
 }
-
 // sweetalart
 // =====================================================================
 // =====================================================================
@@ -168,7 +204,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // =====================================================================
 // =====================================================================
 
-
 // add quesion
 function showContent(contentId) {
   // Hide all contents
@@ -183,21 +218,27 @@ function showContent(contentId) {
 }
 // ----------------------------------------------
 // reload img
-        document.getElementById("imageInput").addEventListener("change", function (event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    const imgPreviewContainer = document.getElementById("imgPreviewContainer");
-                    const imgPreview = document.getElementById("imgPreview");
-                    imgPreview.src = e.target.result;
-                    imgPreviewContainer.style.display = "block"; // Show the div
-                };
-                reader.readAsDataURL(file);
-            }
-        });
+document
+  .getElementById("imageInput")
+  .addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const imgPreviewContainer = document.getElementById(
+          "imgPreviewContainer"
+        );
+        const imgPreview = document.getElementById("imgPreview");
+        imgPreview.src = e.target.result;
+        imgPreviewContainer.style.display = "block"; // Show the div
+      };
+      reader.readAsDataURL(file);
+    }
+  });
 
-        document.getElementById("imgPreviewContainer").addEventListener("click", function () {
-            const imgPreviewContainer = document.getElementById("imgPreviewContainer");
-            imgPreviewContainer.style.display = "none"; // Hide the div on click
-        });
+document
+  .getElementById("imgPreviewContainer")
+  .addEventListener("click", function () {
+    const imgPreviewContainer = document.getElementById("imgPreviewContainer");
+    imgPreviewContainer.style.display = "none"; // Hide the div on click
+  });
