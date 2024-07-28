@@ -686,6 +686,22 @@ svg.svg-inline--fa.fa-angles-right {
   outline: 0;
   padding: 0 0.5rem;
 }
+.remove-prohibition{
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid #BB6400;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.swal2-actions {
+  gap: 10px;
+  justify-content: space-between;
+}
 .index .content .table-responsive .icons {
   display: flex;
   align-items: center;
