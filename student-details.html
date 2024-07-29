@@ -512,7 +512,7 @@
                                   </div>
                                 </a>
                                 <a href="#">
-                                  <div class="block">
+                                  <div class="block" onclick="prohibition()">
                                     <img src="photo/slash.svg" alt="" />
                                   </div>
                                 </a>
@@ -581,7 +581,7 @@
                                   </div>
                                 </a>
                                 <a href="#">
-                                  <div class="block">
+                                  <div class="block" onclick="prohibition()">
                                     <img src="photo/slash.svg" alt="" />
                                   </div>
                                 </a>
@@ -656,7 +656,7 @@
                                   </div>
                                 </a>
                                 <a href="#">
-                                  <div class="block">
+                                  <div class="block" onclick="prohibition()">
                                     <img src="photo/slash.svg" alt="" />
                                   </div>
                                 </a>
@@ -724,11 +724,9 @@
                                     <img src="photo/chart.svg" alt="" />
                                   </div>
                                 </a>
-                                <a href="#">
-                                  <div class="block">
+                                  <div class="block" onclick="prohibition()">
                                     <img src="photo/slash.svg" alt="" />
                                   </div>
-                                </a>
                               </div>
                             </td>
                           </tr>
@@ -793,11 +791,9 @@
                                     <img src="photo/chart.svg" alt="" />
                                   </div>
                                 </a>
-                                <a href="#">
-                                  <div class="block">
+                                  <div class="block" onclick="prohibition()">
                                     <img src="photo/slash.svg" alt="" />
                                   </div>
-                                </a>
                               </div>
                             </td>
                           </tr>
@@ -868,11 +864,9 @@
                                     <img src="photo/chart.svg" alt="" />
                                   </div>
                                 </a>
-                                <a href="#">
-                                  <div class="block">
+                                  <div class="block" onclick="prohibition()">
                                     <img src="photo/slash.svg" alt="" />
                                   </div>
-                                </a>
                               </div>
                             </td>
                           </tr>
@@ -937,11 +931,9 @@
                                     <img src="photo/chart.svg" alt="" />
                                   </div>
                                 </a>
-                                <a href="#">
-                                  <div class="block">
+                                  <div class="block" onclick="prohibition()">
                                     <img src="photo/slash.svg" alt="" />
                                   </div>
-                                </a>
                               </div>
                             </td>
                           </tr>
@@ -1012,11 +1004,9 @@
                                     <img src="photo/chart.svg" alt="" />
                                   </div>
                                 </a>
-                                <a href="#">
-                                  <div class="block">
+                                  <div class="block" onclick="prohibition()">
                                     <img src="photo/slash.svg" alt="" />
                                   </div>
-                                </a>
                               </div>
                             </td>
                           </tr>
@@ -1039,593 +1029,1428 @@
                       <input type="text" placeholder="ابحث هنا.." />
                     </div>
                     <!-- if user want newRequests , accepted and blocked -->
-                    <div class="Requests">
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="options-outlined"
-                        id="success-outlined"
-                        autocomplete="off"
-                        checked
-                      />
-                      <label
-                        class="btn btn-outline-primary"
-                        for="success-outlined"
-                        >طلبات جديدة</label
-                      >
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="options-outlined"
-                        id="danger-outlined"
-                        autocomplete="off"
-                      />
-                      <label
-                        class="btn btn-outline-primary"
-                        for="danger-outlined"
-                        >طلبات جديدة</label
-                      >
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="options-outlined"
-                        id="Requests-outlined"
-                        autocomplete="off"
-                      />
-                      <label
-                        class="btn btn-outline-primary"
-                        for="Requests-outlined"
-                        >طلبات مرفوضة</label
-                      >
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="new-applications-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#new-applications"
+                          type="button"
+                          role="tab"
+                          aria-controls="new-applications"
+                          aria-selected="true"
+                        >
+                          طلبات جديدة
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="Requests-accepted-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#Requests-accepted"
+                          type="button"
+                          role="tab"
+                          aria-controls="Requests-accepted"
+                          aria-selected="false"
+                        >
+                          طلبات مقبولة
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="Requests-rejected-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#Requests-rejected"
+                          type="button"
+                          role="tab"
+                          aria-controls="Requests-rejected"
+                          aria-selected="false"
+                        >
+                          طلبات مرفوضة
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="new-applications"
+                      role="tabpanel"
+                      aria-labelledby="new-applications-tab"
+                    >
+                      <div class="add-course">
+                        <div class="table-responsive">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th scope="col">اسم المنصة</th>
+                                <th scope="col">المدرس</th>
+                                <th scope="col">السنه</th>
+                                <th scope="col">المادة</th>
+                                <th scope="col">الكورس</th>
+                                <th>تاريخ الانضمام</th>
+                                <th>.</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <div class="accept">
+                                      <a href="#"
+                                        ><h6>
+                                          <i class="fa-solid fa-check"></i> قبول
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <div class="block">
+                                      <a href="#">
+                                        <h6>
+                                          <i class="fa-solid fa-xmark"></i> رفض
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <!-- accept-request -->
+                                    <!-- <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div> -->
+                                    <!-- notaccept-reques -->
+                                    <!-- <div class="notaccept-request">
+                                      <a href="#"><h6>طلب مرفوض</h6></a>
+                                    </div> -->
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <div class="accept">
+                                      <a href="#"
+                                        ><h6>
+                                          <i class="fa-solid fa-check"></i> قبول
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <div class="block">
+                                      <a href="#">
+                                        <h6>
+                                          <i class="fa-solid fa-xmark"></i> رفض
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <!-- accept-request -->
+                                    <!-- <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div> -->
+                                    <!-- notaccept-reques -->
+                                    <!-- <div class="notaccept-request">
+                                      <a href="#"><h6>طلب مرفوض</h6></a>
+                                    </div> -->
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <div class="accept">
+                                      <a href="#"
+                                        ><h6>
+                                          <i class="fa-solid fa-check"></i> قبول
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <div class="block">
+                                      <a href="#">
+                                        <h6>
+                                          <i class="fa-solid fa-xmark"></i> رفض
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <!-- accept-request -->
+                                    <!-- <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div> -->
+                                    <!-- notaccept-reques -->
+                                    <!-- <div class="notaccept-request">
+                                      <a href="#"><h6>طلب مرفوض</h6></a>
+                                    </div> -->
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <div class="accept">
+                                      <a href="#"
+                                        ><h6>
+                                          <i class="fa-solid fa-check"></i> قبول
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <div class="block">
+                                      <a href="#">
+                                        <h6>
+                                          <i class="fa-solid fa-xmark"></i> رفض
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <!-- accept-request -->
+                                    <!-- <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div> -->
+                                    <!-- notaccept-reques -->
+                                    <!-- <div class="notaccept-request">
+                                      <a href="#"><h6>طلب مرفوض</h6></a>
+                                    </div> -->
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <div class="accept">
+                                      <a href="#"
+                                        ><h6>
+                                          <i class="fa-solid fa-check"></i> قبول
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <div class="block">
+                                      <a href="#">
+                                        <h6>
+                                          <i class="fa-solid fa-xmark"></i> رفض
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <!-- accept-request -->
+                                    <!-- <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div> -->
+                                    <!-- notaccept-reques -->
+                                    <!-- <div class="notaccept-request">
+                                      <a href="#"><h6>طلب مرفوض</h6></a>
+                                    </div> -->
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <div class="accept">
+                                      <a href="#"
+                                        ><h6>
+                                          <i class="fa-solid fa-check"></i> قبول
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <div class="block">
+                                      <a href="#">
+                                        <h6>
+                                          <i class="fa-solid fa-xmark"></i> رفض
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <!-- accept-request -->
+                                    <!-- <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div> -->
+                                    <!-- notaccept-reques -->
+                                    <!-- <div class="notaccept-request">
+                                      <a href="#"><h6>طلب مرفوض</h6></a>
+                                    </div> -->
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <div class="accept">
+                                      <a href="#"
+                                        ><h6>
+                                          <i class="fa-solid fa-check"></i> قبول
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <div class="block">
+                                      <a href="#">
+                                        <h6>
+                                          <i class="fa-solid fa-xmark"></i> رفض
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <!-- accept-request -->
+                                    <!-- <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div> -->
+                                    <!-- notaccept-reques -->
+                                    <!-- <div class="notaccept-request">
+                                      <a href="#"><h6>طلب مرفوض</h6></a>
+                                    </div> -->
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <div class="accept">
+                                      <a href="#"
+                                        ><h6>
+                                          <i class="fa-solid fa-check"></i> قبول
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <div class="block">
+                                      <a href="#">
+                                        <h6>
+                                          <i class="fa-solid fa-xmark"></i> رفض
+                                        </h6></a
+                                      >
+                                    </div>
+                                    <!-- accept-request -->
+                                    <!-- <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div> -->
+                                    <!-- notaccept-reques -->
+                                    <!-- <div class="notaccept-request">
+                                      <a href="#"><h6>طلب مرفوض</h6></a>
+                                    </div> -->
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="Requests-accepted"
+                      role="tabpanel"
+                      aria-labelledby="Requests-accepted-tab"
+                    >
+                      <!-- table -->
+                      <div class="add-course">
+                        <div class="table-responsive">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th scope="col">اسم المنصة</th>
+                                <th scope="col">المدرس</th>
+                                <th scope="col">السنه</th>
+                                <th scope="col">المادة</th>
+                                <th scope="col">الكورس</th>
+                                <th>تاريخ الانضمام</th>
+                                <th>.</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <!-- accept-request -->
+                                    <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <!-- accept-request -->
+                                    <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <!-- accept-request -->
+                                    <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <!-- accept-request -->
+                                    <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <!-- accept-request -->
+                                    <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <!-- accept-request -->
+                                    <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <!-- accept-request -->
+                                    <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <!-- اسم المنصة -->
+                                <th scope="row">
+                                  <div class="name-Platform">
+                                    <h6>التكاثر في الكائنات الحية</h6>
+                                  </div>
+                                </th>
+                                <!-- المدرس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>د.ابراهيم السيد</p>
+                                  </div>
+                                </td>
+                                <!-- السنه-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                  </div>
+                                </td>
+                                <!--المادة -->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>انجليزي</p>
+                                    <p>علمي علوم</p>
+                                  </div>
+                                </td>
+                                <!-- الكورس-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>شهر يونية المراجعة (4)</p>
+                                  </div>
+                                </td>
+                                <!-- تاريخ الانضمام-->
+                                <td>
+                                  <div class="name-teacher">
+                                    <p>2024-03-20</p>
+                                  </div>
+                                </td>
+                                <!-- حظر الطالب او قبول  -->
+                                <td>
+                                  <div class="block-accpet">
+                                    <!-- accept-request -->
+                                    <div class="accept-request">
+                                      <a href="#"><h6>طلب مقبول</h6></a>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                    class="tab-pane fade"
+                    id="Requests-rejected"
+                    role="tabpanel"
+                    aria-labelledby="Requests-rejected-tab"
+                  >
+                    <!-- table -->
+                    <div class="add-course">
+                      <div class="table-responsive">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th scope="col">اسم المنصة</th>
+                              <th scope="col">المدرس</th>
+                              <th scope="col">السنه</th>
+                              <th scope="col">المادة</th>
+                              <th scope="col">الكورس</th>
+                              <th>تاريخ الانضمام</th>
+                              <th>.</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <!-- اسم المنصة -->
+                              <th scope="row">
+                                <div class="name-Platform">
+                                  <h6>التكاثر في الكائنات الحية</h6>
+                                </div>
+                              </th>
+                              <!-- المدرس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>د.ابراهيم السيد</p>
+                                </div>
+                              </td>
+                              <!-- السنه-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                </div>
+                              </td>
+                              <!--المادة -->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>انجليزي</p>
+                                  <p>علمي علوم</p>
+                                </div>
+                              </td>
+                              <!-- الكورس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>شهر يونية المراجعة (4)</p>
+                                </div>
+                              </td>
+                              <!-- تاريخ الانضمام-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>2024-03-20</p>
+                                </div>
+                              </td>
+                              <!-- حظر الطالب او قبول  -->
+                              <td>
+                                <div class="block-accpet">
+                                  <!-- notaccept-reques -->
+                                  <div class="notaccept-request">
+                                    <a href="#"><h6>طلب مرفوض</h6></a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <!-- اسم المنصة -->
+                              <th scope="row">
+                                <div class="name-Platform">
+                                  <h6>التكاثر في الكائنات الحية</h6>
+                                </div>
+                              </th>
+                              <!-- المدرس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>د.ابراهيم السيد</p>
+                                </div>
+                              </td>
+                              <!-- السنه-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                </div>
+                              </td>
+                              <!--المادة -->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>انجليزي</p>
+                                  <p>علمي علوم</p>
+                                </div>
+                              </td>
+                              <!-- الكورس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>شهر يونية المراجعة (4)</p>
+                                </div>
+                              </td>
+                              <!-- تاريخ الانضمام-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>2024-03-20</p>
+                                </div>
+                              </td>
+                              <!-- حظر الطالب او قبول  -->
+                              <td>
+                                <div class="block-accpet">
+                                  <!-- notaccept-reques -->
+                                  <div class="notaccept-request">
+                                    <a href="#"><h6>طلب مرفوض</h6></a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <!-- اسم المنصة -->
+                              <th scope="row">
+                                <div class="name-Platform">
+                                  <h6>التكاثر في الكائنات الحية</h6>
+                                </div>
+                              </th>
+                              <!-- المدرس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>د.ابراهيم السيد</p>
+                                </div>
+                              </td>
+                              <!-- السنه-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                </div>
+                              </td>
+                              <!--المادة -->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>انجليزي</p>
+                                  <p>علمي علوم</p>
+                                </div>
+                              </td>
+                              <!-- الكورس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>شهر يونية المراجعة (4)</p>
+                                </div>
+                              </td>
+                              <!-- تاريخ الانضمام-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>2024-03-20</p>
+                                </div>
+                              </td>
+                              <!-- حظر الطالب او قبول  -->
+                              <td>
+                                <div class="block-accpet">
+                                  <!-- notaccept-reques -->
+                                  <div class="notaccept-request">
+                                    <a href="#"><h6>طلب مرفوض</h6></a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <!-- اسم المنصة -->
+                              <th scope="row">
+                                <div class="name-Platform">
+                                  <h6>التكاثر في الكائنات الحية</h6>
+                                </div>
+                              </th>
+                              <!-- المدرس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>د.ابراهيم السيد</p>
+                                </div>
+                              </td>
+                              <!-- السنه-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                </div>
+                              </td>
+                              <!--المادة -->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>انجليزي</p>
+                                  <p>علمي علوم</p>
+                                </div>
+                              </td>
+                              <!-- الكورس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>شهر يونية المراجعة (4)</p>
+                                </div>
+                              </td>
+                              <!-- تاريخ الانضمام-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>2024-03-20</p>
+                                </div>
+                              </td>
+                              <!-- حظر الطالب او قبول  -->
+                              <td>
+                                <div class="block-accpet">
+                                  <!-- notaccept-reques -->
+                                  <div class="notaccept-request">
+                                    <a href="#"><h6>طلب مرفوض</h6></a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <!-- اسم المنصة -->
+                              <th scope="row">
+                                <div class="name-Platform">
+                                  <h6>التكاثر في الكائنات الحية</h6>
+                                </div>
+                              </th>
+                              <!-- المدرس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>د.ابراهيم السيد</p>
+                                </div>
+                              </td>
+                              <!-- السنه-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                </div>
+                              </td>
+                              <!--المادة -->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>انجليزي</p>
+                                  <p>علمي علوم</p>
+                                </div>
+                              </td>
+                              <!-- الكورس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>شهر يونية المراجعة (4)</p>
+                                </div>
+                              </td>
+                              <!-- تاريخ الانضمام-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>2024-03-20</p>
+                                </div>
+                              </td>
+                              <!-- حظر الطالب او قبول  -->
+                              <td>
+                                <div class="block-accpet">
+                                  <!-- notaccept-reques -->
+                                  <div class="notaccept-request">
+                                    <a href="#"><h6>طلب مرفوض</h6></a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <!-- اسم المنصة -->
+                              <th scope="row">
+                                <div class="name-Platform">
+                                  <h6>التكاثر في الكائنات الحية</h6>
+                                </div>
+                              </th>
+                              <!-- المدرس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>د.ابراهيم السيد</p>
+                                </div>
+                              </td>
+                              <!-- السنه-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                </div>
+                              </td>
+                              <!--المادة -->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>انجليزي</p>
+                                  <p>علمي علوم</p>
+                                </div>
+                              </td>
+                              <!-- الكورس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>شهر يونية المراجعة (4)</p>
+                                </div>
+                              </td>
+                              <!-- تاريخ الانضمام-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>2024-03-20</p>
+                                </div>
+                              </td>
+                              <!-- حظر الطالب او قبول  -->
+                              <td>
+                                <div class="block-accpet">
+                                  <!-- notaccept-reques -->
+                                  <div class="notaccept-request">
+                                    <a href="#"><h6>طلب مرفوض</h6></a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <!-- اسم المنصة -->
+                              <th scope="row">
+                                <div class="name-Platform">
+                                  <h6>التكاثر في الكائنات الحية</h6>
+                                </div>
+                              </th>
+                              <!-- المدرس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>د.ابراهيم السيد</p>
+                                </div>
+                              </td>
+                              <!-- السنه-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                </div>
+                              </td>
+                              <!--المادة -->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>انجليزي</p>
+                                  <p>علمي علوم</p>
+                                </div>
+                              </td>
+                              <!-- الكورس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>شهر يونية المراجعة (4)</p>
+                                </div>
+                              </td>
+                              <!-- تاريخ الانضمام-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>2024-03-20</p>
+                                </div>
+                              </td>
+                              <!-- حظر الطالب او قبول  -->
+                              <td>
+                                <div class="block-accpet">
+                                  <!-- notaccept-reques -->
+                                  <div class="notaccept-request">
+                                    <a href="#"><h6>طلب مرفوض</h6></a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <!-- اسم المنصة -->
+                              <th scope="row">
+                                <div class="name-Platform">
+                                  <h6>التكاثر في الكائنات الحية</h6>
+                                </div>
+                              </th>
+                              <!-- المدرس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>د.ابراهيم السيد</p>
+                                </div>
+                              </td>
+                              <!-- السنه-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>الصف الثالث الثانوي ( علم علوم )</p>
+                                </div>
+                              </td>
+                              <!--المادة -->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>انجليزي</p>
+                                  <p>علمي علوم</p>
+                                </div>
+                              </td>
+                              <!-- الكورس-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>شهر يونية المراجعة (4)</p>
+                                </div>
+                              </td>
+                              <!-- تاريخ الانضمام-->
+                              <td>
+                                <div class="name-teacher">
+                                  <p>2024-03-20</p>
+                                </div>
+                              </td>
+                              <!-- حظر الطالب او قبول  -->
+                              <td>
+                                <div class="block-accpet">
+                                  <!-- notaccept-reques -->
+                                  <div class="notaccept-request">
+                                    <a href="#"><h6>طلب مرفوض</h6></a>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
-                  <!-- table -->
-                  <div class="add-course">
-                    <div class="table-responsive">
-                      <table>
-                        <thead>
-                          <tr>
-                            <th scope="col">اسم الدرس</th>
-                            <th scope="col">المدرس</th>
-                            <th scope="col">السنه</th>
-                            <th scope="col">المادة</th>
-                            <th scope="col">الكورس</th>
-                            <th>تاريخ الانضمام</th>
-                            <th>.</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <!-- اسم المنصة -->
-                            <th scope="row">
-                              <div class="name-Platform">
-                                <h6>التكاثر في الكائنات الحية</h6>
-                              </div>
-                            </th>
-                            <!-- المدرس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>د.ابراهيم السيد</p>
-                              </div>
-                            </td>
-                            <!-- السنه-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>الصف الثالث الثانوي ( علم علوم )</p>
-                              </div>
-                            </td>
-                            <!--المادة -->
-                            <td>
-                              <div class="name-teacher">
-                                <p>انجليزي</p>
-                                <p>علمي علوم</p>
-                              </div>
-                            </td>
-                            <!-- الكورس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>شهر يونية المراجعة (4)</p>
-                              </div>
-                            </td>
-                            <!-- تاريخ الانضمام-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>2024-03-20</p>
-                              </div>
-                            </td>
-                            <!-- حظر الطالب او قبول  -->
-                            <td>
-                              <div class="block-accpet">
-                                <div class="accept">
-                                  <a href="#"
-                                    ><h6>
-                                      <i class="fa-solid fa-check"></i> قبول
-                                    </h6></a
-                                  >
-                                </div>
-                                <div class="block">
-                                  <a href="#">
-                                    <h6>
-                                      <i class="fa-solid fa-xmark"></i> رفض
-                                    </h6></a
-                                  >
-                                </div>
-                                <!-- accept-request -->
-                                <!-- <div class="accept-request">
-                                  <a href="#"><h6>طلب مقبول</h6></a>
-                                </div> -->
-                                <!-- notaccept-reques -->
-                                <!-- <div class="notaccept-request">
-                                  <a href="#"><h6>طلب مرفوض</h6></a>
-                                </div> -->
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <!-- اسم المنصة -->
-                            <th scope="row">
-                              <div class="name-Platform">
-                                <h6>التكاثر في الكائنات الحية</h6>
-                              </div>
-                            </th>
-                            <!-- المدرس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>د.ابراهيم السيد</p>
-                              </div>
-                            </td>
-                            <!-- السنه-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>الصف الثالث الثانوي ( علم علوم )</p>
-                              </div>
-                            </td>
-                            <!--المادة -->
-                            <td>
-                              <div class="name-teacher">
-                                <p>انجليزي</p>
-                                <p>علمي علوم</p>
-                              </div>
-                            </td>
-                            <!-- الكورس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>شهر يونية المراجعة (4)</p>
-                              </div>
-                            </td>
-                            <!-- تاريخ الانضمام-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>2024-03-20</p>
-                              </div>
-                            </td>
-                            <!-- حظر الطالب او قبول  -->
-                            <td>
-                              <div class="block-accpet">
-                                <div class="accept">
-                                  <a href="#"
-                                    ><h6>
-                                      <i class="fa-solid fa-check"></i> قبول
-                                    </h6></a
-                                  >
-                                </div>
-                                <div class="block">
-                                  <a href="#">
-                                    <h6>
-                                      <i class="fa-solid fa-xmark"></i> رفض
-                                    </h6></a
-                                  >
-                                </div>
-                                <!-- accept-request -->
-                                <!-- <div class="accept-request">
-                                  <a href="#"><h6>طلب مقبول</h6></a>
-                                </div> -->
-                                <!-- notaccept-reques -->
-                                <!-- <div class="notaccept-request">
-                                  <a href="#"><h6>طلب مرفوض</h6></a>
-                                </div> -->
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <!-- اسم المنصة -->
-                            <th scope="row">
-                              <div class="name-Platform">
-                                <h6>التكاثر في الكائنات الحية</h6>
-                              </div>
-                            </th>
-                            <!-- المدرس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>د.ابراهيم السيد</p>
-                              </div>
-                            </td>
-                            <!-- السنه-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>الصف الثالث الثانوي ( علم علوم )</p>
-                              </div>
-                            </td>
-                            <!--المادة -->
-                            <td>
-                              <div class="name-teacher">
-                                <p>انجليزي</p>
-                                <p>علمي علوم</p>
-                              </div>
-                            </td>
-                            <!-- الكورس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>شهر يونية المراجعة (4)</p>
-                              </div>
-                            </td>
-                            <!-- تاريخ الانضمام-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>2024-03-20</p>
-                              </div>
-                            </td>
-                            <!-- حظر الطالب او قبول  -->
-                            <td>
-                              <div class="block-accpet">
-                                <div class="accept">
-                                  <a href="#"
-                                    ><h6>
-                                      <i class="fa-solid fa-check"></i> قبول
-                                    </h6></a
-                                  >
-                                </div>
-                                <div class="block">
-                                  <a href="#">
-                                    <h6>
-                                      <i class="fa-solid fa-xmark"></i> رفض
-                                    </h6></a
-                                  >
-                                </div>
-                                <!-- accept-request -->
-                                <!-- <div class="accept-request">
-                                  <a href="#"><h6>طلب مقبول</h6></a>
-                                </div> -->
-                                <!-- notaccept-reques -->
-                                <!-- <div class="notaccept-request">
-                                  <a href="#"><h6>طلب مرفوض</h6></a>
-                                </div> -->
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <!-- اسم المنصة -->
-                            <th scope="row">
-                              <div class="name-Platform">
-                                <h6>التكاثر في الكائنات الحية</h6>
-                              </div>
-                            </th>
-                            <!-- المدرس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>د.ابراهيم السيد</p>
-                              </div>
-                            </td>
-                            <!-- السنه-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>الصف الثالث الثانوي ( علم علوم )</p>
-                              </div>
-                            </td>
-                            <!--المادة -->
-                            <td>
-                              <div class="name-teacher">
-                                <p>انجليزي</p>
-                                <p>علمي علوم</p>
-                              </div>
-                            </td>
-                            <!-- الكورس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>شهر يونية المراجعة (4)</p>
-                              </div>
-                            </td>
-                            <!-- تاريخ الانضمام-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>2024-03-20</p>
-                              </div>
-                            </td>
-                            <!-- حظر الطالب او قبول  -->
-                            <td>
-                              <div class="block-accpet">
-                                <div class="accept">
-                                  <a href="#"
-                                    ><h6>
-                                      <i class="fa-solid fa-check"></i> قبول
-                                    </h6></a
-                                  >
-                                </div>
-                                <div class="block">
-                                  <a href="#">
-                                    <h6>
-                                      <i class="fa-solid fa-xmark"></i> رفض
-                                    </h6></a
-                                  >
-                                </div>
-                                <!-- accept-request -->
-                                <!-- <div class="accept-request">
-                                  <a href="#"><h6>طلب مقبول</h6></a>
-                                </div> -->
-                                <!-- notaccept-reques -->
-                                <!-- <div class="notaccept-request">
-                                  <a href="#"><h6>طلب مرفوض</h6></a>
-                                </div> -->
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <!-- اسم المنصة -->
-                            <th scope="row">
-                              <div class="name-Platform">
-                                <h6>التكاثر في الكائنات الحية</h6>
-                              </div>
-                            </th>
-                            <!-- المدرس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>د.ابراهيم السيد</p>
-                              </div>
-                            </td>
-                            <!-- السنه-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>الصف الثالث الثانوي ( علم علوم )</p>
-                              </div>
-                            </td>
-                            <!--المادة -->
-                            <td>
-                              <div class="name-teacher">
-                                <p>انجليزي</p>
-                                <p>علمي علوم</p>
-                              </div>
-                            </td>
-                            <!-- الكورس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>شهر يونية المراجعة (4)</p>
-                              </div>
-                            </td>
-                            <!-- تاريخ الانضمام-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>2024-03-20</p>
-                              </div>
-                            </td>
-                            <!-- حظر الطالب او قبول  -->
-                            <td>
-                              <div class="block-accpet">
-                                <div class="accept">
-                                  <a href="#"
-                                    ><h6>
-                                      <i class="fa-solid fa-check"></i> قبول
-                                    </h6></a
-                                  >
-                                </div>
-                                <div class="block">
-                                  <a href="#">
-                                    <h6>
-                                      <i class="fa-solid fa-xmark"></i> رفض
-                                    </h6></a
-                                  >
-                                </div>
-                                <!-- accept-request -->
-                                <!-- <div class="accept-request">
-                                  <a href="#"><h6>طلب مقبول</h6></a>
-                                </div> -->
-                                <!-- notaccept-reques -->
-                                <!-- <div class="notaccept-request">
-                                  <a href="#"><h6>طلب مرفوض</h6></a>
-                                </div> -->
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <!-- اسم المنصة -->
-                            <th scope="row">
-                              <div class="name-Platform">
-                                <h6>التكاثر في الكائنات الحية</h6>
-                              </div>
-                            </th>
-                            <!-- المدرس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>د.ابراهيم السيد</p>
-                              </div>
-                            </td>
-                            <!-- السنه-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>الصف الثالث الثانوي ( علم علوم )</p>
-                              </div>
-                            </td>
-                            <!--المادة -->
-                            <td>
-                              <div class="name-teacher">
-                                <p>انجليزي</p>
-                                <p>علمي علوم</p>
-                              </div>
-                            </td>
-                            <!-- الكورس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>شهر يونية المراجعة (4)</p>
-                              </div>
-                            </td>
-                            <!-- تاريخ الانضمام-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>2024-03-20</p>
-                              </div>
-                            </td>
-                            <!-- حظر الطالب او قبول  -->
-                            <td>
-                              <div class="block-accpet">
-                                <div class="accept">
-                                  <a href="#"
-                                    ><h6>
-                                      <i class="fa-solid fa-check"></i> قبول
-                                    </h6></a
-                                  >
-                                </div>
-                                <div class="block">
-                                  <a href="#">
-                                    <h6>
-                                      <i class="fa-solid fa-xmark"></i> رفض
-                                    </h6></a
-                                  >
-                                </div>
-                                <!-- accept-request -->
-                                <!-- <div class="accept-request">
-                                  <a href="#"><h6>طلب مقبول</h6></a>
-                                </div> -->
-                                <!-- notaccept-reques -->
-                                <!-- <div class="notaccept-request">
-                                  <a href="#"><h6>طلب مرفوض</h6></a>
-                                </div> -->
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <!-- اسم المنصة -->
-                            <th scope="row">
-                              <div class="name-Platform">
-                                <h6>التكاثر في الكائنات الحية</h6>
-                              </div>
-                            </th>
-                            <!-- المدرس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>د.ابراهيم السيد</p>
-                              </div>
-                            </td>
-                            <!-- السنه-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>الصف الثالث الثانوي ( علم علوم )</p>
-                              </div>
-                            </td>
-                            <!--المادة -->
-                            <td>
-                              <div class="name-teacher">
-                                <p>انجليزي</p>
-                                <p>علمي علوم</p>
-                              </div>
-                            </td>
-                            <!-- الكورس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>شهر يونية المراجعة (4)</p>
-                              </div>
-                            </td>
-                            <!-- تاريخ الانضمام-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>2024-03-20</p>
-                              </div>
-                            </td>
-                            <!-- حظر الطالب او قبول  -->
-                            <td>
-                              <div class="block-accpet">
-                                <div class="accept">
-                                  <a href="#"
-                                    ><h6>
-                                      <i class="fa-solid fa-check"></i> قبول
-                                    </h6></a
-                                  >
-                                </div>
-                                <div class="block">
-                                  <a href="#">
-                                    <h6>
-                                      <i class="fa-solid fa-xmark"></i> رفض
-                                    </h6></a
-                                  >
-                                </div>
-                                <!-- accept-request -->
-                                <!-- <div class="accept-request">
-                                  <a href="#"><h6>طلب مقبول</h6></a>
-                                </div> -->
-                                <!-- notaccept-reques -->
-                                <!-- <div class="notaccept-request">
-                                  <a href="#"><h6>طلب مرفوض</h6></a>
-                                </div> -->
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <!-- اسم المنصة -->
-                            <th scope="row">
-                              <div class="name-Platform">
-                                <h6>التكاثر في الكائنات الحية</h6>
-                              </div>
-                            </th>
-                            <!-- المدرس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>د.ابراهيم السيد</p>
-                              </div>
-                            </td>
-                            <!-- السنه-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>الصف الثالث الثانوي ( علم علوم )</p>
-                              </div>
-                            </td>
-                            <!--المادة -->
-                            <td>
-                              <div class="name-teacher">
-                                <p>انجليزي</p>
-                                <p>علمي علوم</p>
-                              </div>
-                            </td>
-                            <!-- الكورس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>شهر يونية المراجعة (4)</p>
-                              </div>
-                            </td>
-                            <!-- تاريخ الانضمام-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>2024-03-20</p>
-                              </div>
-                            </td>
-                            <!-- حظر الطالب او قبول  -->
-                            <td>
-                              <div class="block-accpet">
-                                <div class="accept">
-                                  <a href="#"
-                                    ><h6>
-                                      <i class="fa-solid fa-check"></i> قبول
-                                    </h6></a
-                                  >
-                                </div>
-                                <div class="block">
-                                  <a href="#">
-                                    <h6>
-                                      <i class="fa-solid fa-xmark"></i> رفض
-                                    </h6></a
-                                  >
-                                </div>
-                                <!-- accept-request -->
-                                <!-- <div class="accept-request">
-                                  <a href="#"><h6>طلب مقبول</h6></a>
-                                </div> -->
-                                <!-- notaccept-reques -->
-                                <!-- <div class="notaccept-request">
-                                  <a href="#"><h6>طلب مرفوض</h6></a>
-                                </div> -->
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
                   </div>
                 </div>
                 <!-- سجل الاشتراكات subscribe -->
@@ -1642,41 +2467,21 @@
                       <input type="text" placeholder="ابحث هنا.." />
                     </div>
                     <!-- if user want newRequests , accepted and blocked -->
-                    <div class="Requests">
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="options-outlin"
-                        id="join-outlin"
-                        autocomplete="off"
-                        checked
-                      />
-                      <label class="btn btn-outline-primary" for="join-outlin">
-                        طلب انضمام</label
-                      >
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="options-outlin"
-                        id="sale-outlin"
-                        autocomplete="off"
-                      />
-                      <label class="btn btn-outline-primary" for="sale-outlin"
-                        >شراء
-                      </label>
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="options-outlin"
-                        id="scan-outlin"
-                        autocomplete="off"
-                      />
-                      <label class="btn btn-outline-primary" for="scan-outlin">
-                        scan qr code
-                      </label>
-                    </div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="Request-join-tab" data-bs-toggle="tab" data-bs-target="#Request-join" type="button" role="tab" aria-controls="Request-join" aria-selected="true">طلب انضمام</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sale-tab" data-bs-toggle="tab" data-bs-target="#sale" type="button" role="tab" aria-controls="sale" aria-selected="false">شراء</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#scan-qr" type="button" role="tab" aria-controls="scan-qr" aria-selected="false">scan qr code</button>
+                      </li>
+                    </ul>
                   </div>
-                  <!-- table -->
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="Request-join" role="tabpanel" aria-labelledby="Request-join-tab">
+                                        <!-- table -->
                   <div class="add-course">
                     <div class="table-responsive">
                       <table>
@@ -1793,59 +2598,7 @@
                             <!-- subscribe -->
                             <td>
                               <div class="requst-join">
-                                <p>scan Qrcode</p>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <!-- اسم المنصة -->
-                            <th scope="row">
-                              <div class="name-Platform">
-                                <h6>التكاثر في الكائنات الحية</h6>
-                              </div>
-                            </th>
-                            <!-- المدرس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>د.ابراهيم السيد</p>
-                              </div>
-                            </td>
-                            <!-- السنه-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>الصف الثالث الثانوي ( علم علوم )</p>
-                              </div>
-                            </td>
-                            <!--المادة -->
-                            <td>
-                              <div class="name-teacher">
-                                <p>انجليزي</p>
-                                <p>علمي علوم</p>
-                              </div>
-                            </td>
-                            <!-- الكورس-->
-                            <td>
-                              <div class="name-teacher">
-                                <p>شهر يونية</p>
-                                <p>المراجعة (4)</p>
-                              </div>
-                            </td>
-                            <!-- تاريخ الانضمام -->
-                            <td>
-                              <div class="name-teacher">
-                                <p>2024-03-20</p>
-                              </div>
-                            </td>
-                            <!-- responsible person -->
-                            <td>
-                              <div class="name-person">
-                                <h6>احمد حوام السيد</h6>
-                              </div>
-                            </td>
-                            <!-- subscribe -->
-                            <td>
-                              <div class="requst-join">
-                                <p>شراء</p>
+                                <p>طلب انضمام</p>
                               </div>
                             </td>
                           </tr>
@@ -1949,7 +2702,394 @@
                             <!-- subscribe -->
                             <td>
                               <div class="requst-join">
-                                <p>scan Qrcode</p>
+                                <p>طلب انضمام</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p>طلب انضمام</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p>طلب انضمام</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                    </div>
+                    <div class="tab-pane fade" id="sale" role="tabpanel" aria-labelledby="sale-tab">
+                                        <!-- table -->
+                  <div class="add-course">
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th scope="col">اسم المنصة</th>
+                            <th scope="col">المدرس</th>
+                            <th scope="col">السنه</th>
+                            <th scope="col">المادة</th>
+                            <th scope="col">الكورس</th>
+                            <th>تاريخ الانضمام</th>
+                            <th>الشخص المسؤول</th>
+                            <th>طريقة الاشتراك</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p>شراء</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p>شراء</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p>شراء</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p>شراء</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p>شراء</p>
                               </div>
                             </td>
                           </tr>
@@ -2009,6 +3149,344 @@
                       </table>
                     </div>
                   </div>
+                    </div>
+                    <div class="tab-pane fade" id="scan-qr" role="tabpanel" aria-labelledby="scan-qr-tab">
+                                        <!-- table -->
+                  <div class="add-course">
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th scope="col">اسم المنصة</th>
+                            <th scope="col">المدرس</th>
+                            <th scope="col">السنه</th>
+                            <th scope="col">المادة</th>
+                            <th scope="col">الكورس</th>
+                            <th>تاريخ الانضمام</th>
+                            <th>الشخص المسؤول</th>
+                            <th>طريقة الاشتراك</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p> scan Qrcode</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p>scan Qrcode</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p> scan Qrcode</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p> scan Qrcode</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p>scan Qrcode</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- اسم المنصة -->
+                            <th scope="row">
+                              <div class="name-Platform">
+                                <h6>التكاثر في الكائنات الحية</h6>
+                              </div>
+                            </th>
+                            <!-- المدرس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>د.ابراهيم السيد</p>
+                              </div>
+                            </td>
+                            <!-- السنه-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>الصف الثالث الثانوي ( علم علوم )</p>
+                              </div>
+                            </td>
+                            <!--المادة -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>انجليزي</p>
+                                <p>علمي علوم</p>
+                              </div>
+                            </td>
+                            <!-- الكورس-->
+                            <td>
+                              <div class="name-teacher">
+                                <p>شهر يونية</p>
+                                <p>المراجعة (4)</p>
+                              </div>
+                            </td>
+                            <!-- تاريخ الانضمام -->
+                            <td>
+                              <div class="name-teacher">
+                                <p>2024-03-20</p>
+                              </div>
+                            </td>
+                            <!-- responsible person -->
+                            <td>
+                              <div class="name-person">
+                                <h6>احمد حوام السيد</h6>
+                              </div>
+                            </td>
+                            <!-- subscribe -->
+                            <td>
+                              <div class="requst-join">
+                                <p> scan Qrcode</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+
                 </div>
                 <!-- الامتحانات exams-->
                 <div
@@ -2093,7 +3571,7 @@
                             <!-- icon eye-->
                             <td>
                               <div class="eye">
-                                <a href="#"
+                                <a href="quesion-student-details.html"
                                   ><img src="photo/eye.svg" alt=""
                                 /></a>
                               </div>
@@ -2140,7 +3618,7 @@
                             <!-- icon eye-->
                             <td>
                               <div class="eye">
-                                <a href="#"
+                                <a href="quesion-student-details.html"
                                   ><img src="photo/eye.svg" alt=""
                                 /></a>
                               </div>
@@ -2187,7 +3665,7 @@
                             <!-- icon eye-->
                             <td>
                               <div class="eye">
-                                <a href="#"
+                                <a href="quesion-student-details.html"
                                   ><img src="photo/eye.svg" alt=""
                                 /></a>
                               </div>
@@ -2234,7 +3712,7 @@
                             <!-- icon eye-->
                             <td>
                               <div class="eye">
-                                <a href="#"
+                                <a href="quesion-student-details.html"
                                   ><img src="photo/eye.svg" alt=""
                                 /></a>
                               </div>
@@ -2281,7 +3759,7 @@
                             <!-- icon eye-->
                             <td>
                               <div class="eye">
-                                <a href="#"
+                                <a href="quesion-student-details.html"
                                   ><img src="photo/eye.svg" alt=""
                                 /></a>
                               </div>
@@ -2328,7 +3806,7 @@
                             <!-- icon eye-->
                             <td>
                               <div class="eye">
-                                <a href="#"
+                                <a href="quesion-student-details.html"
                                   ><img src="photo/eye.svg" alt=""
                                 /></a>
                               </div>
@@ -2375,7 +3853,7 @@
                             <!-- icon eye-->
                             <td>
                               <div class="eye">
-                                <a href="#"
+                                <a href="quesion-student-details.html"
                                   ><img src="photo/eye.svg" alt=""
                                 /></a>
                               </div>
@@ -2422,7 +3900,7 @@
                             <!-- icon eye-->
                             <td>
                               <div class="eye">
-                                <a href="#"
+                                <a href="quesion-student-details.html"
                                   ><img src="photo/eye.svg" alt=""
                                 /></a>
                               </div>
@@ -2469,7 +3947,7 @@
                             <!-- icon eye-->
                             <td>
                               <div class="eye">
-                                <a href="#"
+                                <a href="quesion-student-details.html"
                                   ><img src="photo/eye.svg" alt=""
                                 /></a>
                               </div>
@@ -2516,7 +3994,7 @@
                             <!-- icon eye-->
                             <td>
                               <div class="eye">
-                                <a href="#"
+                                <a href="quesion-student-details.html"
                                   ><img src="photo/eye.svg" alt=""
                                 /></a>
                               </div>
@@ -2828,14 +4306,14 @@
                 </div>
                 <div class="modal-body">
                   <lottie-player
-                  src="photo/Animation - 1721206271889.json"
-                  speed="1"
-                  style="width: 100px; height: 100px; margin: auto"
-                  loop
-                  autoplay
-                  direction="1"
-                  mode="normal"
-                ></lottie-player>
+                    src="photo/Animation - 1721206271889.json"
+                    speed="1"
+                    style="width: 100px; height: 100px; margin: auto"
+                    loop
+                    autoplay
+                    direction="1"
+                    mode="normal"
+                  ></lottie-player>
                   <div class="confirme">
                     <h4>هل انت متأكد من تسجيل خروج الطالب ؟</h4>
                     <p>
@@ -3339,7 +4817,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="modal-footer">
                   <div class="add-course">
                     <div class="pagenation">
@@ -3387,5 +4864,13 @@
 
     <!-- show sitting -->
     <script src="js/main.js"></script>
+        <!-- sweet alert -->
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+        integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <!-- sweet alert -->
   </body>
 </html>

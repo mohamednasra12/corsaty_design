@@ -72,7 +72,7 @@ function prohibition() {
       if (result.isConfirmed) {
         swalWithBootstrapButtons.fire({
           title: "prohibition!",
-          text: "Your student has been deleted.",
+          text: ". The student has been banned",
           icon: "success",
         });
       } else if (
