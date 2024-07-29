@@ -467,7 +467,8 @@
                         </div>
                         <div class="add-new-cours">
                           <div class="img">
-                            <img src="photo/search-normal.svg" alt="" />
+                            <input type="text" id="searchInput" class="search-input" placeholder="Search..." />
+                            <img src="photo/search-normal.svg" alt="" id="searchIcon" />
                           </div>
                           <a
                             class="btn btn-primary"
@@ -1288,5 +1289,23 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- sweet alert -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const searchIcon = document.getElementById('searchIcon');
+  const searchInput = document.getElementById('searchInput');
+
+  searchIcon.addEventListener('click', function() {
+      searchInput.style.display = 'block';
+      searchInput.focus();
+  });
+
+  document.addEventListener('click', function(event) {
+      if (event.target !== searchIcon && event.target !== searchInput) {
+          searchInput.style.display = 'none';
+      }
+  });
+});
+
+  </script>
   </body>
 </html>
