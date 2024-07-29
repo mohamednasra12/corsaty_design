@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Search Input on Icon Click</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.search-input {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <span class="search-icon" id="searchIcon">&#128269;</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search..." />
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const searchIcon = document.getElementById('searchIcon');
+    const searchInput = document.getElementById('searchInput');
+
+    searchIcon.addEventListener('click', function() {
+        searchInput.style.display = 'block';
+        searchInput.focus();
+    });
+
+    document.addEventListener('click', function(event) {
+        if (event.target !== searchIcon && event.target !== searchInput) {
+            searchInput.style.display = 'none';
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
