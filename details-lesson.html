@@ -129,7 +129,7 @@
               <i class="fa-solid fa-angles-right"></i>
             </div>
             <div class="name-page">
-              <h4>الدورات التعليمية / تفاصيل الدورة  / تفاصيل الحصة </h4>
+              <h4>الدورات التعليمية / تفاصيل الدورة / تفاصيل الحصة</h4>
             </div>
           </div>
 
@@ -195,21 +195,23 @@
           <div class="content">
             <div class="courses">
               <div class="all-corses">
-                <div class="contant-course">
-                  <div class="video-description">
-                    <div class="vidio">
-                      <a href="#">
+                <div class="headcourse">
+                  <div class="lesson-video">
+                    <div class="imgvidio">
+                      <div class="img">
                         <img src="photo/vidio.png" alt="" />
-                      </a>
-                      <div class="watch-vidio">
-                        <a href="#">
-                          <h6>
-                            <img src="photo/video-circle1.svg" alt="" />
-                            مشاهدة الفيديو
-                          </h6>
-                        </a>
+                      </div>
+                      <div
+                        class="course-vidio"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                      >
+                        <img src="photo/video-circle1.svg" alt="" />
+                        <h6>مشاهدة الفيديو</h6>
                       </div>
                     </div>
+                  </div>
+                  <div class="description-icon">
                     <div class="description">
                       <h4>
                         <p>01.</p>
@@ -284,58 +286,167 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="icon-edit">
-                    <div class="edit-course">
-                      <a href="#">
-                        <div class="img">
-                          <img src="photo/q.svg" alt="" />
-                        </div>
-                      </a>
-                    </div>
-                    <div class="edit-course">
-                      <div class="dropdown">
-                        <a
-                          class="btn dropdown-toggle"
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <img src="photo/scan-barcode5.svg" alt="" />
+                    <div class="icon-edit">
+                      <div class="edit-course">
+                        <a href="edit-lesson.html">
+                          <div class="img">
+                            <img src="photo/q.svg" alt="" />
+                          </div>
                         </a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <img src="photo/scan.svg" alt="" />انشاء QR
-                              Code</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <img src="photo/scan-barcode2.svg" alt="" />QR
-                              Code History</a
-                            >
-                          </li> 
-                        </ul>
                       </div>
-                    </div>
-                    <div class="block-cours">
-                      <a href="#">
-                        <div class="img">
-                          <img src="photo/y.svg" alt="" />
+                      <div class="edit-course">
+                        <div class="dropdown">
+                          <a
+                            class="btn dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="photo/scan-barcode5.svg" alt="" />
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                data-bs-toggle="modal"
+                                data-bs-target="#construction-qr"
+                              >
+                                <img src="photo/scan.svg" alt="" />انشاء QR
+                                Code</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="table-Qr.html">
+                                <img src="photo/scan-barcode2.svg" alt="" />QR
+                                Code History</a
+                              >
+                            </li>
+                          </ul>
                         </div>
-                      </a>
-                    </div>
-                    <div class="delet-cours">
-                      <a href="#">
-                        <div class="img" onclick="remove()">
-                          <img src="photo/delet.svg" alt="" />
+                      </div>
+                      <div class="block-cours">
+                        <a href="#">
+                          <div class="img" onclick="prohibition()">
+                            <img src="photo/y.svg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="delet-cours">
+                        <a href="#">
+                          <div class="img" onclick="remove()">
+                            <img src="photo/delet.svg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <!-- model qr  -->
+                      <div
+                        class="modal fade"
+                        id="construction-qr"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        tabindex="-1"
+                        aria-labelledby="staticBackdropLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5
+                                class="modal-title"
+                                id="construction-qrLabel"
+                              ></h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="qr-contant">
+                                <div class="img">
+                                  <lottie-player
+                                    src="photo/Animation - 1722176538175.json"
+                                    speed="1"
+                                    style="
+                                      width: 100px;
+                                      height: 100px;
+                                      margin: auto;
+                                    "
+                                    loop
+                                    autoplay
+                                    direction="1"
+                                    mode="normal"
+                                  ></lottie-player>
+                                  <h4>create qrcode</h4>
+                                </div>
+                                <div class="form">
+                                  <label for="">count</label>
+                                  <input type="number" />
+                                  <label for="">expire date</label>
+                                  <input type="date" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn qr-save"
+                                data-bs-dismiss="modal"
+                              >
+                                حفظ
+                              </button>
+                              <button
+                                type="button"
+                                class="btn print-qr"
+                                data-bs-dismiss="modal"
+                              >
+                                طباعة ال QR Code
+                              </button>
+                            </div>
+                          </div>
                         </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- model vidio  -->
+                <div
+                  class="modal fade"
+                  id="staticBackdrop"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="title-vidio">
+                          <h1><span>01.</span> الدرس الاول</h1>
+                          <video controls>
+                            <source
+                              src="photo/855418-hd_1920_1080_25fps.mp4"
+                              type="video/mp4"
+                            />
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- model vidio  -->
               </div>
             </div>
           </div>
@@ -394,17 +505,19 @@
                     </select>
                   </div>
                   <div class="adress">
-                  <a href="add-exam.html">
-                    <button class="btn">
-                      + امتحان جديد   
-                    </button>
-                  </a>
-                </div>
+                    <a href="add-exam.html">
+                      <button style="width: 160px; height: 55px" class="btn">
+                        + امتحان جديد
+                      </button>
+                    </a>
+                  </div>
                   <div class="adress">
-                  <a href="add-video.html">
-                    <button class="btn">+ فيديو جديد </button>
-                  </a>
-                </div>
+                    <a href="add-video.html">
+                      <button style="width: 160px; height: 55px" class="btn">
+                        + فيديو جديد
+                      </button>
+                    </a>
+                  </div>
                 </div>
                 <div class="add-course">
                   <div class="table-responsive">
@@ -435,7 +548,7 @@
                           <td class="end">
                             <div class="icons">
                               <div class="edit-course">
-                                <a href="course-exam.html">
+                                <a href="#">
                                   <div class="img">
                                     <img src="photo/copy-left.svg" alt="" />
                                   </div>
@@ -449,7 +562,7 @@
                                 </a>
                               </div>
                               <div class="edit-course">
-                                <a href="#">
+                                <a href="edit-video.html">
                                   <div class="img">
                                     <img src="photo/q.svg" alt="" />
                                   </div>
@@ -457,7 +570,7 @@
                               </div>
                               <div class="block-cours">
                                 <a href="#">
-                                  <div class="img">
+                                  <div class="img" onclick="prohibition()">
                                     <img src="photo/y.svg" alt="" />
                                   </div>
                                 </a>
@@ -486,7 +599,7 @@
                           <td class="end">
                             <div class="icons">
                               <div class="edit-course">
-                                <a href="course-exam.html">
+                                <a href="#">
                                   <div class="img">
                                     <img src="photo/copy-left.svg" alt="" />
                                   </div>
@@ -500,7 +613,7 @@
                                 </a>
                               </div>
                               <div class="edit-course">
-                                <a href="#">
+                                <a href="edit-video.html">
                                   <div class="img">
                                     <img src="photo/q.svg" alt="" />
                                   </div>
@@ -508,7 +621,7 @@
                               </div>
                               <div class="block-cours">
                                 <a href="#">
-                                  <div class="img">
+                                  <div class="img" onclick="prohibition()">
                                     <img src="photo/y.svg" alt="" />
                                   </div>
                                 </a>
@@ -544,7 +657,7 @@
                                 </a>
                               </div>
                               <div class="edit-course">
-                                <a href="#">
+                                <a href="edit-video.html">
                                   <div class="img">
                                     <img src="photo/q.svg" alt="" />
                                   </div>
@@ -552,7 +665,7 @@
                               </div>
                               <div class="block-cours">
                                 <a href="#">
-                                  <div class="img">
+                                  <div class="img" onclick="prohibition()">
                                     <img src="photo/y.svg" alt="" />
                                   </div>
                                 </a>
@@ -581,7 +694,7 @@
                           <td class="end">
                             <div class="icons">
                               <div class="edit-course">
-                                <a href="course-exam.html">
+                                <a href="#">
                                   <div class="img">
                                     <img src="photo/copy-left.svg" alt="" />
                                   </div>
@@ -595,7 +708,7 @@
                                 </a>
                               </div>
                               <div class="edit-course">
-                                <a href="#">
+                                <a href="edit-video.html">
                                   <div class="img">
                                     <img src="photo/q.svg" alt="" />
                                   </div>
@@ -603,7 +716,7 @@
                               </div>
                               <div class="block-cours">
                                 <a href="#">
-                                  <div class="img">
+                                  <div class="img" onclick="prohibition()">
                                     <img src="photo/y.svg" alt="" />
                                   </div>
                                 </a>
@@ -632,7 +745,7 @@
                           <td class="end">
                             <div class="icons">
                               <div class="edit-course">
-                                <a href="course-exam.html">
+                                <a href="#">
                                   <div class="img">
                                     <img src="photo/copy-left.svg" alt="" />
                                   </div>
@@ -646,7 +759,7 @@
                                 </a>
                               </div>
                               <div class="edit-course">
-                                <a href="#">
+                                <a href="edit-video.html">
                                   <div class="img">
                                     <img src="photo/q.svg" alt="" />
                                   </div>
@@ -654,7 +767,7 @@
                               </div>
                               <div class="block-cours">
                                 <a href="#">
-                                  <div class="img">
+                                  <div class="img" onclick="prohibition()">
                                     <img src="photo/y.svg" alt="" />
                                   </div>
                                 </a>
@@ -690,7 +803,7 @@
                                 </a>
                               </div>
                               <div class="edit-course">
-                                <a href="#">
+                                <a href="edit-video.html">
                                   <div class="img">
                                     <img src="photo/q.svg" alt="" />
                                   </div>
@@ -698,7 +811,7 @@
                               </div>
                               <div class="block-cours">
                                 <a href="#">
-                                  <div class="img">
+                                  <div class="img" onclick="prohibition()">
                                     <img src="photo/y.svg" alt="" />
                                   </div>
                                 </a>
@@ -876,7 +989,6 @@
             </div>
           </div>
         </div>
-
         <!-- content -->
       </section>
     </div>

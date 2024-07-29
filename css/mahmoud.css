@@ -592,6 +592,157 @@ svg.svg-inline--fa.fa-angles-right {
 .contant-course .icons-description {
   display: flex;
 }
+.lesson-video {
+  /* display: flex; */
+  width: 25%;
+}
+.lesson-video .imgvidio {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+}
+.lesson-video .imgvidio .img img {
+  width: 100%;
+  height: 30vh;
+}
+.lesson-video .course-vidio {
+  position: absolute;
+  bottom: 30px;
+  left: 5%;
+  background-color: rgb(255 255 255 / 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.5rem;
+  border-radius: 33px;
+  width: 90%;
+}
+.lesson-video .course-vidio h6 {
+  color: white;
+  margin: 0 0.4rem 0 0;
+}
+.headcourse {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.headcourse .description-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 73%;
+}
+.headcourse .dropdown .dropdown-menu {
+  text-align: start;
+  font-family: "regular";
+  font-size: 1rem;
+  color: black;
+}
+.headcourse h4 {
+  font-size: 0.9rem;
+  font-family: "bold";
+  display: flex;
+  margin-bottom: 1rem;
+}
+.headcourse p {
+  font-size: 0.9rem;
+  font-family: "bold";
+  color: #5071eb;
+  margin: 0;
+}
+.headcourse {
+  margin: 0 1rem;
+}
+.headcourse .details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+.headcourse .details .price {
+  background-color: rgb(80 113 235 / 10%);
+  border-radius: 21px;
+  padding: 0.5rem 1rem;
+  margin: 0 0 0 0.5rem;
+}
+.headcourseiption .details .price h6 {
+  color: #5071eb;
+  font-size: 0.8rem;
+  font-family: "medium";
+  margin: 0;
+}
+.headcourse .lesson .exams {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.headcourse .lesson .exams .img {
+  margin-left: 0.5rem;
+}
+.headcourse .lesson .exams h5 {
+  color: #576b74;
+  font-size: 1rem;
+  font-family: "medium";
+  margin: 0;
+}
+.headcourse .lesson .exams h6 {
+  margin: 0;
+  padding: 0.5rem;
+  font-family: "medium";
+  font-size: 1rem;
+}
+.headcourse .lesson .exams a {
+  margin: 0;
+  padding: 0.5rem;
+  font-family: "medium";
+  font-size: 1rem;
+}
+.headcourse .lesson .exams span {
+  color: #e31e25;
+  font-size: 1rem;
+  font-family: "medium";
+  margin: 0;
+}
+.headcourse .details .price h6 {
+  color: #5071eb;
+  font-size: 0.8rem;
+  font-family: "medium";
+  margin: 0;
+}
+.icon-edit {
+  display: flex;
+  gap: 10px;
+}
+.headcourse .icon-edit .edit-course {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #5071eb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.headcourse .icon-edit .block-cours {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #bb6400;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.headcourse .icon-edit .delet-cours {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e31e25;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+/*  */
 .all-corses .modal-content {
   max-width: 100%;
 }
@@ -618,6 +769,12 @@ svg.svg-inline--fa.fa-angles-right {
   width: 100%;
   background-color: white;
   border: 1px solid #0084ff;
+}
+.index .contant-course .description h4 {
+  font-size: 0.9rem;
+  font-family: "bold";
+  display: flex;
+  margin-bottom: 1rem;
 }
 /* index coursat details */
 
@@ -686,11 +843,11 @@ svg.svg-inline--fa.fa-angles-right {
   outline: 0;
   padding: 0 0.5rem;
 }
-.remove-prohibition{
+.remove-prohibition {
   width: 35px;
   height: 35px;
   background-color: white;
-  border: 1px solid #BB6400;
+  border: 1px solid #bb6400;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -1824,6 +1981,7 @@ table tbody .end {
 .index table tbody .book {
   width: 30px;
   height: 30px;
+  cursor: pointer;
   background-color: #5071eb;
   border-radius: 10px;
   display: flex;
@@ -1834,6 +1992,7 @@ table tbody .end {
 .index table tbody .delet {
   width: 30px;
   height: 30px;
+  cursor: pointer;
   background-color: #d6534a;
   border-radius: 10px;
   display: flex;
@@ -3115,7 +3274,7 @@ canvas#myChart {
     height: 30vh;
   }
 }
-@media (max-width:1100px) and (min-width:990px) {
+@media (max-width: 1100px) and (min-width: 990px) {
   .contant-course .icons-description {
     width: 100%;
     flex-direction: column-reverse;
@@ -3551,4 +3710,18 @@ canvas#myChart {
   .index .contant-course .description {
     margin-top: 0.5rem;
   }
+  .headcourse {
+    flex-direction: column;
+  }
+  .lesson-video {
+    width: 61%;
+  }
+  .headcourse .description-icon {
+    width: 100%;
+    margin-top: 1rem;
+    flex-direction:column-reverse;
+  }
+  .icon-edit {
+    margin-bottom: 1rem;
+}
 }
